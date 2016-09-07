@@ -1,0 +1,204 @@
+{
+	margin: 0;
+	padding: 0;
+}
+#bg {
+	position: fixed; 
+	top: 0; 
+	left: 0; 
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+.header {
+	width: 40%;
+	margin: auto;
+}
+.header img {
+	width: 100%;
+	height: 100%;
+}
+#snow {
+	background: none;
+	font-family: Androgyne;
+	background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index:1;
+	-webkit-animation: snow 10s linear infinite;
+	-moz-animation: snow 10s linear infinite;
+	-ms-animation: snow 10s linear infinite;
+	animation: snow 10s linear infinite;
+}
+@keyframes snow {
+	0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+	50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+	100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+	0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+	50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+	100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+	0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+	50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+	100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+	0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+	50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+	100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+#fix {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
+#gift {
+	position: fixed;
+	right: 30%;
+	top: 60%;
+	width: 20%;
+	animation: gift 5s linear infinite alternate;
+}
+#fix {
+	position: fixed;
+	bottom: 5%;
+	right: 5%;
+}
+.letter {
+	text-shadow: 0px 0px 3px white;
+	font-size: 1.5em;
+	font-style: italic;
+	letter-spacing: 0.2em;
+	color: #D3FF0C;
+}
+/*@keyframes tl1 {
+	0% {box-shadow: 0 0 black;}
+	50% {box-shadow: 5px 5px 20px rgba(0,0,0,.5); transform: translate(50px,0);}
+	100% {box-shadow: 0 0 black;}
+}
+@-webkit-keyframes slidein {
+            from {
+               margin-left:100%;
+               width:300%
+            }
+            75% {
+               font-size:300%;
+               margin-left:25%;
+               width:150%;
+            }
+            to {
+               margin-left:0%;
+               width:100%;
+            }
+         }
+         */
+#tl1 {
+	width: 25%;
+	position: fixed;
+	z-index: 10000;
+	animation: tl1 5s linear infinite;	
+}
+#tl1 img {
+	width: 100%;
+}
+ @keyframes tl1 {
+ 	0% {right: 10%;}
+ 	25% {transform: translate(-30%,-20%) rotate(-20deg) skew(-20deg,10deg);}
+ 	50% {transform: translate(-40%,-40%)}
+ 	75% {transform: translate(-60%,0) rotate(-20deg) skew(-20deg,10deg);}
+ 	100% {right: 10%;}
+ }
+ .letter:nth-child(1) {
+
+ 	-webkit-animation: fade 4s infinite 200ms;
+
+ 	animation: fade 4s infinite 200ms;
+
+ }
+ .letter:nth-child(2) {
+
+ 	-webkit-animation: fade 4s infinite 400ms;
+
+ 	animation: fade 4s infinite 400ms;
+
+ }
+ .letter:nth-child(3) {
+
+ 	-webkit-animation: fade 4s infinite 600ms;
+
+ 	animation: fade 4s infinite 600ms;
+
+ }
+ .letter:nth-child(4) {
+
+ 	-webkit-animation: fade 4s infinite 800ms;
+
+ 	animation: fade 4s infinite 800ms;
+
+ }
+ .letter:nth-child(5) {
+
+ 	-webkit-animation: fade 4s infinite 1000ms;
+
+ 	animation: fade 4s infinite 1000ms;
+
+ }
+ .letter:nth-child(6) {
+
+ 	-webkit-animation: fade 4s infinite 1200ms;
+
+ 	animation: fade 4s infinite 1200ms;
+
+ }
+
+ .letter:nth-child(7) {
+
+ 	-webkit-animation: fade 4s infinite 1400ms;
+
+ 	animation: fade 4s infinite 1400ms;
+
+ }
+ .letter:nth-child(8) {
+
+ 	-webkit-animation: fade 4s infinite 1600ms;
+
+ 	animation: fade 4s infinite 1600ms;
+
+ }
+ @-webkit-keyframes fade {
+
+ 	50% {
+
+ 		opacity: 0.02;
+
+ 	}
+ }
+ @keyframes fade {
+
+ 	50% {opacity: 0.2;}
+
+ }
+  @keyframes gift {
+  	0% {opacity: 1;}
+  	50% {opacity: 0.5; transform: scale(1.2);}
+  	100% {opacity: 1;}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
