@@ -148,6 +148,8 @@ ul {
 	color: black;
 	display: block;
 	text-align: center;
+	font-size: 16px;
+	font-family: mariaSemiBold;
 }
 .menu ul li .sub-menu ul li:hover a {
 	color: #870913;
