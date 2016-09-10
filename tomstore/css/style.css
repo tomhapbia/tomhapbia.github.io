@@ -316,7 +316,6 @@ ul {
 	left: 11px;
 	border-radius: 5px;
 	padding: 12px 15px;
-	transition: all 0.7s ease-in-out;
 }
 .vanhoa-detail {
 	height: 280px;
@@ -336,7 +335,7 @@ ul {
 	height: 100%;
 	padding: 20px 20px;
 	background-color: rgba(0, 0, 0, 0.6);
-	transition: all 0.7s ease-in-out;
+	
 }
 .vanhoa-list .overlay h3 {
 	color: #fffeb1;
@@ -352,9 +351,11 @@ ul {
 }
 .vanhoa-detail:hover .overlay {
 	opacity: 1;
+	transition: all 0.7s ease-in-out;
 }
 .vanhoa-detail:hover > h3 {
 	opacity: 0;
+	transition: all 0.7s ease-in-out;
 }
 
 #vanhoa6,
