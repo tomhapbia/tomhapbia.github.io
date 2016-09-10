@@ -103,6 +103,26 @@ ul {
 .menu2 ul li#menu-right-3{
 	background: url('../img/cart.png') 50% 20% no-repeat;
 }
+
+.menu2 ul li#menu-right-1:hover {
+	background: url('../img/people1.png') 50% 20% no-repeat;
+	background-color: #870913;
+	transition: all 0.5s ease-in-out;
+}
+.menu2 ul li#menu-right-2:hover {
+	background: url('../img/phone1.png') 50% 20% no-repeat;
+	background-color: #870913;
+	transition: all 0.5s ease-in-out;
+}
+.menu2 ul li#menu-right-3:hover {
+	background: url('../img/cart1.png') 50% 20% no-repeat;
+	background-color: #870913;
+	transition: all 0.5s ease-in-out;
+}
+.menu2 ul li:hover a{
+	color: #fff;
+	transition: all 0.5s ease-in-out;
+}
 .menu2 ul li a {
 	font-size: 12px;
 	display: block;
