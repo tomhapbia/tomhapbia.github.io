@@ -1,0 +1,282 @@
+.diachi {
+	background-image: url("../img/vanhoa_bg.jpg");
+	height: 60px;
+	width: 100%;
+}
+
+.diachi-wrap {
+	width: 80%;
+	margin: auto;
+}
+.diachi-wrap img {
+	width: 20px;
+	float: left;
+	margin-right: 5px;
+	display: inline-block;
+	margin-top: 18px;
+}
+.diachi-wrap ul {
+	margin-left: 100px;
+}
+.diachi-wrap ul li {
+	float: left;
+	line-height: 60px;
+}
+
+.diachi-wrap ul li a {
+	color: #000;
+	font-size: 15px;
+	display: inline-block;
+	float: left;
+}
+.diachi-wrap ul li span {
+	margin: 0 10px;
+}
+
+.noibat {
+	background: url('../img/noibat_bg.jpg') 0 0 repeat;
+	overflow: hidden;
+	border-top: 2px solid #d1d1d1;
+	padding: 30px 0;
+}
+.noibat .title h3 {
+	font-family: mariaBold;
+	font-size: 30px;
+	color: #870913;
+	font-weight: bold;
+	float: left;
+	display: inline-block;
+	margin-right: 50px;
+	text-transform: uppercase;
+}
+.gioithieu,
+.noibat .title-wrap {
+	margin: 0 auto;
+	width: 80%;
+	margin-top: 10px;
+	position: relative;
+	padding: 0 10px;
+}
+.gioithieu {
+	margin: 30px auto;
+	padding-bottom: 30px;
+}
+.gioithieu p {
+	margin: 8px 0px;
+	padding: 0px;
+	line-height: 20px;
+	color: rgb(34, 34, 34);
+	font-family: OpenSans-Regular, sans-serif;
+	font-size: 15px;
+	text-align: justify;
+}
+.noibat .title {
+	width: 100%;
+	border-bottom: 2px dotted #ae9855;
+	padding: 10px;
+	overflow: hidden;
+}
+.noibat .title ul {
+	float: left;
+	display: inline-block;
+}
+.noibat .title ul li {
+	float: left;
+	/*	margin: 3px 5px;*/
+	display: inline-table;
+}
+.noibat .title ul li a {
+	color: #000;
+	display: inline-block;
+	padding: 7px 20px 3px 20px;
+	border-radius: 10px;
+	margin: 0 10px 0 0px;
+	float: left;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-family: mariaSemiBold;
+}
+.noibat .title ul li a:hover {
+	color: #870913;
+}
+.noibat .title ul li::after {
+	display: inline;
+	content: "|";
+	color: #ae9f68;
+	font-size: 20px;
+	float: left;
+	margin-top: 4px;
+}
+.noibat .title ul li:last-child::after {
+	display: none;
+}
+a.active {
+	color: #fff !important;
+	background-color: #870913;
+}
+li.active {
+	color: #fff !important;
+	background-color: #870913;
+}
+.noibat .title img {
+	width: 20px;
+	vertical-align: middle;
+	display: block;
+	margin: auto;
+}
+.special {
+	width: 80%;
+	margin: 50px auto;
+	overflow: hidden;
+	border-bottom: 2px dotted #ae9855;
+	padding-bottom: 40px;
+}
+.special .list {
+	padding: 0 10px;
+	overflow: hidden;
+	width: 20%;
+	float: left;
+	margin-bottom: 10px;
+}
+.special .item {
+	width: 100%;
+	border: 1px solid #e8e1c1;
+	overflow: hidden;
+}
+.special .item .image {
+	width: 100%;
+	position: relative;
+}
+.special .list:hover .item .image img {
+	opacity: 0.5;
+	transform: scale(1.2);
+
+}
+.special .list:hover .item .image .image-overlay {
+	opacity: 0.9;
+	transition: all 0.5s ease-in-out;
+}
+.special .item .image .image-overlay {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	background-color: rgba(255, 255, 255, .8);
+	z-index: 1;
+	opacity: 0;
+
+}
+.special .item .image .image-overlay a {
+	border: 1px solid #8b0304;
+	border-radius: 3px;
+	position: absolute;
+	top: 50%;
+	left: 30%;
+	padding: 10px;
+	transform: translate(-20%,-50%);
+	overflow: hidden;
+	transition: all ease-in-out .5s;
+	text-transform: uppercase;
+	color: #8b0304;
+	cursor: pointer;
+	display: inline-block;
+	margin-bottom: 0px;
+	font-weight: 550;
+	vertical-align: middle;
+	font-size: 14px;
+}
+.special .item .image .image-overlay a:hover {
+	color: #fff;
+	background-color: #8b0304;
+}
+
+.special .item .image .image-overlay a span {
+	display: block;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+.special .item img {
+	width: 100%;
+	vertical-align: middle;
+	transition: all 0.5s ease-in-out;
+}
+
+.special .item .description {
+	width: 100%;
+	position: relative;
+	border-top: 1px solid #e8e1c1;
+	padding: 10px;
+	height: 60px;
+	background-image: linear-gradient(to bottom, #ffffff, #fcf4df);
+}
+.special .item .description h3 {
+	font-size: 18px;
+	color: #8b0304;
+	margin-bottom: 5px;
+	font-family: mariaSemiBold;
+}
+.special .item .description p {
+	font-family: mariaRegular;
+	font-size: 14px;
+}
+.special .item .description span a {
+	width: 30px;
+	height: 30px;
+	display: block;
+	position: absolute;
+	top: 12px;
+	right: 5px;
+	background-color: #8b0304;
+	border-radius: 50%;
+	background-image: url('../img/cart1.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	z-index: 1000;
+}
+
+.phan-trang {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+}
+.phan-trang ul {
+	display: inline-block;
+}
+.phan-trang ul li {
+	display: inline-block;
+	float: left;
+	padding: 5px;
+	border: 1px solid #8b0304;
+	margin: 2px;
+	border-radius: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
