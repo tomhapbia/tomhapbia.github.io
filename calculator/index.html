@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CALCULATOR</title>
+	<style type="text/css">
+		.wrap {
+			width: 80%;
+			margin: auto;
+		}
+		h1 {
+			text-align: center;
+			text-transform: uppercase;
+			margin-bottom: 50px;
+		}
+		table {
+			margin: auto;
+		}
+		.number {
+			text-align: right;
+			width: 600px;
+		}
+		input {
+			width: 100%;
+			padding: 5px 0;
+			font-size: 30px;
+			padding: 12px 20px;
+			margin: 10px 0;
+			box-sizing: border-box;
+		}
+		tr {
+			width: 100%;
+		}
+		td {
+			width: 20%;
+		}
+		button {
+			width: 100%;
+			padding: 10px 0;
+			margin-bottom: 5px;
+			background-color: #13A7FF;
+			font-size: 24px;
+			color: #fff;
+		}
+	</style>
+	
+</head>
+<body>
+	<div class="wrap">
+		<h1>Calculator</h1>
+		<table width="550" >
+			<tr>
+				<td colspan="5">
+					<input type="text" name="number" id="number" class="number">
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<button name="num1" value="1" onclick="getValue(this.value)">1</button>
+				</td>
+				<td>
+					<button name="num2" value="2" onclick="getValue(this.value)">2</button>
+				</td>
+				<td>
+					<button name="num3" value="3" onclick="getValue(this.value)">3</button>
+				</td>
+				<td>
+					<button name="cong" value="+" onclick="pheptoan(this.value)">+</button>
+				</td>
+				<td>
+					<button name="mod" value="%" onclick="pheptoan(this.value)">%</button>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<button name="num4" value="4" onclick="getValue(this.value)">4</button>
+				</td>
+				<td>
+					<button name="num5" value="5" onclick="getValue(this.value)">5</button>
+				</td>
+				<td>
+					<button name="num6" value="6" onclick="getValue(this.value)">6</button>
+				</td>
+				<td>
+					<button name="tru" value="-" onclick="pheptoan(this.value)">-</button>
+				</td>
+				<td>
+					<button name="bp" value="bp" onclick="pheptoan(this.value)">X<sup>2</sup></button>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<button name="num7" value="7" onclick="getValue(this.value)">7</button>
+				</td>
+				<td>
+					<button name="num8" value="8" onclick="getValue(this.value)">8</button>
+				</td>
+				<td>
+					<button name="num9" value="9" onclick="getValue(this.value)">9</button>
+				</td>
+				<td>
+					<button name="nhan" value="*" onclick="pheptoan(this.value)">*</button>
+				</td>
+				<td>
+					<button name="gt" value="gt" onclick="pheptoan(this.value)">!</button>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<button name="ac" value="AC" onclick="reset()">AC</button>
+				</td>
+				<td>
+					<button name="cham" value="." onclick="getValue(this.value)">.</button>
+				</td>
+				<td>
+					<button name="bang" value="=" onclick="ketqua()">=</button>
+				</td>
+				<td>
+					<button name="chia" value="/" onclick="pheptoan(this.value)">/</button>
+				</td>
+
+				<td>
+					<button name="can" value="can" onclick="pheptoan(this.value)">√</button>
+				</td>
+			</tr>
+
+
+		</table>
+	</div>
+
+	<script type="text/javascript">
+		var number = "";
+		var pheptinh = "";
+
+		function getValue(val) {
+			num = document.getElementById("number").value;
+			document.getElementById("number").value = num + "" + val;
+		}
+
+		function pheptoan(val) {
+			if (val == "bp") {
+				number = document.getElementById("number").value;
+				document.getElementById("number").value = Number(number) * Number(number);
+			} else if (val == "gt"){
+				number = document.getElementById("number").value;
+				if (number == 0) {
+					document.getElementById("number").value = 1;
+				} else{
+					a = 1;
+					for (var i = 1; i <= number; i++) {
+						a *= i;
+						document.getElementById("number").value = a;
+					};
+				};
+			} else if (val == "can") {
+				number = document.getElementById("number").value;
+				document.getElementById("number").value = Math.sqrt(Number(number));
+			}else {
+				number = document.getElementById("number").value;
+				document.getElementById("number").value = "";
+				pheptinh = val;
+			};
+		}
+
+		function ketqua() {
+			ketQuaTinh = 0;
+
+			switch(pheptinh){
+				case "+":
+				ketQuaTinh = parseFloat((Number(number)) + Number(document.getElementById("number").value));
+				break;
+				case "-":
+				ketQuaTinh = Number(number) - Number(document.getElementById("number").value);
+				break;
+				case "*":
+				ketQuaTinh = Number(number) * Number(document.getElementById("number").value);
+				break;
+				case "/":
+				ketQuaTinh = Number(number) / Number(document.getElementById("number").value);
+				break;
+				case "%":
+				ketQuaTinh = Number(number) % Number(document.getElementById("number").value);
+				break;
+			}
+			document.getElementById("number").value = ketQuaTinh;
+		}
+
+		function reset() {
+			number = "";
+			pheptinh = "";
+			document.getElementById("number").value = "";
+		}
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
