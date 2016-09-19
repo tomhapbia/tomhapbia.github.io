@@ -144,7 +144,7 @@
 		function pheptoan(val) {
 			if (val == "bp") {
 				number = document.getElementById("number").value;
-				document.getElementById("number").value = Number(number) * Number(number);
+				document.getElementById("number").value = (Number(number) * Number(number)).toFixed(5);
 			} else if (val == "gt"){
 				number = document.getElementById("number").value;
 				if (number == 0) {
@@ -158,7 +158,7 @@
 				};
 			} else if (val == "can") {
 				number = document.getElementById("number").value;
-				document.getElementById("number").value = Math.sqrt(Number(number));
+				document.getElementById("number").value = (Math.sqrt(Number(number))).toFixed(5);
 			}else {
 				number = document.getElementById("number").value;
 				document.getElementById("number").value = "";
@@ -186,7 +186,7 @@
 				ketQuaTinh = Number(number) % Number(document.getElementById("number").value);
 				break;
 			}
-			document.getElementById("number").value = ketQuaTinh;
+			document.getElementById("number").value = ketQuaTinh.toFixed(5);
 		}
 
 		function reset() {
