@@ -54,7 +54,11 @@
 					<input type="text" name="number" id="number" class="number">
 				</td>
 			</tr>
-
+			<tr>
+				<td>
+					<button name="ac" value="AC" onclick="reset()">AC</button>
+				</td>
+			</tr>
 			<tr>
 				<td>
 					<button name="num1" value="1" onclick="getValue(this.value)">1</button>
@@ -111,7 +115,7 @@
 
 			<tr>
 				<td>
-					<button name="ac" value="AC" onclick="reset()">AC</button>
+					<button name="num0" value="0" onclick="getValue(this.value)">0</button>
 				</td>
 				<td>
 					<button name="cham" value="." onclick="getValue(this.value)">.</button>
@@ -171,22 +175,22 @@
 
 			switch(pheptinh){
 				case "+":
-				ketQuaTinh = parseFloat((Number(number)) + Number(document.getElementById("number").value));
+				ketQuaTinh = (Number(number)*10 + Number(document.getElementById("number").value)*10)/10;
 				break;
 				case "-":
-				ketQuaTinh = Number(number) - Number(document.getElementById("number").value);
+				ketQuaTinh = (Number(number)*10 - Number(document.getElementById("number").value)*10)/10;
 				break;
 				case "*":
-				ketQuaTinh = Number(number) * Number(document.getElementById("number").value);
+				ketQuaTinh = (Number(number)*10 * Number(document.getElementById("number").value)*10)/10;
 				break;
 				case "/":
-				ketQuaTinh = Number(number) / Number(document.getElementById("number").value);
+				ketQuaTinh = (Number(number)*10 / Number(document.getElementById("number").value)*10)/10;
 				break;
 				case "%":
 				ketQuaTinh = Number(number) % Number(document.getElementById("number").value);
 				break;
 			}
-			document.getElementById("number").value = ketQuaTinh.toFixed(5);
+			document.getElementById("number").value = ketQuaTinh;
 		}
 
 		function reset() {
