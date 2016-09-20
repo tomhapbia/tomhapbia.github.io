@@ -58,6 +58,9 @@
 				<td>
 					<button name="ac" value="AC" onclick="reset()">AC</button>
 				</td>
+				<td>
+					<button name="backspace" value="backspace" onclick="backspace()">&lt;&lt;&lt;</button>
+				</td>
 			</tr>
 			<tr>
 				<td>
@@ -197,6 +200,10 @@
 			number = "";
 			pheptinh = "";
 			document.getElementById("number").value = "";
+		}
+		function backspace() {
+			number = document.getElementById("number").value;
+			document.getElementById("number").value = number.substring(0, number.length - 1	);
 		}
 	</script>
 </body>
