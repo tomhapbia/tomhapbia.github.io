@@ -16,20 +16,53 @@ for (var i = 0; i <= 14; i++) {
     arrTemp[i] = arrImg[i];
 };
 
-for (var i = 0; i <= 14; i++) {
-    arrTemp.push(arrTemp[i]);
-};
+arrTemp = arrTemp.concat(arrTemp);
 
 shuffleArray(arrTemp);
 
-console.log(arrImg);
-console.log(arrTemp);
+// console.log(arrImg);
+// console.log(arrTemp);
 
-for (var i = 0; i <= 29; i++) {
-    $(".grid").append('<div class="card"><div class="front"><img src="img/' + arrTemp[i] + '.jpg"></div><div class="back"><img src="img/card.jpg"></div></div>');
+for (var i = 0; i < arrTemp.length; i++) {
+    $(".grid").append('<div class="card"'+ 'data-name="' + arrTemp[i] + '"><div class="front"><img src="img/' + arrTemp[i] + '.jpg"></div><div class="back"><img src="img/card.jpg"></div></div>');
 };
 
+var check = 0;
+
 $(".card").click(function (){
-    $(this).children(".front").css('transform', 'rotateY(0deg)');
-    $(this).children(".back").css('transform', 'rotateY(180deg)');
+    var temp = $(this);
+    if (check == 0 || check == 1) {
+        $(this).children().addClass('fliped');
+        check++;
+        setTimeout(function (){
+            $(temp).children().removeClass('fliped');
+        }, 1200)
+    } else {
+        setTimeout(function (){
+            $(".card").children().removeClass('fliped');
+            $(temp).children().addClass('fliped');
+            check = 1;
+        }, 200)
+        setTimeout(function (){
+            $(temp).children().removeClass('fliped');
+        }, 1500)
+    }
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

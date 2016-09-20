@@ -41,16 +41,12 @@ img {
     top: 0;
     left: 0;
 }
-.card .front {
+/*.card .front {
     transform: rotateY(180deg);
-}
-/*.card:hover .back {
-    transform: rotateY(180deg);
-}
-
-.card:hover .front {
-    transform: rotateY(0deg);
 }*/
+.fliped {
+    transform: rotateY(180deg);
+}
 
 .card .front,
 .card .back {
@@ -59,9 +55,18 @@ img {
     -ms-transition: all 1s;
     -o-transition: all 1s;
     transition: all 1s;
+}
+.card .back {
     backface-visibility: hidden;
 }
 
+/*.card:hover .back {
+    transform: rotateY(180deg);
+}
+
+.card:hover .front {
+    transform: rotateY(0deg);
+    }*/
 
 
 
