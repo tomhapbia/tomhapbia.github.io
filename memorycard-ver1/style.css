@@ -1,0 +1,79 @@
+body {
+    background: url("img/bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 50px;
+
+}
+.content {
+    width: 100%;
+    overflow: hidden;
+}
+.grid {
+    float: left;
+    width: 100%;
+    
+}
+.card {
+    position: relative;
+    width: 10%; 
+    float: left;
+    
+
+}
+.front,
+.back {
+    height: 180px;
+    padding: 10px;
+}
+
+
+.card .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.card .front {
+    transform: rotateY(180deg);
+}
+/*.card:hover .back {
+    transform: rotateY(180deg);
+}
+
+.card:hover .front {
+    transform: rotateY(0deg);
+}*/
+
+.card .front,
+.card .back {
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    backface-visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
