@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CALCULATOR</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="wrap">
+		<h1>Calculator</h1>
+		<table width="550" >
+			<tr>
+				<td colspan="5">
+					<input type="text" name="number" id="number" class="number">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button class="btn-btn" name="ac" value="AC" onclick="reset()">AC</button>
+				</td>
+				<td>
+					<button class="btn-btn" name="backspace" value="backspace" onclick="backspace()">&lt;&lt;&lt;</button>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button class="btn-btn" name="num1" value="1" onclick="getValue(this.value)">1</button>
+				</td>
+				<td>
+					<button class="btn-btn" name="num2" value="2" onclick="getValue(this.value)">2</button>
+				</td>
+				<td>
+					<button class="btn-btn" name="num3" value="3" onclick="getValue(this.value)">3</button>
+				</td>
+				<td>
+					<button class="btn-btn" name="cong" value="+" onclick="pheptoan(this.value)">+</button>
+				</td>
+				<td>
+					<button class="btn-btn" name="mod" value="%" onclick="pheptoan(this.value)">%</button>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<button class="btn-btn" name="num4" value="4" onclick="getValue(this.value)">4</button>
+				</td>
+				<td>
+					<button class="btn-btn" name="num5" value="5" onclick="getValue(this.value)">5</button>
+				</td>
+				<td>
+					<button class="btn-btn" name="num6" value="6" onclick="getValue(this.value)">6</button>
+				</td>
+				<td>
+					<button class="btn-btn" name="tru" value="-" onclick="pheptoan(this.value)">-</button>
+				</td>
+				<td>
+					<button class="btn-btn" name="bp" value="bp" onclick="pheptoan(this.value)">X<sup>2</sup></button>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<button class="btn-btn" name="num7" value="7" onclick="getValue(this.value)">7</button>
+				</td>
+				<td>
+					<button class="btn-btn" name="num8" value="8" onclick="getValue(this.value)">8</button>
+				</td>
+				<td>
+					<button class="btn-btn" name="num9" value="9" onclick="getValue(this.value)">9</button>
+				</td>
+				<td>
+					<button class="btn-btn" name="nhan" value="*" onclick="pheptoan(this.value)">*</button>
+				</td>
+				<td>
+					<button class="btn-btn" name="gt" value="gt" onclick="pheptoan(this.value)">!</button>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<button class="btn-btn" name="num0" value="0" onclick="getValue(this.value)">0</button>
+				</td>
+				<td>
+					<button class="btn-btn" name="cham" value="." onclick="getValue(this.value)">.</button>
+				</td>
+				<td>
+					<button class="btn-btn" name="bang" value="=" onclick="ketqua()">=</button>
+				</td>
+				<td>
+					<button class="btn-btn" name="chia" value="/" onclick="pheptoan(this.value)">/</button>
+				</td>
+
+				<td>
+					<button class="btn-btn" name="can" value="can" onclick="pheptoan(this.value)">√</button>
+				</td>
+			</tr>
+
+
+		</table>
+		<div class="change-theme">
+			<div class="change-theme-color">
+				<span>Background calculator:</span>
+				<input type="text" name="backgroundbutton" class="inputcolor" id="backgroundcal" placeholder="Tên màu hoặc mã màu HEX">
+				<button name="change-body" class="changecolor" onclick="changebody()">Change</button>
+			</div>	
+
+			<div class="change-theme-color">
+				<span>Background nut bam:</span>
+				<input type="text" name="colorbutton" class="inputcolor" id="backgroundbutton" placeholder="Tên màu hoặc mã màu HEX">
+				<button name="change-body" class="changecolor" onclick="changebackgroundbtn()">Change</button>
+			</div>	
+
+			<div class="change-theme-color">
+				<span>Mau nut bam:</span>
+				<input type="text" name="colorbtn" class="inputcolor" id="colorbtn" placeholder="Tên màu hoặc mã màu HEX">
+				<button name="change-body" class="changecolor" onclick="changecolorbtn()">Change</button>
+			</div>		
+		</div>
+	</div>
+	<script src="jquery-3.1.0.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
