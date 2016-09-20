@@ -11,50 +11,59 @@
 		<div class="title">
 			<h1>QUIZ ONLINE TECHMASTER</h1>
 		</div>
-		<div class="question-wrap">
-			<div id="cau1" class="cauhoi">
-				<h3 id="name1" class="name">Cau hoi:</h3>
-				<p id="dapan11" class="dapan" onclick="changeColor(this)"></p>
-				<p id="dapan12" class="dapan" onclick="changeColor(this)"></p>
-				<p id="dapan13" class="dapan" onclick="changeColor(this)"></p>
-			</div>
-
-			<div id="cau2" class="cauhoi">
-				<h3 id="name2" class="name"></h3>
-				<p id="dapan21" class="dapan" onclick="changeColor(this)"></p>
-				<p id="dapan22" class="dapan" onclick="changeColor(this)"></p>
-				<p id="dapan23" class="dapan" onclick="changeColor(this)"></p>
-			</div>
-			<div id="cau3" class="cauhoi">
-				<h3 id="name3" class="name"></h3>
-				<p id="dapan31" class="dapan" onclick="changeColor(this)"></p>
-				<p id="dapan32" class="dapan" onclick="changeColor(this)"></p>
-				<p id="dapan33" class="dapan" onclick="changeColor(this)"></p>
-			</div>
-
-
-			<div id="cau4" class="cauhoi">
-				<h3 id="name4" class="name"></h3>
-				<p id="dapan41" class="dapan" onclick="changeColor(this)"></p>
-				<p id="dapan42" class="dapan" onclick="changeColor(this)"></p>
-				<p id="dapan43" class="dapan" onclick="changeColor(this)"></p>
-			</div>
-			<div id="cau5" class="cauhoi">
-				<h3 id="name5" class="name"></h3>
-				<p id="dapan51" class="dapan" onclick="changeColor(this)"></p>
-				<p id="dapan52" class="dapan" onclick="changeColor(this)"></p>
-				<p id="dapan53" class="dapan" onclick="changeColor(this)"></p>
-			</div>
-			<div id="cau6" class="cauhoi">
-				<h3 id="name6" class="name"></h3>
-				<p id="dapan61" class="dapan" onclick="changeColor(this)"></p>
-				<p id="dapan62" class="dapan" onclick="changeColor(this)"></p>
-				<p id="dapan63" class="dapan" onclick="changeColor(this)"></p>
+		<div id="center">
+			<div id="center1">
+				<input type="text" name="socauhoi" id="socauhoi" class="fix" placeholder="Tối đa là 6 câu hỏi!">
+				<button name="num1" onclick="checknumques()" id="numques">Let's go!</button>
 			</div>
 		</div>
-		
-		<div class="submit" id="submit">
-			<button name="check" onclick="check()">Kiem tra</button>		
+		<div class="clearfix"></div>
+		<div class="question-wrap">
+			<div>
+				<div id="cau1" class="cauhoi">
+					<h3 id="name1" class="name"></h3>
+					<p id="dapan11" class="dapan" onclick="changeColor(this)"></p>
+					<p id="dapan12" class="dapan" onclick="changeColor(this)"></p>
+					<p id="dapan13" class="dapan" onclick="changeColor(this)"></p>
+				</div>
+
+				<div id="cau2" class="cauhoi">
+					<h3 id="name2" class="name"></h3>
+					<p id="dapan21" class="dapan" onclick="changeColor(this)"></p>
+					<p id="dapan22" class="dapan" onclick="changeColor(this)"></p>
+					<p id="dapan23" class="dapan" onclick="changeColor(this)"></p>
+				</div>
+				<div id="cau3" class="cauhoi">
+					<h3 id="name3" class="name"></h3>
+					<p id="dapan31" class="dapan" onclick="changeColor(this)"></p>
+					<p id="dapan32" class="dapan" onclick="changeColor(this)"></p>
+					<p id="dapan33" class="dapan" onclick="changeColor(this)"></p>
+				</div>
+
+
+				<div id="cau4" class="cauhoi">
+					<h3 id="name4" class="name"></h3>
+					<p id="dapan41" class="dapan" onclick="changeColor(this)"></p>
+					<p id="dapan42" class="dapan" onclick="changeColor(this)"></p>
+					<p id="dapan43" class="dapan" onclick="changeColor(this)"></p>
+				</div>
+				<div id="cau5" class="cauhoi">
+					<h3 id="name5" class="name"></h3>
+					<p id="dapan51" class="dapan" onclick="changeColor(this)"></p>
+					<p id="dapan52" class="dapan" onclick="changeColor(this)"></p>
+					<p id="dapan53" class="dapan" onclick="changeColor(this)"></p>
+				</div>
+				<div id="cau6" class="cauhoi">
+					<h3 id="name6" class="name"></h3>
+					<p id="dapan61" class="dapan" onclick="changeColor(this)"></p>
+					<p id="dapan62" class="dapan" onclick="changeColor(this)"></p>
+					<p id="dapan63" class="dapan" onclick="changeColor(this)"></p>
+				</div>
+			</div>
+
+			<div class="submit" id="submit">
+				<button name="check" onclick="check()" id="check">Kiem tra</button>		
+			</div>
 		</div>
 	</div>
 	<script type="text/javascript" src="quiz.js"></script>
