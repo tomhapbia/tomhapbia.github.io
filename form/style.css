@@ -1,0 +1,29 @@
+legend {
+	font-size: 24px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+input {
+	height: 20px;
+	width: 200px;
+	margin-bottom: 10px;
+	border: 1px solid red;
+	border-radius: 4px;
+	padding: 5px;
+}
+input[type=radio] {
+	width: 20px;
+}
+input[type=submit],
+input[type=reset] {
+	margin-top: 10px;
+	text-align: center; 
+	height: 30px;
+	font-size: 14px;
+	background:#ccc; 
+	cursor:pointer;
+	width: 80px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
