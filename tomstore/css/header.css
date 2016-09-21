@@ -1,14 +1,14 @@
 @font-face {
 	font-family: mariaBold;
-	src: url(../font/MYRIA-BOLD.woff);
+	src: url(../fonts/MYRIA-BOLD.woff);
 }
 @font-face {
 	font-family: mariaRegular;
-	src: url(../font/MYRIA-REGULAR.woff);
+	src: url(../fonts/MYRIA-REGULAR.woff);
 }
 @font-face {
 	font-family: mariaSemiBold;
-	src: url(../font/MYRIA-SEMIBOLD.woff);
+	src: url(../fonts/MYRIA-SEMIBOLD.woff);
 }
 * {
 	box-sizing: border-box;
