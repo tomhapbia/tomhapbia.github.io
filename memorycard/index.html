@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Memory Card</title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<audio id="music-bg" autostart="0">
+		<source src="audio/cf2.mp3" autostart="0" type="audio/mpeg">
+	</audio>
+	<audio id="music-correct" autostart="0">
+			<source src="audio/correct.mp3" autostart="0" type="audio/mpeg">
+	</audio>
+	<audio id="music-incorrect" autostart="0">
+			<source src="audio/incorrect.mp3" autostart="0" type="audio/mpeg">
+	</audio>
+	<audio id="music-kill1" autostart="0">
+			<source src="audio/kill1.mp3" autostart="0" type="audio/mpeg">
+	</audio>
+	<audio id="music-kill2" autostart="0">
+			<source src="audio/kill2.mp3" autostart="0" type="audio/mpeg">
+	</audio>
+	<audio id="music-kill3" autostart="0">
+			<source src="audio/kill3.mp3" autostart="0" type="audio/mpeg">
+	</audio>
+	<audio id="music-kill4" autostart="0">
+			<source src="audio/kill4.mp3" autostart="0" type="audio/mpeg">
+	</audio>
+	<audio id="music-kill5" autostart="0">
+			<source src="audio/kill5.mp3" autostart="0" type="audio/mpeg">
+	</audio>
+	<audio id="music-kill6" autostart="0">
+			<source src="audio/kill6.mp3" autostart="0" type="audio/mpeg">
+	</audio>
+	<audio id="music-kill7" autostart="0">
+			<source src="audio/kill7.mp3" autostart="0" type="audio/mpeg">
+	</audio>
+	<audio id="music-kill8" autostart="0">
+			<source src="audio/kill8.mp3" autostart="0" type="audio/mpeg">
+	</audio>
+	<audio id="music-kill9" autostart="0">
+			<source src="audio/kill9.mp3" autostart="0" type="audio/mpeg">
+	</audio>
+	<audio id="music-10s" autostart="0">
+			<source src="audio/10s.mp3" autostart="0" type="audio/mpeg">
+	</audio>
+	<audio id="music-5s" autostart="0">
+			<source src="audio/5s.mp3" autostart="0" type="audio/mpeg">
+	</audio>
+	<audio id="music-win" autostart="0">
+			<source src="audio/win.mp3" autostart="0" type="audio/mpeg">
+	</audio>
+	<audio id="music-over" autostart="0">
+			<source src="audio/gameover.mp3" autostart="0" type="audio/mpeg">
+	</audio>
+	<div class="modal-start">
+		<div class="game-mode">
+			<p>Chọn chế độ chơi</p>
+		</div>
+
+		<div class="game-detail">
+			<p onclick="startEasy()">Easy</p>
+			<p onclick="startNormal()">Normal</p>
+			<p onclick="startHard()">Hard</p>
+		</div>
+	</div>
+
+	<div class="modal-end">
+		<div class="game-mode">
+			<img src="img/gameover.jpg">
+			<p onclick="resetGame()">Play Again!</p>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="progressbar">
+			<progress max="120" value="120"></progress>
+			<div class="score">
+				<p>Score: 0</p>
+			</div>
+		</div>
+		
+		<div class="content">
+			<div class="grid">
+			</div>
+		</div>
+	</div>
+	<script src="jquery-3.1.0.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
