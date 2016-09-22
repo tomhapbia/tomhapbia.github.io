@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Table</title>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="wrap">
+		<h1>Danh sách học viên TechMaster</h1>
+		<table>
+			<thead>
+				<tr>
+				<th class="stt">STT</th>
+					<th class="name" onclick="sort(this)">Họ Tên <i class="fa fa-sort" aria-hidden="true"></i></th>
+					<th class="age" onclick="sort(this)">Tuổi <i class="fa fa-sort" aria-hidden="true"></i></th>
+					<th class="avatar">Avatar</th>
+					<th class="rich" onclick="sort(this)">Tài Sản <i class="fa fa-sort" aria-hidden="true"></i> <br>(tỉ VND)</th>
+					<th class="mail" onclick="sort(this)">Email <i class="fa fa-sort" aria-hidden="true"></i></th>
+					<th class="phone" onclick="sort(this)">Số Điện Thoại <i class="fa fa-sort" aria-hidden="true"></i></th>
+					<th class="address" onclick="sort(this)">Quê Quán <i class="fa fa-sort" aria-hidden="true"></i></th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- <tr>
+					<td class="stt">1</td>
+					<td class="name">Phạm Nhật Vượng</td>
+					<td class="age">48</td>
+					<td class="avatar"><img src="img/1.jpg"></td>
+					<td class="rich">28.502</td>
+					<td class="mail">stevejob@apple.com</td>
+					<td class="phone">0987987987</td>
+					<td class="address">Hà Tĩnh</td>
+				</tr> -->
+			</tbody>
+		</table>
+	</div>
+	<script src="jquery-3.1.0.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+.wrap {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+}
+table {
+	width: 100%;
+	margin: auto;
+}
+i {
+	margin-left: 10px;
+}
+table, td, th {
+	border: 1px solid grey;
+	font-size: 18px;
+}
+ {
+	background-color: #ADD5AF !important;
+}
+tbody > tr:hover {
+	background-color: #3BA5D5 !important;
+}
+table {
+	border-collapse: collapse;
+}
+td, th {
+	padding: 5px 10px;
+	text-align: center;
+}
+
+img {
+	width: 100px;
+}
