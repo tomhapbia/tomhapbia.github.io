@@ -8,37 +8,42 @@
 <body>
 	<fieldset>
 		<legend>Khung dang ki thanh vien</legend>
-		<form action="info.html" method="GET">
-			<table width="50">
-				<tr>
+		<form id="register" action="info.html" method="GET">
+			<table border="0">
+				<tr class="des">
 					<td>Username:</td>
 					<td>
 						<input type="text" name="username" id="username" placeholder="Nhap ten dang nhap" />
+						<span class="error"></span>
 					</td>
 				</tr>
 				<tr>
 					<td>Password:</td>
 					<td>
 						<input type="password" name="password" id="password" placeholder="Nhap mat khau" />
-					</td>
-				</tr>
-				<tr>
-					<td>Gioi tinh:</td>
-					<td>
-						<input type="radio" name="sex" id="male" /><label for="male">Nam</label>					
-						<input type="radio" name="sex" id="famale" /><label for="famale">Nu</label>
+						<span class="error"></span>
 					</td>
 				</tr>
 				<tr>
 					<td>Email:</td>
 					<td>
-						<input type="email" name="email" id="email" placeholder="Email" />
+						<input type="text" name="email" id="email" placeholder="Email" />
+						<span class="error"></span>
+					</td>
+					
+				</tr>
+				<tr>
+					<td>SDT:</td>
+					<td>
+						<input type="phone" name="phone" id="phone" placeholder="So dien thoai" />
+						<span class="error"></span>
 					</td>
 				</tr>
 				<tr>
-					<td>Dia chi:</td>
+					<td>Facebook:</td>
 					<td>
-						<input type="address" name="diachi" id="diachi" placeholder="Dia chi" />	
+						<input type="text" name="facebook" id="facebook" placeholder="Dia chi fb ca nhan" />	
+						<span class="error"></span>
 					</td>
 				</tr>
 				<tr>
@@ -58,5 +63,7 @@
 			</table>
 		</form>
 	</fieldset>
+	<script src="jquery-3.1.0.min.js"></script>
+	<script src="index.js"></script>
 </body>
 </html>

@@ -3,7 +3,15 @@ legend {
 	text-transform: uppercase;
 	margin-bottom: 20px;
 }
-
+table {
+	overflow: hidden;
+}
+.error {
+	color: red;
+}
+td {
+	margin-right: 10px;
+}
 input {
 	height: 20px;
 	width: 200px;
@@ -17,7 +25,6 @@ input[type=radio] {
 }
 input[type=submit],
 input[type=reset] {
-	margin-top: 10px;
 	text-align: center; 
 	height: 30px;
 	font-size: 14px;
