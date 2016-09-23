@@ -1,0 +1,176 @@
+@font-face {
+    font-family: bebas;
+    src: url(../fonts/BebasNeueBold.ttf);
+}
+@font-face {
+    font-family: helveti;
+    src: url(../fonts/helveticaneue.ttf);
+}
+.navbar-default .navbar-nav > li {
+	text-align: right;
+}
+.navbar-default .navbar-nav > li > a {
+	color: #b9b9b9;
+	font-family: bebas;
+	font-size: 16px;
+	padding-top: 20px;
+}
+.navbar{
+	padding-top: 10px;
+	margin-bottom: 15px;
+}
+.navbar-default{
+	border: none;
+	background: none;
+}
+.navbar-brand {
+	padding: 15px 0px;
+}
+.selected,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover{
+	color: #e8663c !important;
+}
+.carousel-control.right,
+.carousel-control.left{
+	background-image: none;
+}
+#padding-item{
+	padding-top: 20px;
+}
+.thumbnail{
+	margin-bottom: 0;
+	border: none;
+}
+.h2-content{
+	color: #e8663c;
+	font-size: 18px;
+	font-family: bebas;
+	line-height: 24px;
+	text-transform: uppercase;
+	padding-left: 70px;
+}
+#first{
+	background: url(../images/p1.png) no-repeat;
+}
+#mid{
+	background: url(../images/p2.png) no-repeat;
+}
+#last{
+	background: url(../images/p3.png) no-repeat;
+}
+.p-content{
+	color: #414141;
+	font-size: 12px;
+	line-height: 18px;
+	font-family: helveti;
+}
+.a-more{
+	color: #ffffff;
+	font-size: 12px;
+	font-family: bebas;
+	display: block;
+	width: 50px;
+	background: #e8663c;
+	padding: 7px;
+	text-decoration: none;
+	text-align: center;
+	margin-top: 20px;
+}
+.bgheading {
+	background: url(../images/span.png);
+	height: 20px;
+	margin: 50px 0 30px 0;
+}
+.bgheading span{
+	color: #e8603c;
+	font-size: 18px;
+	font-family: bebas;
+	display: block;
+	background: #fff;
+	width: 130px;
+	line-height: 20px;
+	padding: 2px 0;
+}
+.rw-h3{
+	color: #b9b9b9;
+	font-size: 16px;
+	line-height: 18px;
+	font-family: bebas;
+}
+
+.rw-p{
+	color: #e8663c;
+	font-size: 11px;
+	line-height: 18px;
+	font-family: bebas;
+}
+.row footer{
+	background: #e8663c;
+	padding: 40px 35px;
+	overflow: hidden;
+	clear: both;
+}
+.row footer h3{
+	color: #ffffff;
+	font-size: 20px;
+	font-family: bebas;
+}
+.row footer p{
+	color: #ffffff;
+	font-size: 12px;
+	font-family: helveti;
+}
+
+.row footer ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.row footer ul li {
+	float: left;
+	margin: 20px 5px;
+}
+.row footer span.special{
+	color: #f3b29d;
+	font-family: helveti;
+	font-size: 12px;
+}
+@media (max-width: 767px) {
+	.row footer {
+		padding: 0px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
