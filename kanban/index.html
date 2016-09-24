@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>KANBAN BOARD</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header class="container-fluid">
+		<nav>
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo center">KANBAN BOARD</a>
+			</div>
+		</nav>
+	</header>
+	<section class="container">
+		<div class="row">
+
+			<div class="col s12 m4 l4">
+				<div class="card">
+					<h5 class="center">TO DO</h5>
+					<ul class="collection move collapsible" data-collapsible="accordion" id="toDo">
+						<li class="collection-item" data-id-li="1">
+							<div class="collapsible-header">Chấm bài cho học viên<i class="small material-icons" data-id-i="1">delete</i></div>
+							<div class="collapsible-body"><p>Ngày mai. 2h</p></div>
+						</li>
+
+						<li class="collection-item" data-id-li="2">
+							<div class="collapsible-header">Chuyển cơ sở 2 <i class="small material-icons" data-id-i="2">delete</i></div>
+							<div class="collapsible-body"><p>Tầng 23 StarCity</p></div>
+						</li>
+						<li class="collection-item" data-id-li="3">
+							<div class="collapsible-header">Dạy Laravel <i class="small material-icons" data-id-i="3">delete</i></div>
+							<div class="collapsible-body"><p>Router. Controller</p></div>
+						</li>
+						<li class="collection-item" data-id-li="4">
+							<div class="collapsible-header">Support HTML <i class="small material-icons" data-id-i="4">delete</i></div>
+							<div class="collapsible-body"><p>Ahihi</p></div>
+						</li>
+					</ul>
+				</div>
+				<form>
+					<div class="row">
+						<div class="input-field col s12">
+							<input id="nameToDo" type="text" class="validate">
+							<label for="nameToDo">Thêm công việc</label>
+						</div>
+						<div class="input-field col s12">
+							<input id="description" type="text" class="validate">
+							<label for="description">Ghi chú</label>
+						</div>
+					</div>
+					<a class="waves-effect waves-light btn">Thêm</a>
+				</form>
+			</div>
+
+			<div class="col s12 m4 l4">
+				<div class="card">
+					<h5 class="center">DOING</h5>
+					<ul class="collection move collapsible" data-collapsible="accordion" id="doing">
+						<li class="collection-item">
+							<div class="collapsible-header">Về quê</div>
+							<div class="collapsible-body"><p>Đi bằng xe máy</p></div>
+						</li>
+
+						<li class="collection-item">
+							<div class="collapsible-header">Quay tay</div>
+							<div class="collapsible-body"><p>Ahihi</p></div>
+						</li>
+						<!-- <li class="collection-item">
+							<div class="collapsible-header">Alvin</div>
+							<div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+						</li>
+						<li class="collection-item">
+							<div class="collapsible-header">Alvin</div>
+							<div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+						</li> -->
+					</ul>
+				</div>
+			</div>
+
+			<div class="col s12 m4 l4">
+				<div class="card">
+					<h5 class="center">DONE</h5>
+					<ul class="collection move collapsible" data-collapsible="accordion" id="done">
+						<li class="collection-item">
+							<div class="collapsible-header">Quay Video</div>
+							<div class="collapsible-body"><p>Camtasia quá sida</p></div>
+						</li>
+
+						<li class="collection-item">
+							<div class="collapsible-header">Mua xe máy</div>
+							<div class="collapsible-body"><p>Cào cào =))</p></div>
+						</li>
+						<li class="collection-item">
+							<div class="collapsible-header">Học nấu ăn</div>
+							<div class="collapsible-body"><p>Luộc trứng</p></div>
+						</li>
+						<!-- <li class="collection-item">
+							<div class="collapsible-header">Alvin</div>
+							<div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+						</li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/materialize.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+header {
+	margin-bottom: 2rem;
+}
+.card {
+	padding-top: 0.5rem;
+}
+.card h5 {
+	color: #ef5350;
+}
+.collection {
+	overflow: visible;
+}
+
+.collection .collection-item {
+	border: 1px solid #e0e0e0;
+}
+.collection .collection-item.active {
+	background-color: #fff;
+}
+.collapsible-body p,
+.collapsible-header {
+	color: black;
+}
+.collection .collection-item:hover i {
+	display: block;
+}
+.collection .collection-item i {
+	float: right;
+	display: none;
+}
+.collapsible-header {
+	border: none;
+}
+.collapsible-body {
+	border: none;
+}
+
+#doing .collection-item i,
+#done .collection-item i {
+	display: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
