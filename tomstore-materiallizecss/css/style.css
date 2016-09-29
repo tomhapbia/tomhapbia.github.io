@@ -54,9 +54,13 @@ a {
 	opacity: 0;
 	transform: scale(0);
 	-webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	transition: all 1s ease;
 	overflow: hidden;
+	margin-top: 10px;
+}
+.navbar-default .navbar-nav .dropdown ul li {
+	margin-bottom: 10px;
 }
 .navbar-default .navbar-nav .dropdown ul.dropdown-show {
 	transform: scale(1);
@@ -298,7 +302,9 @@ Image credits: unsplash.com
 
 
 
-
+/********************************/
+/*             SUPORT           */
+/********************************/
 
 
 
@@ -352,6 +358,12 @@ Image credits: unsplash.com
 	max-height: 100%;
 	vertical-align: middle;
 }
+
+
+
+/********************************/
+/*        NOIBAT-SPECIAL        */
+/********************************/
 
 
 
@@ -523,11 +535,403 @@ Image credits: unsplash.com
 	background-repeat: no-repeat;
 	z-index: 1000;
 }
+
 /********************************/
-/*          Media Queries       */
+/*             VANHOA           */
 /********************************/
-@media screen and (min-width: 980px){
-	.hero { width: 980px; }    
+
+.vanhoa {
+	background: url('../img/vanhoa_bg.jpg') 0 0 repeat;
+	overflow: hidden;
+	padding-top: 50px;
+	padding-bottom: 10px;
+	border-top: 2px solid #d1d1d1;
+}
+.vanhoa .title {
+	margin-bottom: 50px;
+}
+
+.vanhoa h2 {
+	font-family: mariaBold;
+	font-size: 36px;
+	color: #870913;
+	text-align: center;
+	font-weight: bold;
+}
+.vanhoa .title {
+	margin: 0 auto;
+	width: 200px;
+	margin-top: 10px;
+	position: relative;
+	margin-bottom: 50px;
+}
+
+.vanhoa .title::before,
+.noibat .title::before {
+	content: "";
+	position: absolute;
+	height: 1px;
+	background-color: #8b0304;
+	width: calc((50%) - 20px);
+	display: inline-block;
+	position: absolute;
+	top: calc((50%) - 1px);
+	left: 0;
+}
+.vanhoa .title::after {
+	content: "";
+	position: absolute;
+	height: 1px;
+	background-color: #8b0304;
+	width: calc((50%) - 20px);
+	display: inline-block;
+	position: absolute;
+	top: calc((50%) - 1px);
+	right: 0;
+}
+.vanhoa .title img {
+	width: 20px;
+	vertical-align: middle;
+	display: block;
+	margin: auto;
+}
+
+.vanhoa-list {
+	padding-bottom: 50px;
+	margin: auto;
+}
+.vanhoa-img {
+	border-radius: 10px;
+	border: 1px solid #e8e1c1;
+	width: 100%;
+	height: 100%;
+}
+.vanhoa-img img {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	display: block;
+	vertical-align: middle;
+}
+.vanhoa-detail > h3 {
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	position: absolute;
+	bottom: 30px;
+	font-size: 16px;
+	left: 11px;
+	border-radius: 5px;
+	padding: 12px 15px;
+	font-family: mariaRegular;
+}
+.vanhoa-detail {
+	height: 280px;
+	float: left;
+	width: 100%;
+	position: relative;
+	margin-bottom: 20px;
+}
+.vanhoa-list .overlay {
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	opacity: 0;
+	border-radius: 10px;
+	border: 1px solid #e8e1c1;
+	width: 100%;
+	height: 100%;
+	padding: 0px 20px;
+	background-color: rgba(0, 0, 0, 0.6);
+	
+}
+.vanhoa-list .overlay h3 {
+	color: #fffeb1;
+	font-family: mariaRegular;
+	font-size: 20px;
+	line-height: 20px;
+	margin-bottom: 15px;
+
+}
+.vanhoa-list .overlay p {
+	color: #fff;
+	line-height: 1.2em;
+}
+.vanhoa-detail:hover .overlay {
+	opacity: 1;
+	transition: all 0.7s ease-in-out;
+}
+.vanhoa-detail:hover > h3 {
+	opacity: 0;
+	transition: all 0.7s ease-in-out;
+}
+
+
+/********************************/
+/*           ABOUT US           */
+/********************************/
+
+.about-us {
+	background: url('../img/noibat_bg.jpg') 0 0 repeat;
+	overflow: hidden;
+	border-top: 2px solid #d1d1d1;
+	padding: 40px 0;
+}
+
+.about-us .about-wrap .facebook .about-title,
+.about-us .about-wrap .video .about-title,
+.about-us .about-wrap .khach-hang .about-title {
+	position: relative;
+	margin-bottom: 20px;
+	padding: 5px 0;
+	overflow: hidden;
+}
+.about-us .about-wrap .facebook .about-title h3,
+.about-us .about-wrap .video .about-title h3,
+.about-us .about-wrap .khach-hang .about-title h3 {
+	font-family: mariaBold;
+	color: #272727;
+	font-size: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.about-us .about-wrap .khach-hang .quote {
+	background: transparent;
+	position: relative;
+	width: 100%;
+}
+.about-us .about-wrap .khach-hang .quote .quote-detail {
+	border: 1px dashed #6c3c3c;
+	padding: 25px 30px 170px 60px;
+	position: relative;
+	margin-bottom: 30px;
+	width: 100%;
+	border-radius: 10px;
+}
+.about-us .about-wrap .khach-hang .quote .quote-detail::before {
+	content: "";
+	position: absolute;
+	height: 25px;
+	width: 44px;
+	bottom: -25px;
+	background: url('../img/face_bg.png');
+	left: 20px;
+}
+
+.about-us .about-wrap .khach-hang .quote .quote-detail p::after,
+.about-us .about-wrap .khach-hang .quote .quote-detail p::before {
+	position: absolute;
+	font-family: "Times New Roman",sans-serif;
+	font-size: 80px;
+	color: #7d7a70;
+	content: "“";
+	display: block;
+	width: 30px;
+	height: 30px;
+	line-height: 75px;
+}
+.about-us .about-wrap .khach-hang .quote .quote-detail p::before {
+	top: 15px;
+	left: 10px;
+}
+.about-us .about-wrap .khach-hang .quote .quote-detail p::after {
+	transform: rotateY(-180deg);
+	right: 5px;
+	bottom: 5px;
+}
+.about-us .about-wrap .khach-hang .quote .quote-detail p
+{
+	position: absolute;
+	width: 100%;
+	overflow: hidden;
+	height: 100%;
+	left: 0;
+	top: 0;
+	text-align: justify;
+	padding: 25px 30px 120px 60px;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.about-us .about-wrap .khach-hang .user {
+	width: 100%;
+	overflow: hidden;
+}
+.khach-hang .user .avatar {
+	border: 2px solid #ae9855;
+	width: 25%;
+	padding: 2px;
+	border-radius: 50%;
+	overflow: hidden;
+	float: left;
+	margin-right: 20px;
+}
+.khach-hang .user .avatar img {
+	width: 100%;
+	vertical-align: middle;
+	border-radius: 50%;
+}
+
+.khach-hang .user .info {
+	float: left;
+	padding: 0 10px 10px;
+}
+.khach-hang .user .info h3 {
+	font-size: 16px;
+	font-family: mariaBold;
+}
+.khach-hang .user .info p {
+	font-size: 16px;
+	margin-top: 10px;
+	font-style: italic;
+}
+
+.about-us .about-wrap .video .video-detail {
+	width: 100%;
+}
+
+.about-us .about-wrap .video .video-detail #video1 {
+	width: 100%;
+	padding: 0 5px;
+	margin-bottom: 5px;
+}
+
+.about-us .about-wrap .video .video-detail #video2,
+.about-us .about-wrap .video .video-detail #video3 {
+	width: 50%;
+	float: left;
+	padding: 0 5px;
+}
+.facebook-detail {
+	padding: 0 5px;
+}
+
+
+.fix-sm-md {
+	display: none;
+}
+
+
+
+
+
+/********************************/
+/*             MAP              */
+/********************************/
+
+.map {
+	background: url('../img/vanhoa_bg.jpg') 0 0 repeat;
+	overflow: hidden;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-top: 2px solid #d1d1d1;
+}
+/*.map .map-wrap .sanpham,
+.map .map-wrap .tintuc,
+.map .map-wrap .chungtoi,
+.map .map-wrap .chinhsach,
+.map .map-wrap .thanhtoan {
+	padding-left: 20px;
+}*/
+.map .map-wrap h3 {
+	font-size: 16px;
+	font-family: mariaSemiBold;
+	color: #000000;
+	line-height: 30px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.map .map-wrap a:hover h3 {
+	color: #fff;
+}
+.map .map-wrap a:hover {
+	color: #fff;
+}
+.map .map-wrap ul li a {
+	color: #201b1b;
+	font-size: 15px;
+	cursor: pointer;
+}
+.map .map-wrap .thanhtoan ul {
+	width: 100%;
+}
+.map .map-wrap .thanhtoan ul li {
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.map .map-wrap .thanhtoan ul li img {	
+	width: 30%;
+	display: block;
+	margin-left: 20%;
+}
+
+.map .map-wrap .tintuc input {
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+	background: transparent;
+	border: 1px solid #870913;
+	height: 40px;
+	border-radius: 30px;
+}
+.map .map-wrap .tintuc p {
+	color: #000;
+	margin-top: 10px;
+	line-height: 24px;
+	font-size: 14px;
+}
+
+/********************************/
+/*           FOOTER             */
+/********************************/
+
+.footer {
+	background: #8B0304;
+	width: 100%;
+	overflow: hidden;
+	padding-top: 30px;
+	padding-bottom: 50px;
+	border-top: 2px solid #d1d1d1;
+	position: relative;
+}
+.footer .footer-wrap {
+	overflow: hidden;
+}
+.footer .footer-wrap h3 {
+	font-size: 18px;
+	font-family: mariaSemiBold;
+	text-transform: uppercase;
+	margin-top: 20px;
+	display: block;
+	color: #F8F2CE;
+	margin-bottom: 20px;
+}
+.footer .footer-wrap p {
+	color: #000;
+	margin-top: 7px;
+	line-height: 18px;
+	font-size: 14px;
+	color: #F8F2CE;
+}
+.footer .footer-wrap .ketnoi #ktimg {
+	width: 80%;
+	overflow: hidden;
+	margin: auto;
+	margin-bottom: 10px;
+}
+.footer .footer-wrap .ketnoi #ktimg img {
+	display: block;
+	float: left;
+	width: 33.333333%;
+	padding-left: 5px;
+}
+.footer .footer-wrap .ketnoi h3 {
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.footer .footer-wrap .ketnoi p {
+	clear: both;
 }
 
 
@@ -538,13 +942,12 @@ Image credits: unsplash.com
 
 
 
-
-
-
-
-
-
-
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 980px){
+	.hero { width: 980px; }    
+}
 
 
 
@@ -606,6 +1009,9 @@ Image credits: unsplash.com
 	.navbar-nav {
 		margin-left: 150px;
 	}
+	.fix-sm-md {
+		display: block;
+	}
 }
 @media (min-width: 991px) {	
 	.navbar-default .navbar-nav>li>a {
@@ -632,4 +1038,21 @@ Image credits: unsplash.com
 	.navbar-default .navbar-brand img {
 		width: 250px !important;
 	}
+	.vanhoa h2,
+	.noibat h2 {
+		font-size: 32px;
+	}
+	.about-us .about-wrap .khach-hang .quote .quote-detail {
+		padding-bottom: 190px;
+	}
+
+	.about-us .about-wrap .khach-hang .quote {
+    width: 95%;
+    margin: auto;
 }
+
+
+
+
+
+
