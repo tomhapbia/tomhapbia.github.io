@@ -13,4 +13,11 @@ $(document).ready(function() {
 		};
 	});
 
+	
+	$("#myBtn").click(function(){
+        $("#bs-carousel").carousel("prev");
+    });
+    $("#myBtn2").click(function(){
+        $("#bs-carousel").carousel("next");
+    });
 });
