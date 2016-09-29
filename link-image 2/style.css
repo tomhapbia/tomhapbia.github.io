@@ -1,0 +1,22 @@
+h1 {
+			text-align: center;
+			color: red;
+		}
+		a {
+			text-decoration: none;
+			text-align: center;
+		}
+		img {
+			max-width: 500px;
+			max-height: 500px;
+			display: block;
+			margin: 0 auto;
+		}
+		p#name {
+			font-size: 24px;
+		}
+		#detail{
+			max-width: 750px;
+			margin: 0 auto;
+			font-size: 16px;
+		}
