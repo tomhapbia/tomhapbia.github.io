@@ -14,7 +14,12 @@
 /********************************/
 /*            Header            */
 /********************************/
-
+a:focus {
+	outline: none!important;
+}
+.special .item .description span a {
+	display: none!important;
+}
 
 header {
 	min-height: 70px;
@@ -164,6 +169,9 @@ a {
 	height: 100%;
 	font-family: mariaRegular;
 }
+.menu2 ul li:last-child a {
+	border-right: none;
+}
 .menu2 ul li#menu-right-1{
 	background: url('../img/people.png') 50% 20% no-repeat;
 }
@@ -241,7 +249,7 @@ Image credits: unsplash.com
 .carousel-indicators {
 	width: 60px;
 	background-color: rgba(0,0,0,0.4);
-	border-radius: 8px; 
+	border-radius: 8px;
 	margin-left: -30px;
 }
 .fade-carousel .carousel-indicators > li.active {
@@ -271,7 +279,7 @@ Image credits: unsplash.com
 }
 .hero h1 {
 	 -webkit-text-stroke: 1px black;
-	font-size: 36px;    
+	font-size: 36px;
 	font-weight: bold;
 	margin: 0;
 	padding: 0;
@@ -282,18 +290,18 @@ Image credits: unsplash.com
 .fade-carousel .carousel-inner .item .hero {
 	opacity: 0;
 	-webkit-transition: 1s all ease-in-out .1s;
-	-moz-transition: 1s all ease-in-out .1s; 
-	-ms-transition: 1s all ease-in-out .1s; 
-	-o-transition: 1s all ease-in-out .1s; 
-	transition: 1s all ease-in-out .1s; 
+	-moz-transition: 1s all ease-in-out .1s;
+	-ms-transition: 1s all ease-in-out .1s;
+	-o-transition: 1s all ease-in-out .1s;
+	transition: 1s all ease-in-out .1s;
 }
 .fade-carousel .carousel-inner .item.active .hero {
 	opacity: 1;
 	-webkit-transition: 1s all ease-in-out .1s;
-	-moz-transition: 1s all ease-in-out .1s; 
-	-ms-transition: 1s all ease-in-out .1s; 
-	-o-transition: 1s all ease-in-out .1s; 
-	transition: 1s all ease-in-out .1s;    
+	-moz-transition: 1s all ease-in-out .1s;
+	-ms-transition: 1s all ease-in-out .1s;
+	-o-transition: 1s all ease-in-out .1s;
+	transition: 1s all ease-in-out .1s;
 }
 
 .btn.btn-lg {padding: 10px 40px;}
@@ -319,7 +327,7 @@ Image credits: unsplash.com
 /********************************/
 /*       Slides backgrounds     */
 /********************************/
-.fade-carousel .slides .slide-1, 
+.fade-carousel .slides .slide-1,
 .fade-carousel .slides .slide-2,
 .fade-carousel .slides .slide-3 {
 	height: 100%;
@@ -328,7 +336,7 @@ Image credits: unsplash.com
 	background-repeat: no-repeat;
 }
 .fade-carousel .slides .slide-1 {
-	background-image: url('../img/slider1.jpg'); 
+	background-image: url('../img/slider1.jpg');
 }
 .fade-carousel .slides .slide-2 {
 	background-image: url('../img/slider2.jpeg');
@@ -362,7 +370,7 @@ Image credits: unsplash.com
 	text-align: center !important;
 }
 
-#support .support-wrap ul {	
+#support .support-wrap ul {
 	display: inline-block;
 }
 
@@ -410,7 +418,8 @@ Image credits: unsplash.com
 	background: url('../img/noibat_bg.jpg') 0 0 repeat;
 	overflow: hidden;
 	border-top: 2px solid #d1d1d1;
-	padding: 50px 0;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 .noibat h2 {
@@ -543,11 +552,12 @@ Image credits: unsplash.com
 	position: relative;
 	border-top: 1px solid #e8e1c1;
 	padding: 0px 10px 10px;
-	height: 85px;
+	height: 65px;
 	background-image: linear-gradient(to bottom, #ffffff, #fcf4df);
 }
 .special .item .description h3 {
 	font-size: 18px;
+	text-align: center;
 	color: #8b0304;
 	margin-top: 10px;
 	margin-bottom: 5px;
@@ -555,8 +565,8 @@ Image credits: unsplash.com
 }
 .special .item .description p {
 	font-family: mariaRegular;
+	text-align: center;
 	font-size: 14px;
-	width: 70%;
 	margin-bottom: 0;
 }
 .special .item .description span a {
@@ -681,7 +691,7 @@ Image credits: unsplash.com
 	height: 100%;
 	padding: 0px 20px;
 	background-color: rgba(0, 0, 0, 0.6);
-	
+
 }
 .vanhoa-list .overlay h3 {
 	color: #fffeb1;
@@ -738,10 +748,11 @@ Image credits: unsplash.com
 	background: transparent;
 	position: relative;
 	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 .about-us .about-wrap .khach-hang .quote .quote-detail {
 	border: 1px dashed #6c3c3c;
-	padding: 25px 30px 170px 60px;
 	position: relative;
 	margin-bottom: 30px;
 	width: 100%;
@@ -780,14 +791,14 @@ Image credits: unsplash.com
 }
 .about-us .about-wrap .khach-hang .quote .quote-detail p
 {
-	position: absolute;
+	position: relative;
 	width: 100%;
 	overflow: hidden;
 	height: 100%;
 	left: 0;
 	top: 0;
 	text-align: justify;
-	padding: 25px 30px 120px 60px;
+	padding: 25px 40px 20px 50px;
 	font-size: 16px;
 	line-height: 24px;
 }
@@ -795,6 +806,7 @@ Image credits: unsplash.com
 .about-us .about-wrap .khach-hang .user {
 	width: 100%;
 	overflow: hidden;
+	padding-left: 15px;
 }
 .khach-hang .user .avatar {
 	border: 2px solid #ae9855;
@@ -831,7 +843,7 @@ Image credits: unsplash.com
 
 .about-us .about-wrap .video .video-detail #video1 {
 	width: 100%;
-	padding: 0 5px;
+	padding: 0 15px;
 	margin-bottom: 5px;
 }
 
@@ -839,10 +851,10 @@ Image credits: unsplash.com
 .about-us .about-wrap .video .video-detail #video3 {
 	width: 50%;
 	float: left;
-	padding: 0 5px;
+	padding: 0 15px;
 }
 .facebook-detail {
-	padding: 0 5px;
+	padding: 0 15px;
 }
 
 
@@ -901,7 +913,7 @@ Image credits: unsplash.com
 	width: 100%;
 	margin-bottom: 10px;
 }
-.map .map-wrap .thanhtoan ul li img {	
+.map .map-wrap .thanhtoan ul li img {
 	width: 30%;
 	display: block;
 	margin: auto;
@@ -939,6 +951,12 @@ Image credits: unsplash.com
 .footer .footer-wrap {
 	overflow: hidden;
 }
+
+.footer .chinhanh,
+.footer .company {
+	margin-left: -15px;
+}
+
 .footer .footer-wrap h3 {
 	font-size: 18px;
 	font-family: mariaSemiBold;
@@ -978,11 +996,149 @@ Image credits: unsplash.com
 
 
 
+/********************************/
+/*          MODAL-LOGIN         */
+/********************************/
 
 
+.modal-content {
+	background-color: #f7f1db;
+}
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li.active>a:focus {
+	color: #8b0304;
+	font-weight: 600;
+	border: 1px solid #c4af62;
+    border-bottom: 1px solid #f7f1db;
+}
+.nav-tabs {
+	border-bottom: 1px solid #c4af62;
+}
+
+.modal-header {
+	border: none;
+}
+.modal-body {
+	overflow: hidden;
+}
+.modal-footer {
+	border-top: none;
+}
+.nav-tabs>li>a {
+	color: black;
+	font-family: mariaSemiBold;
+}
+.nav>li>a:hover {
+	background-color: #f7f1db;
+	border: none;
+	color: #8b0304;
+}
+.form-control {
+    border: 1px solid #c4af62;
+}
+label {
+	margin-top: 10px;
+}
+.form-login-signup {
+	overflow: hidden;
+}
+.btn-login-sign-up {
+	text-align: right;
+	margin-top: 20px;
+}
+
+#lost-pass {
+	margin-bottom: 20px;
+}
+#lost-pass a {
+	color: black;
+	font-weight: 400;
+}
+#lost-pass a:hover {
+	color: #8b0304;
+}
+
+.btn-primary {
+	color: #fff;
+	background-color: #8b0304;
+}
+.btn-primary:hover {
+	color: #fff;
+	background-color: #8b0304;
+}
+
+/********************************/
+/*        MODAL-LIEN HE         */
+/********************************/
+
+.bs-lienhe-modal-lg .modal-header {
+	border-bottom: 1px solid #c4af62;
+}
+
+.bs-lienhe-modal-lg .modal-body {
+	padding: 10px 10px 10px 20px;
+}
+.bs-lienhe-modal-lg .modal-body h3 {
+	font-family: mariaSemiBold;
+	font-size: 30px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #8b0304;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+.bs-lienhe-modal-lg .modal-body p {
+	text-align: center;
+	font-family: mariaSemiBold;
+	font-size: 24px;
+}
+
+.bs-lienhe-modal-lg .modal-body ul li {
+	list-style: disc;
+	font-size: 17px;
+	list-style-position: inside;
+	padding: 10px 0 0 0;
+}
+.bs-lienhe-modal-lg .modal-footer {
+    background-color: #ebe2c1;
+    text-align: left;
+    padding: 5px 15px;
+}
+
+/********************************/
+/*           BTN TO TOP         */
+/********************************/
 
 
-
+span#btn-to-top {
+	border: 2px solid #f8f2dc;
+    background-color: #8b0304;
+    color: #f8f2dc;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 101;
+    font-size: 24px;
+    line-height: 45px;
+    transition: all ease-in-out .2s;
+    -webkit-transition: all ease-in-out .2s;
+    display: none;
+}
+span#btn-to-top:hover {
+	background-color: #f8f2dc;
+    color: #8b0304;
+	border: 2px solid #8b0304;
+}
+span#btn-to-top:hover i {
+	transform: translateY(-2px);
+}
 
 /********************************/
 /*          Media Queries       */
@@ -990,13 +1146,13 @@ Image credits: unsplash.com
 
 
 @media screen and (min-width: 980px){
-	.hero { width: 980px; }    
+	.hero { width: 980px; }
 }
 
 
 @media (max-width: 1185px){
 	.nav-laptop-right {
-		display: none!important; 
+		display: none!important;
 	}
 	.information-mobile {
 		display: block!important;
@@ -1007,12 +1163,12 @@ Image credits: unsplash.com
 		display: none!important;
 	}
 	.nav-laptop-right {
-		display: block!important; 
+		display: block!important;
 	}
 }
 
 @media (max-width: 991px) {
-	.navbar-collapse.collapse.in { 
+	.navbar-collapse.collapse.in {
 		display: block!important;
 	}
 	.collapsing {
@@ -1062,6 +1218,7 @@ Image credits: unsplash.com
 	}
 }
 
+
 @media (min-width: 1025px) {
 	.navbar-nav {
 		margin-left: 150px;
@@ -1077,7 +1234,7 @@ Image credits: unsplash.com
 	}
 
 }
-@media (min-width: 991px) {	
+@media (min-width: 991px) {
 	.navbar-default .navbar-nav>li>a {
 		line-height: 70px;
 	}
@@ -1097,9 +1254,25 @@ Image credits: unsplash.com
 	.map .map-wrap h3.h3-center {
 		text-align: center;
 	}
+	.login-form {
+		padding: 0 100px;
+	}
+	.btn-login-sign-up {
+		padding: 0 100px;
+	}
 
+	.bs-lienhe-modal-lg .modal-body {
+		padding: 10px 60px 10px 80px;
+	}
+	.bs-lienhe-modal-lg .modal-footer {
+		padding-left: 80px;
+	}
+
+	.bs-lienhe-modal-lg .modal-body ul li {
+		list-style-position: outside;
+	}
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.navbar-default .navbar-brand img {
 		width: 250px !important;
 	}
@@ -1107,10 +1280,6 @@ Image credits: unsplash.com
 	.noibat h2 {
 		font-size: 32px;
 	}
-	.about-us .about-wrap .khach-hang .quote .quote-detail {
-		padding-bottom: 190px;
-	}
-
 	.about-us .about-wrap .khach-hang .quote {
 		width: 95%;
 		margin: auto;
@@ -1130,7 +1299,7 @@ Image credits: unsplash.com
 		width: 30%;
 		margin-right: 3.3%;
 	}
-	.map .map-wrap .thanhtoan ul li img {	
+	.map .map-wrap .thanhtoan ul li img {
 		margin-left: 0px;
 		float: left;
 		width: 100%;
