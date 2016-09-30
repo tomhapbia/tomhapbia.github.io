@@ -1048,16 +1048,25 @@ label {
 	margin-top: 20px;
 }
 
-#lost-pass {
-	margin-bottom: 20px;
-}
-#lost-pass a {
-	color: black;
-	font-weight: 400;
-}
-#lost-pass a:hover {
-	color: #8b0304;
-}
+
+	#lost-pass {
+		margin-bottom: 20px;
+	}
+	#lost-pass a {
+		color: black;
+		font-weight: 400;
+	}
+	#lost-pass a:hover {
+		color: #8b0304;
+	}
+	#lost-pass span,
+	#lost-pass input {
+		float: left;
+	}
+	#lost-pass span {
+		color: black;
+		font-weight: 600;
+	}
 
 .btn-primary {
 	color: #fff;
@@ -1281,7 +1290,6 @@ span#btn-to-top:hover i {
 		font-size: 32px;
 	}
 	.about-us .about-wrap .khach-hang .quote {
-		width: 95%;
 		margin: auto;
 	}
 	.carousel-control .icon-prev, .carousel-control .icon-next {

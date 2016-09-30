@@ -54,7 +54,7 @@
 							<label for="description">Ghi chú</label>
 						</div>
 					</div>
-					<a class="waves-effect waves-light btn">Thêm</a>
+					<a id="addtodo" class="waves-effect waves-light btn">Thêm</a>
 				</form>
 			</div>
 
@@ -109,7 +109,17 @@
 			</div>
 		</div>
 	</section>
+	
 
+	<div id="modal1" class="modal">
+		<div class="modal-content">
+			<h4>Bạn có chắc chắn muốn xóa công việc</h4>
+		</div>
+		<div class="modal-footer">
+			<a id="agree" href="#!" class="red lighten-1 modal-action modal-close waves-effect waves-red btn-flat">Agree</a>
+			<a id="cancel" href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+		</div>
+	</div>
 
 	<script src="js/jquery-3.1.0.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>

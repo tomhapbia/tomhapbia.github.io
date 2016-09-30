@@ -659,16 +659,25 @@ label {
 	margin-top: 20px;
 }
 
-#lost-pass {
-	margin-bottom: 20px;
-}
-#lost-pass a {
-	color: black;
-	font-weight: 400;
-}
-#lost-pass a:hover {
-	color: #8b0304;
-}
+
+	#lost-pass {
+		margin-bottom: 20px;
+	}
+	#lost-pass a {
+		color: black;
+		font-weight: 400;
+	}
+	#lost-pass a:hover {
+		color: #8b0304;
+	}
+	#lost-pass span,
+	#lost-pass input {
+		float: left;
+	}
+	#lost-pass span {
+		color: black;
+		font-weight: 600;
+	}
 
 .btn-primary {
 	color: #fff;
