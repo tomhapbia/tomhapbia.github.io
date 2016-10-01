@@ -13,6 +13,18 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+	<div class="find-laptop-overlay">
+		<div id="field-find" class="find-field-laptop">
+			<div class="input-group">
+			<input type="text" class="form-control" id="timkiem" placeholder="Tìm kiếm sản phẩm...">
+				<!-- <span class="input-group-btn">
+					<button class="btn btn-default" type="button">Tìm!</button>
+				</span> -->
+			</div>
+		</div>
+	</div>
+
+
 	<header class="container-fluid">
 		<div class="row">
 			<nav class="navbar navbar-default" role="navigation">
@@ -67,13 +79,13 @@
 						<ul class="nav navbar-nav nav-laptop">
 							<li><a href="#">Trang chủ</a></li>
 							<li>
-								<a href="#">Sản phẩm</a>
+								<a href="list-product.html">Sản phẩm</a>
 								<div class="sub-menu">
 									<ul>
-										<li><a href="">Ô Mai</a></li>
-										<li><a href="">Chè</a></li>
-										<li><a href="">Kẹo</a></li>
-										<li><a href="">Gói Quà Tặng</a></li>
+										<li><a href="list-product.html">Ô Mai</a></li>
+										<li><a href="list-product.html">Chè</a></li>
+										<li><a href="list-product.html">Kẹo</a></li>
+										<li><a href="list-product.html">Gói Quà Tặng</a></li>
 									</ul>
 								</div>
 							</li>
@@ -112,8 +124,10 @@
 										<li id="menu-right-1"><a href="" data-toggle="modal" data-target=".bs-example-modal-lg">Tài khoản<span id="a1"></span></a></li>
 										<li id="menu-right-2"><a href="" data-toggle="modal" data-target=".bs-lienhe-modal-lg">Liện hệ</a></li>
 										<li id="menu-right-3"><a href="">Giỏ hàng</a></li>
+										<li id="menu-right-4" class="find-laptop"><a href="javascript:void(0)">Tìm Kiếm</a></li>
 									</ul>
 								</div>
+
 							</li>
 						</ul>
 					</div>
@@ -131,7 +145,17 @@
 							<li id="menu-right-1"><a href="" data-toggle="modal" data-target=".bs-example-modal-lg">Tài khoản<span id="a1"></span></a></li>
 							<li id="menu-right-2"><a href="" data-toggle="modal" data-target=".bs-lienhe-modal-lg">Liện hệ</a></li>
 							<li id="menu-right-3"><a href="">Giỏ hàng</a></li>
+							<li id="menu-right-4" class="find-moblie"><a href="javascript:void(0)">Tìm Kiếm</a></li>
 						</ul>
+					</div>
+
+					<div id="field-find" class="find-field-mobile">
+						<div class="input-group">
+							<input type="text" id="timkiem-mobile" class="form-control" placeholder="Tìm kiếm sản phẩm...">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="button">Tìm!</button>
+							</span>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -449,13 +473,15 @@
 					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-lg-offset-1">
 						<div id="vanhoa1" class="vanhoa-detail wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
 							<div class="vanhoa-img">
-								<img src="img/vanhoa1.jpg">
+								<img src="img/vanhoa9.jpg">
 							</div>
-							<h3>Nét văn hóa của người Hà Nội thanh lịch</h3>
+							<h3>“Món quà” quý giá của người dân Bắc Kạn</h3>
 							<a href="">
 								<div class="overlay">
-									<h3>Nét văn hóa của người Hà Nội thanh lịch</h3>
-									<p> Hẳn trong lòng mỗi người đặt chân đến Hà Nội từng có một hình ảnh về Hà Nội khuất sâu trong lòng, có xốn xang, có thanh lịch... Đối với những người chỉ thăm lướt qua thành phố Hà Nội, có lẽ ấn tượng nhất là về hình ảnh giao thông chen chúc xen lẫn xe máy và ô tô, những tòa nhà dân cư cao thấp khác nhau, những con phố đầy bóng cây cao to....</p>
+									<h3>“Món quà” quý giá của người dân Bắc Kạn</h3>
+									<p> Những quả mơ đá lớn lên trong sương gió của núi rừng, chắt chiu từng dưỡng chất từ đất mẹ không chỉ là người bạn thân thiết, là món quà quý giá mà thiên nhiên đã trao tặng cho người dân Bắc Kạn...</p>
+									<i class="fa fa-angle-right" aria-hidden="true"></i>
+									<span>Xem chi tiết</span>
 								</div>
 							</a>
 						</div>
@@ -470,7 +496,9 @@
 							<a href="">
 								<div class="overlay">
 									<h3>Nét đẹp văn hóa ẩm thực Việt</h3>
-									<p>Văn hóa ẩm thực là nét văn hóa tự nhiên hình thành trong cuộc sống. Nhất là đối với người Việt Nam, ẩm thực không chỉ là nét văn hóa về vật chất mà còn là văn hóa về tinh thần. </p>
+									<p>Ẩm thực là nét văn hóa tự nhiên hình thành trong cuộc sống. Nhất là đối với người Việt Nam, ẩm thực không chỉ là nét văn hóa về vật chất mà còn là văn hóa về tinh thần. </p>
+									<i class="fa fa-angle-right" aria-hidden="true"></i>
+									<span>Xem chi tiết</span>
 								</div>
 							</a>
 						</div>
@@ -486,7 +514,9 @@
 							<a href="">
 								<div class="overlay">
 									<h3>Văn hoá uống trà của người Việt</h3>
-									<p> Ngày xưa còn nhỏ, tôi nghĩ rất đơn giản về trà, trà là thứ để khi khách đến nhà, ba mẹ lại bắt tôi pha trà mời khách uống. Sau này khi lớn lên, tôi mới hiểu về giá trị của chén trà, người ta có thể đến gần nhau hơn, hiểu nhau hơn cũng chính nhờ trà.</p>
+									<p> Ngày xưa còn nhỏ, tôi nghĩ rất đơn giản về trà, trà là thứ để khi khách đến nhà, ba mẹ lại bắt tôi pha trà mời khách uống. Sau này khi lớn lên, tôi mới hiểu về giá trị của chén trà, người ta có thể đến gần nhau hơn...</p>
+									<i class="fa fa-angle-right" aria-hidden="true"></i>
+									<span>Xem chi tiết</span>
 								</div>
 							</a>
 						</div>
@@ -502,6 +532,8 @@
 								<div class="overlay">
 									<h3>Nghe tinh túy đất trời chảy quyện trong tâm thức</h3>
 									<p>Từ nước Đức xa xôi, những người bạn Hồng Lam đã gửi lại những lời chia sẻ chân thành về món quà "Tinh hoa quà Việt".</p>
+									<i class="fa fa-angle-right" aria-hidden="true"></i>
+									<span>Xem chi tiết</span>
 								</div>
 							</a>
 						</div>
@@ -517,6 +549,8 @@
 								<div class="overlay">
 									<h3>Nhớ Mộc Châu mùa hoa mận</h3>
 									<p>Nhớ mỗi mùa hoa mận nở, Mộc Châu tựa chốn thiên đường làm đắm say, đê mê, sống dậy khoảng lặng trong lòng du khách lạc bước tới đây.</p>
+									<i class="fa fa-angle-right" aria-hidden="true"></i>
+									<span>Xem chi tiết</span>
 								</div>
 							</a>
 						</div>
@@ -532,6 +566,8 @@
 								<div class="overlay">
 									<h3>Đón bạn với Tinh hoa quà Việt</h3>
 									<p>Từ nước Đức xa xôi, những người bạn Hồng Lam đã gửi lại những lời chia sẻ chân thành về món quà "Tinh hoa quà Việt".</p>
+									<i class="fa fa-angle-right" aria-hidden="true"></i>
+									<span>Xem chi tiết</span>
 								</div>
 							</a>
 						</div>
@@ -749,11 +785,26 @@
 									<input type="password" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 form-control" id="password">
 								</div>
 							</form>
+
+
+
 							<div class="btn-login-sign-up">
 								<div id="lost-pass">
 									<a href="">Quên mật khẩu?</a>
 									<input type="checkbox" name="" id=""><span>&nbsp; Ghi nhớ đăng nhập</span>
 								</div>
+
+								<div class="socials-login">
+									<a href="" id="login-fb" class="color-white">
+										<span class="fa fa-facebook text-center background-blue"></span>
+										<span class="fix-width-social text-center color-blue">Facebook</span>
+									</a>
+									<a href="" id="login-gg" class="color-white">
+										<span class="fa fa-google-plus text-center background-red"></span>
+										<span class="fix-width-social text-center color-red">Google</span>
+									</a>
+								</div>
+
 								<button type="button" class="btn btn-default" data-dismiss="modal">Hủy</button>
 								<button type="button" class="btn btn-primary">Đăng Nhập</button>
 							</div>

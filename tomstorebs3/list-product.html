@@ -13,6 +13,18 @@
 	<link rel="stylesheet" type="text/css" href="css/list-product.css">
 </head>
 <body>
+	<div class="find-laptop-overlay">
+		<div id="field-find" class="find-field-laptop">
+			<div class="input-group">
+				<input type="text" class="form-control" id="timkiem" placeholder="Tìm kiếm sản phẩm...">
+				<!-- <span class="input-group-btn">
+					<button class="btn btn-default" type="button">Tìm!</button>
+				</span> -->
+			</div>
+		</div>
+	</div>
+
+
 	<header class="container-fluid">
 		<div class="row">
 			<nav class="navbar navbar-default" role="navigation">
@@ -112,6 +124,7 @@
 										<li id="menu-right-1"><a href="" data-toggle="modal" data-target=".bs-example-modal-lg">Tài khoản<span id="a1"></span></a></li>
 										<li id="menu-right-2"><a href="" data-toggle="modal" data-target=".bs-lienhe-modal-lg">Liện hệ</a></li>
 										<li id="menu-right-3"><a href="">Giỏ hàng</a></li>
+										<li id="menu-right-4" class="find-laptop"><a href="javascript:void(0)">Tìm Kiếm</a></li>
 									</ul>
 								</div>
 							</li>
@@ -131,7 +144,17 @@
 							<li id="menu-right-1"><a href="" data-toggle="modal" data-target=".bs-example-modal-lg">Tài khoản<span id="a1"></span></a></li>
 							<li id="menu-right-2"><a href="" data-toggle="modal" data-target=".bs-lienhe-modal-lg">Liện hệ</a></li>
 							<li id="menu-right-3"><a href="">Giỏ hàng</a></li>
+							<li id="menu-right-4" class="find-moblie"><a href="javascript:void(0)">Tìm Kiếm</a></li>
 						</ul>
+					</div>
+
+					<div id="field-find" class="find-field-mobile">
+						<div class="input-group">
+							<input type="text" id="timkiem-mobile" class="form-control" placeholder="Tìm kiếm sản phẩm...">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="button">Tìm!</button>
+							</span>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -139,13 +162,13 @@
 	</section>
 
 	<section class="container-fluid diachi">
-			<div class="col-xs-12 col-sm-12 col-md-11 col-md-offset-1 col-lg-11 col-lg-offset-1">
-				<ol class="breadcrumb">
-					<li><a href="#">Trang chủ</a></li>
-					<li><a href="#">Sản phẩm</a></li>
-					<li class="active-breadcrumb">Ô Mai</li>
-				</ol>
-			</div>
+		<div class="col-xs-12 col-sm-12 col-md-11 col-md-offset-1 col-lg-11 col-lg-offset-1">
+			<ol class="breadcrumb">
+				<li><a href="#">Trang chủ</a></li>
+				<li><a href="#">Sản phẩm</a></li>
+				<li class="active-breadcrumb">Ô Mai</li>
+			</ol>
+		</div>
 	</section>
 
 	<section class="container-fluid noibat">
@@ -154,317 +177,316 @@
 				<div class="title">
 					<h3 class="col-xs-12 col-sm-4 col-md-3 col-lg-3">SẢN PHẨM</h3>
 					<ul>
-						<li><a class="active" href="">ô mai</a></li>
-						<li><a href="">chè</a></li>
-						<li><a href="">kẹo</a></li>
-						<li><a href="">gói quà tặng</a></li>
+						<li><a class="active" href="javascript:void(0)" id="omai" onclick="changeListProduct(this)">ô mai</a></li>
+						<li><a href="javascript:void(0)" id="che" onclick="changeListProduct(this)">chè</a></li>
+						<li><a href="javascript:void(0)" id="keo" onclick="changeListProduct(this)">kẹo</a></li>
+						<li><a href="javascript:void(0)" id="goiquatang" onclick="changeListProduct(this)">gói quà tặng</a></li>
 					</ul>
 				</div>
 			</div>
 
-
-			<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 col-lg-offset-1 special">
-				<div class="list">
-					<div class="item">
-						<div class="image">
-							<img src="img/man1.jpg">
-							<div class="image-overlay">
-								<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
+			<div id="list-product">
+				<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 col-lg-offset-1 special">
+					<div class="list">
+						<div class="item">
+							<div class="image">
+								<img src="img/man1.jpg">
+								<div class="image-overlay">
+									<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
+								</div>
+							</div>
+							<div class="description">
+								<a href="product-detail.html">
+									<h3>Mơ mặn ngọt</h3>
+								</a>
+								<p>Chua, mặn, ngọt</p>
+								<span><a href="#"></a></span>
 							</div>
 						</div>
-						<div class="description">
-							<a href="product-detail.html">
-								<h3>Mơ mặn ngọt</h3>
-							</a>
-							<p>Chua, mặn, ngọt</p>
-							<span><a href="#"></a></span>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 special">
+					<div class="list">
+						<div class="item">
+							<div class="image">
+								<img src="img/mo2.jpg">
+								<div class="image-overlay">
+									<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
+								</div>
+							</div>
+							<div class="description">
+								<a href="product-detail.html">
+									<h3>Mơ HL 3</h3>
+								</a>
+								<p>Chua, cay, ngọt, cam thảo</p>
+								<span><a href="#"></a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 special">
+					<div class="list">
+						<div class="item">
+							<div class="image">
+								<img src="img/mo4.jpg">
+								<div class="image-overlay">
+									<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
+								</div>
+							</div>
+							<div class="description">
+								<a href="product-detail.html">
+									<h3>Mơ gừng giòn</h3>
+								</a>
+								<p>Chua, ngọt, giòn</p>
+								<span><a href="#"></a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 special">
+					<div class="list">
+						<div class="item">
+							<div class="image">
+								<img src="img/mo5.jpg">
+								<div class="image-overlay">
+									<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
+								</div>
+							</div>
+							<div class="description">
+								<a href="product-detail.html">
+									<h3>Mơ chùa Hương</h3>
+								</a>
+								<p>Chua, ngọt, dẻo, gừng</p>
+								<span><a href="#"></a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 special">
+					<div class="list">
+						<div class="item">
+							<div class="image">
+								<img src="img/chanh1.jpg">
+								<div class="image-overlay">
+									<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
+								</div>
+							</div>
+							<div class="description">
+								<a href="product-detail.html">
+									<h3>Chanh đào</h3>
+								</a>
+								<p>Ngọt, thơm</p>
+								<span><a href="#"></a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 col-lg-offset-1 special">
+					<div class="list">
+						<div class="item">
+							<div class="image">
+								<img src="img/xoai1.jpg">
+								<div class="image-overlay">
+									<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
+								</div>
+							</div>
+							<div class="description">
+								<a href="product-detail.html">
+									<h3>Xoài dẻo</h3>
+								</a>
+								<p>Thơm, dẻo, ngọt</p>
+								<span><a href="#"></a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 special">
+					<div class="list">
+						<div class="item">
+							<div class="image">
+								<img src="img/tramman.jpg">
+								<div class="image-overlay">
+									<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
+								</div>
+							</div>
+							<div class="description">
+								<a href="product-detail.html">
+									<h3>Trám mặt</h3>
+								</a>
+								<p>Chua, mặn</p>
+								<span><a href="#"></a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 special">
+					<div class="list">
+						<div class="item">
+							<div class="image">
+								<img src="img/me2.jpg">
+								<div class="image-overlay">
+									<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
+								</div>
+							</div>
+							<div class="description">
+								<a href="product-detail.html">
+									<h3>Me tươi cay</h3>
+								</a>
+								<p>Chua, cay, ngọt</p>
+								<span><a href="#"></a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 special">
+					<div class="list">
+						<div class="item">
+							<div class="image">
+								<img src="img/chanhcom.jpg">
+								<div class="image-overlay">
+									<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
+								</div>
+							</div>
+							<div class="description">
+								<a href="product-detail.html">
+									<h3>Chanh cốm</h3>
+								</a>
+								<p>Ngọt, thơm</p>
+								<span><a href="#"></a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 visible-md visible-lg special fix-sm-md">
+					<div class="list">
+						<div class="item">
+							<div class="image">
+								<img src="img/mo9.jpg">
+								<div class="image-overlay">
+									<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
+								</div>
+							</div>
+							<div class="description">
+								<a href="product-detail.html">
+									<h3>Mơ xào</h3>
+								</a>
+								<p>Chua, man, ngot</p>
+								<span><a href="#"></a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 col-lg-offset-1 visible-md visible-lg special">
+					<div class="list">
+						<div class="item">
+							<div class="image">
+								<img src="img/man1.jpg">
+								<div class="image-overlay">
+									<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
+								</div>
+							</div>
+							<div class="description">
+								<a href="product-detail.html">
+									<h3>Mơ mặn ngọt</h3>
+								</a>
+								<p>Chua, mặn, ngọt</p>
+								<span><a href="#"></a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 visible-md visible-lg special">
+					<div class="list">
+						<div class="item">
+							<div class="image">
+								<img src="img/mo2.jpg">
+								<div class="image-overlay">
+									<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
+								</div>
+							</div>
+							<div class="description">
+								<a href="product-detail.html">
+									<h3>Mơ HL 3</h3>
+								</a>
+								<p>Chua, cay, ngọt, cam thảo</p>
+								<span><a href="#"></a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 visible-lg special">
+					<div class="list">
+						<div class="item">
+							<div class="image">
+								<img src="img/mo4.jpg">
+								<div class="image-overlay">
+									<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
+								</div>
+							</div>
+							<div class="description">
+								<a href="product-detail.html">
+									<h3>Mơ gừng giòn</h3>
+								</a>
+								<p>Chua, ngọt, giòn</p>
+								<span><a href="#"></a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 visible-lg special">
+					<div class="list">
+						<div class="item">
+							<div class="image">
+								<img src="img/mo5.jpg">
+								<div class="image-overlay">
+									<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
+								</div>
+							</div>
+							<div class="description">
+								<a href="product-detail.html">
+									<h3>Mơ chùa Hương</h3>
+								</a>
+								<p>Chua, ngọt, dẻo, gừng</p>
+								<span><a href="#"></a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 visible-lg special">
+					<div class="list">
+						<div class="item">
+							<div class="image">
+								<img src="img/chanh1.jpg">
+								<div class="image-overlay">
+									<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
+								</div>
+							</div>
+							<div class="description">
+								<a href="product-detail.html">
+									<h3>Chanh đào</h3>
+								</a>
+								<p>Ngọt, thơm</p>
+								<span><a href="#"></a></span>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-
-			<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 special">
-				<div class="list">
-					<div class="item">
-						<div class="image">
-							<img src="img/mo2.jpg">
-							<div class="image-overlay">
-								<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
-							</div>
-						</div>
-						<div class="description">
-							<a href="product-detail.html">
-								<h3>Mơ HL 3</h3>
-							</a>
-							<p>Chua, cay, ngọt, cam thảo</p>
-							<span><a href="#"></a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 special">
-				<div class="list">
-					<div class="item">
-						<div class="image">
-							<img src="img/mo4.jpg">
-							<div class="image-overlay">
-								<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
-							</div>
-						</div>
-						<div class="description">
-							<a href="product-detail.html">
-								<h3>Mơ gừng giòn</h3>
-							</a>
-							<p>Chua, ngọt, giòn</p>
-							<span><a href="#"></a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 special">
-				<div class="list">
-					<div class="item">
-						<div class="image">
-							<img src="img/mo5.jpg">
-							<div class="image-overlay">
-								<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
-							</div>
-						</div>
-						<div class="description">
-							<a href="product-detail.html">
-								<h3>Mơ chùa Hương</h3>
-							</a>
-							<p>Chua, ngọt, dẻo, gừng</p>
-							<span><a href="#"></a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 special">
-				<div class="list">
-					<div class="item">
-						<div class="image">
-							<img src="img/chanh1.jpg">
-							<div class="image-overlay">
-								<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
-							</div>
-						</div>
-						<div class="description">
-							<a href="product-detail.html">
-								<h3>Chanh đào</h3>
-							</a>
-							<p>Ngọt, thơm</p>
-							<span><a href="#"></a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-			<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 col-lg-offset-1 special">
-				<div class="list">
-					<div class="item">
-						<div class="image">
-							<img src="img/xoai1.jpg">
-							<div class="image-overlay">
-								<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
-							</div>
-						</div>
-						<div class="description">
-							<a href="product-detail.html">
-								<h3>Xoài dẻo</h3>
-							</a>
-							<p>Thơm, dẻo, ngọt</p>
-							<span><a href="#"></a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 special">
-				<div class="list">
-					<div class="item">
-						<div class="image">
-							<img src="img/tramman.jpg">
-							<div class="image-overlay">
-								<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
-							</div>
-						</div>
-						<div class="description">
-							<a href="product-detail.html">
-								<h3>Trám mặt</h3>
-							</a>
-							<p>Chua, mặn</p>
-							<span><a href="#"></a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 special">
-				<div class="list">
-					<div class="item">
-						<div class="image">
-							<img src="img/me2.jpg">
-							<div class="image-overlay">
-								<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
-							</div>
-						</div>
-						<div class="description">
-							<a href="product-detail.html">
-								<h3>Me tươi cay</h3>
-							</a>
-							<p>Chua, cay, ngọt</p>
-							<span><a href="#"></a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 special">
-				<div class="list">
-					<div class="item">
-						<div class="image">
-							<img src="img/chanhcom.jpg">
-							<div class="image-overlay">
-								<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
-							</div>
-						</div>
-						<div class="description">
-							<a href="product-detail.html">
-								<h3>Chanh cốm</h3>
-							</a>
-							<p>Ngọt, thơm</p>
-							<span><a href="#"></a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 visible-md visible-lg special fix-sm-md">
-				<div class="list">
-					<div class="item">
-						<div class="image">
-							<img src="img/mo9.jpg">
-							<div class="image-overlay">
-								<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
-							</div>
-						</div>
-						<div class="description">
-							<a href="product-detail.html">
-								<h3>Mơ xào</h3>
-							</a>
-							<p>Chua, man, ngot</p>
-							<span><a href="#"></a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-			<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 col-lg-offset-1 visible-md visible-lg special">
-				<div class="list">
-					<div class="item">
-						<div class="image">
-							<img src="img/man1.jpg">
-							<div class="image-overlay">
-								<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
-							</div>
-						</div>
-						<div class="description">
-							<a href="product-detail.html">
-								<h3>Mơ mặn ngọt</h3>
-							</a>
-							<p>Chua, mặn, ngọt</p>
-							<span><a href="#"></a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 visible-md visible-lg special">
-				<div class="list">
-					<div class="item">
-						<div class="image">
-							<img src="img/mo2.jpg">
-							<div class="image-overlay">
-								<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
-							</div>
-						</div>
-						<div class="description">
-							<a href="product-detail.html">
-								<h3>Mơ HL 3</h3>
-							</a>
-							<p>Chua, cay, ngọt, cam thảo</p>
-							<span><a href="#"></a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 visible-lg special">
-				<div class="list">
-					<div class="item">
-						<div class="image">
-							<img src="img/mo4.jpg">
-							<div class="image-overlay">
-								<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
-							</div>
-						</div>
-						<div class="description">
-							<a href="product-detail.html">
-								<h3>Mơ gừng giòn</h3>
-							</a>
-							<p>Chua, ngọt, giòn</p>
-							<span><a href="#"></a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 visible-lg special">
-				<div class="list">
-					<div class="item">
-						<div class="image">
-							<img src="img/mo5.jpg">
-							<div class="image-overlay">
-								<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
-							</div>
-						</div>
-						<div class="description">
-							<a href="product-detail.html">
-								<h3>Mơ chùa Hương</h3>
-							</a>
-							<p>Chua, ngọt, dẻo, gừng</p>
-							<span><a href="#"></a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 visible-lg special">
-				<div class="list">
-					<div class="item">
-						<div class="image">
-							<img src="img/chanh1.jpg">
-							<div class="image-overlay">
-								<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
-							</div>
-						</div>
-						<div class="description">
-							<a href="product-detail.html">
-								<h3>Chanh đào</h3>
-							</a>
-							<p>Ngọt, thơm</p>
-							<span><a href="#"></a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-
 
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<nav aria-label="Page navigation">
@@ -631,6 +653,18 @@
 									<a href="">Quên mật khẩu?</a>
 									<input type="checkbox" name="" id=""><span>&nbsp; Ghi nhớ đăng nhập</span>
 								</div>
+
+								<div class="socials-login">
+									<a href="" id="login-fb" class="color-white">
+										<span class="fa fa-facebook text-center background-blue"></span>
+										<span class="fix-width-social text-center color-blue">Facebook</span>
+									</a>
+									<a href="" id="login-gg" class="color-white">
+										<span class="fa fa-google-plus text-center background-red"></span>
+										<span class="fix-width-social text-center color-red">Google</span>
+									</a>
+								</div>
+
 								<button type="button" class="btn btn-default" data-dismiss="modal">Hủy</button>
 								<button type="button" class="btn btn-primary">Đăng Nhập</button>
 							</div>

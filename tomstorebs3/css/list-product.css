@@ -166,7 +166,7 @@ a {
 	margin-bottom: 0px;
 }
 .menu2 ul li {
-	width: 33.33333%;
+	width: 25%;
 	height: 100%;
 	font-family: mariaRegular;
 }
@@ -178,6 +178,9 @@ a {
 }
 .menu2 ul li#menu-right-3{
 	background: url('../img/cart.png') 50% 20% no-repeat;
+}
+.menu2 ul li#menu-right-4{
+	background: url('../img/find.png') 50% 20% no-repeat;
 }
 
 .menu2 ul li#menu-right-1:hover {
@@ -195,6 +198,47 @@ a {
 	background-color: #8b0304;
 	transition: all 0.5s ease-in-out;
 }
+.menu2 ul li#menu-right-4:hover {
+	background: url('../img/find1.png') 50% 20% no-repeat;
+	background-color: #8b0304;
+	transition: all 0.5s ease-in-out;
+}
+
+/********************************/
+/*          FIND FIELD          */
+/********************************/
+
+
+.find-laptop-overlay {
+	width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    position: fixed;
+    top: 113px;
+    display: none;
+}
+.input-group {
+	width: 100%;
+}
+.find-field-laptop {
+	max-width: 350px;
+	min-width: 300px;
+	position: absolute;
+	right: 30px;
+	top: -40px;
+}
+.find-field-mobile {
+	max-width: 350px;
+	right: 0;
+	display: none;
+	position: absolute;
+}
+
+
+
+
+
+
 .menu2 ul li:hover a{
 	color: #fff;
 	transition: all 0.5s ease-in-out;
@@ -213,9 +257,9 @@ a {
 	/*	border-top: 0.5px solid #8b0304;*/
 }
 
-.menu2 ul li:last-child a {
+/*.menu2 ul li:last-child a {
 	border-right: none;
-}
+}*/
 .menu2 ul li:first-child a {
 	border-left: 0.5px solid #8b0304;
 }
@@ -660,24 +704,68 @@ label {
 }
 
 
-	#lost-pass {
-		margin-bottom: 20px;
-	}
-	#lost-pass a {
-		color: black;
-		font-weight: 400;
-	}
-	#lost-pass a:hover {
-		color: #8b0304;
-	}
-	#lost-pass span,
-	#lost-pass input {
-		float: left;
-	}
-	#lost-pass span {
-		color: black;
-		font-weight: 600;
-	}
+.socials-login {
+	margin-top: 20px;
+	text-align: center;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+.socials-login span {
+	height: 35px;
+	line-height: 35px;
+}
+.color-blue {
+	color: #3b5998 !important;
+}
+.background-blue {
+	background-color: #284580;
+}
+.background-red {
+	background-color: #6c0304;
+}
+.color-red {
+	color: #8b0304 !important;
+}
+#login-fb {
+	float: left;
+	width: 45%;
+	border: 1px solid #284580 !important;
+	height: 37px;
+}
+#login-gg {
+	float: right;
+	width: 45%;
+	height: 37px;
+	border: 1px solid #6c0304 !important;
+}
+.socials-login span.fa{
+	width: 36px;
+	border-right: 1px solid;
+	font-size: 18px;
+	float: left;
+}
+.color-white {
+	color: #fff!important;
+}
+
+#lost-pass {
+	margin-bottom: 20px;
+}
+#lost-pass a {
+	color: black;
+	font-weight: 400;
+}
+#lost-pass a:hover {
+	color: #8b0304;
+}
+#lost-pass span,
+#lost-pass input {
+	float: left;
+}
+#lost-pass span {
+	color: black;
+	font-weight: 600;
+}
 
 .btn-primary {
 	color: #fff;
@@ -829,9 +917,9 @@ span#btn-to-top:hover i {
 	.container-fluid>.navbar-collapse {
 		margin-top: 5px;
 	}
-	.information-mobile .menu2 ul li {
-		width: 33.333%;
-	}
+/*	.information-mobile .menu2 ul li {
+		width: 20%;
+	}*/
 	.menu2 ul {
 		margin-bottom: 0px;
 	}
