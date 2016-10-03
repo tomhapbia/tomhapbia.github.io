@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>GIỎ HÀNG</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link type="image/x-icon" rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/giohang.css">
 </head>
 <body>
 	<div class="find-laptop-overlay">
@@ -180,484 +180,197 @@
 		</div>
 	</section>
 
-	<section class="container-fluid">
-		<div class="row">
-			<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
-				<!-- 			<div class="overlay"></div> -->
-
-				<ol class="carousel-indicators">
-					<li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
-					<li data-target="#bs-carousel" data-slide-to="1"></li>
-					<li data-target="#bs-carousel" data-slide-to="2"></li>
-				</ol>
-
-				<div class="carousel-inner">
-					<div class="item slides active">
-						<div class="slide-1"></div>
-						<div class="hero">
-							<hgroup>
-								<h1>We are creative</h1>
-								<h3>Get start your next awesome project</h3>
-							</hgroup>
-							<button class="btn btn-hero btn-lg" role="button">See all features</button>
-						</div>
-					</div>
-					<div class="item slides">
-						<div class="slide-2"></div>
-						<div class="hero">
-							<hgroup>
-								<h1>We are smart</h1>
-								<h3>Get start your next awesome project</h3>
-							</hgroup>
-							<button class="btn btn-hero btn-lg" role="button">See all features</button>
-						</div>
-					</div>
-					<div class="item slides">
-						<div class="slide-3"></div>
-						<div class="hero">
-							<hgroup>
-								<h1>We are amazing</h1>
-								<h3>Get start your next awesome project</h3>
-							</hgroup>
-							<button class="btn btn-hero btn-lg" role="button">See all features</button>
-						</div>
-					</div>
-				</div>
-
-				<a id="myBtn" class="left carousel-control" role="button" data-slide="prev">
-					<span class="icon-prev" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a id="myBtn2" class="right carousel-control" role="button" data-slide="next">
-					<span class="icon-next" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>
-			</div>
+	<section class="container-fluid diachi">
+		<div class="col-xs-12 col-sm-12 col-md-11 col-md-offset-1 col-lg-11 col-lg-offset-1">
+			<ol class="breadcrumb">
+				<li><a href="#">Trang chủ</a></li>
+				<li class="active-breadcrumb">Giỏ Hàng</li>
+			</ol>
 		</div>
 	</section>
 
-
-	<section class="container-fluid" id="support">
+	<section class="container-fluid giohang">
 		<div class="row">
-			<div class="container">
-				<div>
-					<div class="support-wrap">
-						<ul>
-							<li>
-								<a href="">
-									<img src="img/deliver.png">
-									<span>Giao hàng siêu tốc</span>
+			<div class="title-wrap col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+				<div class="title">
+					<h3 class="col-xs-12 col-sm-4 col-md-3 col-lg-3">GIỎ HÀNG</h3>
+				</div>
+			</div>
+			<div class="hidden-xs col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
+				<table class="table table-bordered cart-products rwd-table">    
+					<thead data-thead="Danh sách giỏ hàng">
+						<tr class="background-brown">
+							<th class="cart-product-img">Hình ảnh</th>
+							<th class="cart-product-title">Tên sản phẩm</th>
+							<th class="cart-product-weight">Khối lượng</th>
+							<th class="cart-product-price">Đơn giá</th>
+							<th class="cart-product-quantity">Số lượng</th>
+							<th class="cart-product-total">Thành tiền</th>
+							<th class="cart-product-delete">Xóa</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="background-vani">
+							<td data-th="Ảnh">
+								<img src="img/chanhcom.jpg" class="mCS_img_loaded lazy-loaded">
+							</td>
+							<td data-th="Tên sản phẩm">
+								<a href="">Mơ gừng chua ngọt - Hộp 500gr</a>
+							</td>
+							<td>500gr</td>
+							<td data-th="Đơn giá">95.000 đ</td>
+							<td data-th="Số lượng" id="fix-td-sm">
+								<div class="wan-spinner">
+									<a href="javascript:void(0)" class="minus" id="minus-cart">-</a>
+									<input type="text" class="total-mask" data-productid="30" value="2">
+									<a href="javascript:void(0)" class="plus" id="plus-cart">+</a>
+								</div>
+							</td>
+							<td data-th="Thành tiền"><b class="color-red">2,470,000 đ</b></td>
+							<td data-th="Xóa">
+								<a href="javascript:void(0)">
+									<i class="fa fa-times-circle-o" aria-hidden="true"></i>
 								</a>
-							</li>
-							<li>
-								<a href="">
-									<img src="img/message.png">
-									<span>Tư vấn miễn phí</span>
+							</td>
+						</tr>
+						<tr class="background-vani">
+							<td data-th="Ảnh">
+								<img src="img/mo5.jpg" class="mCS_img_loaded lazy-loaded">
+							</td>
+							<td data-th="Tên sản phẩm">
+								<a href="">Mơ gừng chua ngọt - Hộp 250gr</a>
+							</td>
+							<td data-th="Khối lượng">250gr</td>
+							<td data-th="Đơn giá">60.000 đ</td>
+							<td data-th="Số lượng" id="fix-td-sm">
+								<div class="wan-spinner">
+									<a href="javascript:void(0)" class="minus" id="minus-cart">-</a>
+									<input type="text" id="item_28" class="total-mask" data-productid="28" data-productname="Hộp 250gr" value="3">
+									<a href="javascript:void(0)" class="plus" id="plus-cart">+</a>
+								</div>
+							</td>
+							<td data-th="Thành tiền"><b class="color-red">180,000 đ</b></td>
+							<td data-th="Xóa">
+								<a href="javascript:void(0)">
+									<i class="fa fa-times-circle-o" aria-hidden="true"></i>
 								</a>
-							</li>
-							<li>
-								<a href="">
-									<img src="img/usd.png">
-									<span>Thanh toán khi nhận hàng</span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="col-xs-12 visible-xs giohang-xs">
+				<h3>Danh sách giỏ hàng:</h3>
+				<div class="list-donhang">
+					<table class="table table-bordered cart-products rwd-table">
+						<tr>
+							<td>Ảnh</td>
+							<td><img src="img/chanhcom.jpg"></td>
+						</tr>
+						<tr>
+							<td>Tên sản phẩm</td>
+							<td>Mơ gừng chua ngọt - Hộp 500gr</td>
+						</tr>
+						<tr>
+							<td>Khối lượng</td>
+							<td>500gr</td>
+						</tr>
+						<tr>
+							<td>Đơn giá</td>
+							<td>100.000đ</td>
+						</tr>
+						<tr>
+							<td>Số lượng</td>
+							<td>
+								<div class="wan-spinner">
+									<a href="javascript:void(0)" class="minus" id="minus-cart">-</a>
+									<input type="text" id="item_28" class="total-mask" data-productid="28" data-productname="Hộp 250gr" value="3">
+									<a href="javascript:void(0)" class="plus" id="plus-cart">+</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Thành tiền</td>
+							<td><b class="color-red">180,000 đ</b></td>
+						</tr>
+						<tr>
+							<td>Xóa</td>
+							<td>
+								<a href="javascript:void(0)">
+									<i class="fa fa-times-circle-o" aria-hidden="true"></i>
 								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+							</td>
+						</tr>
+					</table>
 
-
-	<section class="container-fluid noibat">
-		<div class="row">
-			<h2>SẢN PHẨM NỔI BẬT</h2>
-			<div class="title">
-				<img src="img/title.png">
-			</div>
-
-			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-2 col-lg-offset-1 special">
-				<div class="list">
-					<div class="item">
-						<div class="image">
-							<img src="img/man1.jpg">
-							<div class="image-overlay">
-								<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
-							</div>
-						</div>
-						<div class="description">
-							<a href="product-detail.html">
-								<h3>Mơ mặn ngọt</h3>
-							</a>
-							<p>Chua, mặn, ngọt</p>
-							<span><a href="#"></a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-2 special">
-				<div class="list">
-					<div class="item">
-						<div class="image">
-							<img src="img/mo2.jpg">
-							<div class="image-overlay">
-								<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
-							</div>
-						</div>
-						<div class="description">
-							<a href="product-detail.html">
-								<h3>Mơ TS 3</h3>
-							</a>
-							<p>Chua, cay, ngọt, cam thảo</p>
-							<span><a href="#"></a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-2 special">
-				<div class="list">
-					<div class="item">
-						<div class="image">
-							<img src="img/mo4.jpg">
-							<div class="image-overlay">
-								<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
-							</div>
-						</div>
-						<div class="description">
-							<a href="product-detail.html">
-								<h3>Mơ gừng giòn</h3>
-							</a>
-							<p>Chua, ngọt, giòn</p>
-							<span><a href="#"></a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-2 special">
-				<div class="list">
-					<div class="item">
-						<div class="image">
-							<img src="img/mo5.jpg">
-							<div class="image-overlay">
-								<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
-							</div>
-						</div>
-						<div class="description">
-							<a href="product-detail.html">
-								<h3>Mơ chùa Hương</h3>
-							</a>
-							<p>Chua, ngọt, dẻo, gừng</p>
-							<span><a href="#"></a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-2 special">
-				<div class="list">
-					<div class="item">
-						<div class="image">
-							<img src="img/chanh1.jpg">
-							<div class="image-overlay">
-								<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
-							</div>
-						</div>
-						<div class="description">
-							<a href="product-detail.html">
-								<h3>Chanh đào</h3>
-							</a>
-							<p>Ngọt, thơm</p>
-							<span><a href="#"></a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-2 col-lg-offset-1 special">
-				<div class="list">
-					<div class="item">
-						<div class="image">
-							<img src="img/xoai1.jpg">
-							<div class="image-overlay">
-								<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
-							</div>
-						</div>
-						<div class="description">
-							<a href="product-detail.html">
-								<h3>Xoài dẻo</h3>
-							</a>
-							<p>Thơm, dẻo, ngọt</p>
-							<span><a href="#"></a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-2 special">
-				<div class="list">
-					<div class="item">
-						<div class="image">
-							<img src="img/tramman.jpg">
-							<div class="image-overlay">
-								<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
-							</div>
-						</div>
-						<div class="description">
-							<a href="product-detail.html">
-								<h3>Trám mặt</h3>
-							</a>
-							<p>Chua, mặn</p>
-							<span><a href="#"></a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-2 special">
-				<div class="list">
-					<div class="item">
-						<div class="image">
-							<img src="img/me2.jpg">
-							<div class="image-overlay">
-								<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
-							</div>
-						</div>
-						<div class="description">
-							<a href="product-detail.html">
-								<h3>Me tươi cay</h3>
-							</a>
-							<p>Chua, cay, ngọt</p>
-							<span><a href="#"></a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-2 special">
-				<div class="list">
-					<div class="item">
-						<div class="image">
-							<img src="img/chanhcom.jpg">
-							<div class="image-overlay">
-								<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
-							</div>
-						</div>
-						<div class="description">
-							<a href="product-detail.html">
-								<h3>Chanh cốm</h3>
-							</a>
-							<p>Ngọt, thơm</p>
-							<span><a href="#"></a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-2 special fix-sm-md">
-				<div class="list">
-					<div class="item">
-						<div class="image">
-							<img src="img/mo9.jpg">
-							<div class="image-overlay">
-								<a href="product-detail.html"><span>Xem Chi Tiết</span></a>
-							</div>
-						</div>
-						<div class="description">
-							<a href="product-detail.html">
-								<h3>Mơ xào</h3>
-							</a>
-							<p>Chua, man, ngot</p>
-							<span><a href="#"></a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	<section class="container-fluid vanhoa">
-		<div class="row">
-			<h2>VĂN HÓA ẨM THỰC</h2>
-			<div class="title">
-				<img src="img/title.png">
-			</div>
-
-			<div class="container-fluid vanhoa-list">
-				<div class="row">
-					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-lg-offset-1">
-						<div id="vanhoa1" class="vanhoa-detail wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
-							<div class="vanhoa-img">
-								<img src="img/vanhoa9.jpg">
-							</div>
-							<h3>“Món quà” quý giá của người dân Bắc Kạn</h3>
-							<a href="">
-								<div class="overlay">
-									<h3>“Món quà” quý giá của người dân Bắc Kạn</h3>
-									<p> Những quả mơ đá lớn lên trong sương gió của núi rừng, chắt chiu từng dưỡng chất từ đất mẹ không chỉ là người bạn thân thiết, là món quà quý giá mà thiên nhiên đã trao tặng cho người dân Bắc Kạn...</p>
-									<i class="fa fa-angle-right" aria-hidden="true"></i>
-									<span>Xem chi tiết</span>
+					<table class="table table-bordered cart-products rwd-table">
+						<tr>
+							<td>Ảnh</td>
+							<td><img src="img/chanhcom.jpg"></td>
+						</tr>
+						<tr>
+							<td>Tên sản phẩm</td>
+							<td>Mơ gừng chua ngọt - Hộp 500gr</td>
+						</tr>
+						<tr>
+							<td>Khối lượng</td>
+							<td>500gr</td>
+						</tr>
+						<tr>
+							<td>Đơn giá</td>
+							<td>100.000đ</td>
+						</tr>
+						<tr>
+							<td>Số lượng</td>
+							<td>
+								<div class="wan-spinner">
+									<a href="javascript:void(0)" class="minus" id="minus-cart">-</a>
+									<input type="text" id="item_28" class="total-mask" data-productid="28" data-productname="Hộp 250gr" value="3">
+									<a href="javascript:void(0)" class="plus" id="plus-cart">+</a>
 								</div>
-							</a>
-						</div>
-					</div>
-
-					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-						<div id="vanhoa2" class="vanhoa-detail wow fadeInDown">
-							<div class="vanhoa-img">
-								<img src="img/vanhoa6.jpg">
-							</div>
-							<h3>Nét đẹp văn hóa ẩm thực Việt</h3>
-							<a href="">
-								<div class="overlay">
-									<h3>Nét đẹp văn hóa ẩm thực Việt</h3>
-									<p>Ẩm thực là nét văn hóa tự nhiên hình thành trong cuộc sống. Nhất là đối với người Việt Nam, ẩm thực không chỉ là nét văn hóa về vật chất mà còn là văn hóa về tinh thần. </p>
-									<i class="fa fa-angle-right" aria-hidden="true"></i>
-									<span>Xem chi tiết</span>
-								</div>
-							</a>
-						</div>
-					</div>
-
-					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-						<div id="vanhoa3" class="vanhoa-detail wow fadeInRight">
-							<div class="vanhoa-img">
-								<img src="img/vanhoa3.jpg">
-							</div>
-							<h3>Văn hoá uống trà của người Việt</h3>
-
-							<a href="">
-								<div class="overlay">
-									<h3>Văn hoá uống trà của người Việt</h3>
-									<p> Ngày xưa còn nhỏ, tôi nghĩ rất đơn giản về trà, trà là thứ để khi khách đến nhà, ba mẹ lại bắt tôi pha trà mời khách uống. Sau này khi lớn lên, tôi mới hiểu về giá trị của chén trà, người ta có thể đến gần nhau hơn...</p>
-									<i class="fa fa-angle-right" aria-hidden="true"></i>
-									<span>Xem chi tiết</span>
-								</div>
-							</a>
-						</div>
-					</div>
-
-					<div class="col-xs-12 col-sm-12 col-md-6 col-md-push-3 col-lg-4 col-lg-push-3 col-lg-offset-1">
-						<div id="vanhoa5" class="vanhoa-detail wow slideInLeft">
-							<div class="vanhoa-img">
-								<img src="img/vanhoa8.jpg">
-							</div>
-							<h3>Nghe tinh túy đất trời chảy quyện trong tâm thức</h3>
-							<a href="">
-								<div class="overlay">
-									<h3>Nghe tinh túy đất trời chảy quyện trong tâm thức</h3>
-									<p>Từ nước Đức xa xôi, những người bạn Hồng Lam đã gửi lại những lời chia sẻ chân thành về món quà "Tinh hoa quà Việt".</p>
-									<i class="fa fa-angle-right" aria-hidden="true"></i>
-									<span>Xem chi tiết</span>
-								</div>
-							</a>
-						</div>
-					</div>
-
-					<div class="col-xs-12 col-sm-6 col-md-3 col-md-pull-6 col-lg-3 col-lg-pull-4">
-						<div id="vanhoa6" class="vanhoa-detail wow fadeInRight">
-							<div class="vanhoa-img">
-								<img src="img/vanhoa7.jpg">
-							</div>
-							<h3>Nhớ Mộc Châu mùa hoa mận</h3>
-							<a href="">
-								<div class="overlay">
-									<h3>Nhớ Mộc Châu mùa hoa mận</h3>
-									<p>Nhớ mỗi mùa hoa mận nở, Mộc Châu tựa chốn thiên đường làm đắm say, đê mê, sống dậy khoảng lặng trong lòng du khách lạc bước tới đây.</p>
-									<i class="fa fa-angle-right" aria-hidden="true"></i>
-									<span>Xem chi tiết</span>
-								</div>
-							</a>
-						</div>
-					</div>
-
-					<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-						<div id="vanhoa4" class="vanhoa-detail wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-							<div class="vanhoa-img">
-								<img src="img/vanhoa6.jpg">
-							</div>
-							<h3>Đón bạn với Tinh hoa quà Việt</h3>
-							<a href="">
-								<div class="overlay">
-									<h3>Đón bạn với Tinh hoa quà Việt</h3>
-									<p>Từ nước Đức xa xôi, những người bạn Hồng Lam đã gửi lại những lời chia sẻ chân thành về món quà "Tinh hoa quà Việt".</p>
-									<i class="fa fa-angle-right" aria-hidden="true"></i>
-									<span>Xem chi tiết</span>
-								</div>
-							</a>
-						</div>
-					</div>
-
+							</td>
+						</tr>
+						<tr>
+							<td>Thành tiền</td>
+							<td><b class="color-red">180,000 đ</b></td>
+						</tr>
+						<tr>
+							<td>Xóa</td>
+							<td>
+								<a href="javascript:void(0)">
+									<i class="fa fa-times-circle-o" aria-hidden="true"></i>
+								</a>
+							</td>
+						</tr>
+					</table>
 				</div>
 			</div>
-		</div>
-	</section>
 
-
-	<section class="container-fluid about-us">
-		<div class="row">
-			<div class="container-fluid about-wrap">
-				<div class="row">
-					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-lg-offset-1">
-						<div class="khach-hang">
-							<div class="about-title">
-								<h3>Phản hồi của khách hàng</h3>
-							</div>
-							<div class="quote">
-								<div class="quote-detail">
-									<p>Các sản phẩm của ô mai TOM STORE hầu hết mẫu mã đẹp, mang đậm phong cách truyền thống. Về hương vị, có lẽ do mình khó tính nên chỉ cảm thấy yêu thích một số dòng ô mai của TOM STORE thôi ;)</p>
-								</div>
-							</div>
-							<div class="user">
-								<div class="avatar">
-									<img src="img/user.jpg" alt="Anh Khach Hang" title="Khach hang: Touliver">
-								</div>
-								<div class="info">
-									<h3>Hoàng Touliver</h3>
-									<p>Producer, DJ</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-						<div class="video">
-							<div class="about-title">
-								<h3>Video</h3>
-							</div>
-							<div class="video-detail">
-								<div id="video1">
-									<iframe width="100%" src="https://www.youtube.com/embed/JtKZKxNFp3Y" frameborder="0" allowfullscreen></iframe>
-								</div>
-								<div id="video2">
-									<iframe width="100%" src="https://www.youtube.com/embed/VFzsSbdS7Sk" frameborder="0" allowfullscreen></iframe>
-								</div>
-								<div id="video3">
-									<iframe width="100%" src="https://www.youtube.com/embed/L1lU9ZgbhlA" frameborder="0" allowfullscreen></iframe>
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
-						<div class="facebook">
-							<div class="about-title">
-								<h3>facebook</h3>
-							</div>
-							<div class="facebook-detail">
-								<iframe width="100%" height="310" src="https://www.youtube.com/embed/fTUFZfJ2UKk" frameborder="0" allowfullscreen></iframe>
-							</div>
-						</div>
-					</div>
-
-
+			<div class="col-xs-12 col-sm-4 col-sm-push-5 col-md-4 col-md-push-4 col-lg-3 col-lg-offset-1 col-lg-push-4">
+				<div class="summary">
+					Tổng tiền: <b class="color-red">2.650.000 đ</b>
 				</div>
 			</div>
+
+			<div class="col-xs-12 col-sm-3 col-sm-push-5 col-md-4 col-md-push-4 col-lg-3 thanhtoan col-lg-push-4">
+				<button type="submit" class="btn btn-lg none-border-radius btn-block background-red color-white text-uppercase none-outline">Thanh toán</button>
+			</div>
+
+
+			<div class="col-xs-12 col-sm-5 col-sm-pull-7 col-md-4 col-md-pull-8 col-lg-3 col-lg-offset-1 col-lg-pull-7 deleteall">
+				<ul>
+					<li>
+						<a href="mo" class="btn btn"><i class="fa fa-long-arrow-left color-red"></i>Tiếp tục mua hàng</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" title="" onclick="deleteAllCart();" class="btn btn"><i class="fa fa-trash color-red"></i>Xóa tất cả</a>
+					</li>
+				</ul>
+			</div>
+
+
+
 		</div>
 	</section>
 
@@ -729,7 +442,6 @@
 		</div>
 	</section>
 
-
 	<footer class="container-fluid footer">
 		<div class="row footer-wrap">
 			<div class="container-fluid">
@@ -773,6 +485,7 @@
 						</div>
 					</div>
 				</div>
+
 			</div>
 		</div>
 	</footer>
@@ -803,9 +516,6 @@
 									<input type="password" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 form-control" id="password">
 								</div>
 							</form>
-
-
-
 							<div class="btn-login-sign-up">
 								<div id="lost-pass">
 									<a href="">Quên mật khẩu?</a>
@@ -824,7 +534,7 @@
 								</div>
 
 								<button type="button" class="btn btn-default" data-dismiss="modal">Hủy</button>
-								<a href="user-info.html"><button type="button" class="btn btn-primary">Đăng Nhập</button></a>
+								<button type="button" class="btn btn-primary">Đăng Nhập</button>
 							</div>
 						</div>
 
@@ -852,18 +562,13 @@
 									</div>
 
 									<div class="form-group login-form">
-										<label for="recipient-name" class="control-label">Số điện thoại:</label>
-										<input type="text" class=" col-xs-12 col-sm-12 col-md-4 col-lg-4 form-control">
-									</div>
-									<div class="form-group login-form">
-										<label for="recipient-name" class="control-label">Địa chỉ:</label>
-										<!-- <input type="text" class=" col-xs-12 col-sm-12 col-md-4 col-lg-4 form-control"> -->
-										<textarea class="form-control" rows="3"></textarea>
+										<label for="recipient-name" class="control-label">Ngày tháng năm sinh:</label>
+										<input type="text" class=" col-xs-12 col-sm-12 col-md-4 col-lg-4 form-control" id="datepicker">
 									</div>
 								</form>
 								<div class="btn-login-sign-up">
 									<button type="button" class="btn btn-default" data-dismiss="modal">Hủy</button>
-									<a href=""><button type="button" class="btn btn-primary">Đăng Kí</button></a>
+									<button type="button" class="btn btn-primary">Đăng Kí</button>
 								</div>
 							</div>
 						</div>

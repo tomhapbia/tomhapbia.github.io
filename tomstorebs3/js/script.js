@@ -33,6 +33,7 @@ var goi = [goi1,goi2,goi3,goi4,goi5,goi5,goi4,goi3,goi2,goi1];
 
 
 // Show product in list-product
+
 function changeListProduct (nameProduct) {
 	$('.noibat .title ul li a').removeClass('active');
 	$(nameProduct).addClass('active');
@@ -166,7 +167,6 @@ $(document).ready(function() {
 	$('#timkiem-mobile').focusout(function(){
 		$('.find-field-mobile').css('display', 'none');
 	});
-
 
 
 });
