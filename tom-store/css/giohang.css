@@ -319,13 +319,19 @@ a {
 }
 
 .summary {
-	text-align: center;
-	border: 1px solid #d0c69f;
+	text-align: right;
 	height: 45px;
 	line-height: 45px;
 	font-size: 18px;
 	position: relative;
 	margin-bottom: 20px;
+/*	margin-right: -30px;*/
+}
+.summary b {
+	font-size: 24px;
+}
+.giohang .thanhtoan {
+	margin-top: -40px;
 }
 .thanhtoan button {
 	background-color: #8b0304;
@@ -339,18 +345,21 @@ a {
 }
 .deleteall ul li {
 	display: inline-block;
+	margin-bottom: 10px;
 }
 .deleteall ul li a {
 	background: #fcf6e0;
-    border: 1px solid #8b0304;
-    margin-right: 5px;
-    color: black;
+	border: 1px solid #8b0304;
+	margin-right: 5px;
+	color: black;
 }
 .deleteall ul li a:hover {
 	color: #8b0304;
 }
 
-
+.float-right {
+	float: right;
+}
 
 
 
@@ -848,7 +857,7 @@ label {
 }
 
 
-@media (max-width: 1185px){
+@media (max-width: 1290px){
 	.nav-laptop-right {
 		display: none!important;
 	}
@@ -856,7 +865,7 @@ label {
 		display: block!important;
 	}
 }
-@media (min-width: 1185px) {
+@media (min-width: 1290px) {
 	.information-mobile {
 		display: none!important;
 	}
@@ -915,10 +924,13 @@ label {
 
 @media (min-width: 1025px) {
 	.navbar-nav {
-		margin-left: 100px;
+		margin-left: 20px;
 	}
 	.fix-sm-md {
 		display: block;
+	}
+	.summary {
+		margin-right: -20px;
 	}
 }
 
@@ -964,6 +976,9 @@ label {
 
 	.bs-lienhe-modal-lg .modal-body ul li {
 		list-style-position: outside;
+	}
+	.giohang .thanhtoan {
+		margin-top: -10px;
 	}
 
 }
@@ -1012,7 +1027,10 @@ label {
 	}
 	.giohang table tbody td {
 		text-align: left;
-		width: 50%;
+	}
+	.summary {
+		margin-right: 0px;
+		text-align: center;
 	}
 }
 

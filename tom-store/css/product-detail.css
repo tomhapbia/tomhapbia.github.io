@@ -936,7 +936,6 @@ span#btn-to-top:hover i {
 }
 
 
-
 /********************************/
 /*          Media Queries       */
 /********************************/
@@ -947,7 +946,7 @@ span#btn-to-top:hover i {
 }
 
 
-@media (max-width: 1185px){
+@media (max-width: 1290px){
 	.nav-laptop-right {
 		display: none!important;
 	}
@@ -955,7 +954,7 @@ span#btn-to-top:hover i {
 		display: block!important;
 	}
 }
-@media (min-width: 1185px) {
+@media (min-width: 1290px) {
 	.information-mobile {
 		display: none!important;
 	}
@@ -980,7 +979,6 @@ span#btn-to-top:hover i {
 	.container-fluid>.navbar-collapse {
 		margin-top: 5px;
 	}
-
 	.menu2 ul {
 		margin-bottom: 0px;
 	}
@@ -1015,10 +1013,13 @@ span#btn-to-top:hover i {
 
 @media (min-width: 1025px) {
 	.navbar-nav {
-		margin-left: 100px;
+		margin-left: 20px;
 	}
 	.fix-sm-md {
 		display: block;
+	}
+	.summary {
+		margin-right: -20px;
 	}
 }
 
@@ -1065,6 +1066,9 @@ span#btn-to-top:hover i {
 	.bs-lienhe-modal-lg .modal-body ul li {
 		list-style-position: outside;
 	}
+	.giohang .thanhtoan {
+		margin-top: -10px;
+	}
 
 }
 @media (max-width: 768px) {
@@ -1107,9 +1111,17 @@ span#btn-to-top:hover i {
 	.noibat .title h3 {
 		text-align: center;
 	}
+	.giohang table tbody td {
+		border: none!important;
+	}
+	.giohang table tbody td {
+		text-align: left;
+	}
+	.summary {
+		margin-right: 0px;
+		text-align: center;
+	}
 }
-
-
 
 
 

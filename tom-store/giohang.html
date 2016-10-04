@@ -202,7 +202,6 @@
 						<tr class="background-brown">
 							<th class="cart-product-img">Hình ảnh</th>
 							<th class="cart-product-title">Tên sản phẩm</th>
-							<th class="cart-product-weight">Khối lượng</th>
 							<th class="cart-product-price">Đơn giá</th>
 							<th class="cart-product-quantity">Số lượng</th>
 							<th class="cart-product-total">Thành tiền</th>
@@ -217,7 +216,6 @@
 							<td data-th="Tên sản phẩm">
 								<a href="">Mơ gừng chua ngọt - Hộp 500gr</a>
 							</td>
-							<td>500gr</td>
 							<td data-th="Đơn giá">95.000 đ</td>
 							<td data-th="Số lượng" id="fix-td-sm">
 								<div class="wan-spinner">
@@ -226,7 +224,7 @@
 									<a href="javascript:void(0)" class="plus" id="plus-cart">+</a>
 								</div>
 							</td>
-							<td data-th="Thành tiền"><b class="color-red">2,470,000 đ</b></td>
+							<td data-th="Thành tiền"><b class="color-red float-right">2,470,000 đ</b></td>
 							<td data-th="Xóa">
 								<a href="javascript:void(0)">
 									<i class="fa fa-times-circle-o" aria-hidden="true"></i>
@@ -240,7 +238,6 @@
 							<td data-th="Tên sản phẩm">
 								<a href="">Mơ gừng chua ngọt - Hộp 250gr</a>
 							</td>
-							<td data-th="Khối lượng">250gr</td>
 							<td data-th="Đơn giá">60.000 đ</td>
 							<td data-th="Số lượng" id="fix-td-sm">
 								<div class="wan-spinner">
@@ -249,7 +246,7 @@
 									<a href="javascript:void(0)" class="plus" id="plus-cart">+</a>
 								</div>
 							</td>
-							<td data-th="Thành tiền"><b class="color-red">180,000 đ</b></td>
+							<td data-th="Thành tiền"><b class="float-right color-red">180,000 đ</b></td>
 							<td data-th="Xóa">
 								<a href="javascript:void(0)">
 									<i class="fa fa-times-circle-o" aria-hidden="true"></i>
@@ -273,10 +270,6 @@
 							<td>Mơ gừng chua ngọt - Hộp 500gr</td>
 						</tr>
 						<tr>
-							<td>Khối lượng</td>
-							<td>500gr</td>
-						</tr>
-						<tr>
 							<td>Đơn giá</td>
 							<td>100.000đ</td>
 						</tr>
@@ -314,10 +307,6 @@
 							<td>Mơ gừng chua ngọt - Hộp 500gr</td>
 						</tr>
 						<tr>
-							<td>Khối lượng</td>
-							<td>500gr</td>
-						</tr>
-						<tr>
 							<td>Đơn giá</td>
 							<td>100.000đ</td>
 						</tr>
@@ -347,26 +336,27 @@
 				</div>
 			</div>
 
-			<div class="col-xs-12 col-sm-4 col-sm-push-5 col-md-4 col-md-push-4 col-lg-3 col-lg-offset-1 col-lg-push-4">
+			<div class="col-xs-12 col-sm-6 col-sm-push-6 col-md-5 col-md-push-6 col-lg-5 col-lg-offset-1 col-lg-push-4">
 				<div class="summary">
 					Tổng tiền: <b class="color-red">2.650.000 đ</b>
 				</div>
 			</div>
 
-			<div class="col-xs-12 col-sm-3 col-sm-push-5 col-md-4 col-md-push-4 col-lg-3 thanhtoan col-lg-push-4">
-				<a href="thanhtoan.html"><button type="submit" class="btn btn-lg none-border-radius btn-block background-red color-white text-uppercase none-outline">Thanh toán</button></a>
-			</div>
-
-
-			<div class="col-xs-12 col-sm-5 col-sm-pull-7 col-md-4 col-md-pull-8 col-lg-3 col-lg-offset-1 col-lg-pull-7 deleteall">
+			<div style="margin-top: 0; margin-bottom: 10px;" class="col-xs-12 visible-xs col-sm-3 col-md-4  col-lg-3 col-lg-offset-1 col-lg-push-7 thanhtoan">
+					<a href="thanhtoan.html"><button type="submit" class="btn btn-lg none-border-radius btn-block background-red color-white text-uppercase none-outline">Thanh toán</button></a>
+				</div>
+			<div class="col-xs-12 col-sm-5 col-sm-pull-6 col-md-4 col-lg-2 col-lg-offset-1 col-lg-pull-6 deleteall col-md-pull-5">
 				<ul>
 					<li>
-						<a href="mo" class="btn btn"><i class="fa fa-long-arrow-left color-red"></i>Tiếp tục mua hàng</a>
+						<a href="" class="btn btn"><i style="margin-right: 5px;" class="fa fa-long-arrow-left color-red"></i>Tiếp tục mua hàng</a>
 					</li>
 					<li>
-						<a href="javascript:void(0);" title="" onclick="deleteAllCart();" class="btn btn"><i class="fa fa-trash color-red"></i>Xóa tất cả</a>
+						<a href="javascript:void(0);" title="" onclick="deleteAllCart();" class="btn btn"><i style="margin-right: 5px;" class="fa fa-trash color-red"></i>Xóa tất cả</a>
 					</li>
 				</ul>
+			</div>
+			<div class="col-xs-12 hidden-xs col-sm-5 col-md-4 col-md-push-2 col-lg-3 col-lg-offset-1 col-lg-push-7 thanhtoan">
+				<a href="thanhtoan.html"><button type="submit" class="btn btn-lg none-border-radius btn-block background-red color-white text-uppercase none-outline">Thanh toán</button></a>
 			</div>
 
 

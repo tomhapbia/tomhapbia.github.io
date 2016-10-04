@@ -744,7 +744,7 @@ span#btn-to-top:hover i {
 }
 
 
-@media (max-width: 1185px){
+@media (max-width: 1290px){
 	.nav-laptop-right {
 		display: none!important;
 	}
@@ -752,7 +752,7 @@ span#btn-to-top:hover i {
 		display: block!important;
 	}
 }
-@media (min-width: 1185px) {
+@media (min-width: 1290px) {
 	.information-mobile {
 		display: none!important;
 	}
@@ -809,19 +809,21 @@ span#btn-to-top:hover i {
 	}
 }
 
-
 @media (min-width: 1025px) {
 	.navbar-nav {
-		margin-left: 150px;
+		margin-left: 20px;
 	}
 	.fix-sm-md {
 		display: block;
+	}
+	.summary {
+		margin-right: -20px;
 	}
 }
 
 @media (max-width: 1024px) {
 	.nav-laptop {
-		margin-left: 100px!important;
+		margin-left: 70px!important;
 	}
 
 }
@@ -845,7 +847,6 @@ span#btn-to-top:hover i {
 	.map .map-wrap h3.h3-center {
 		text-align: center;
 	}
-	/*.socials-login,*/
 	.login-form {
 		padding: 0 100px;
 	}
@@ -863,8 +864,12 @@ span#btn-to-top:hover i {
 	.bs-lienhe-modal-lg .modal-body ul li {
 		list-style-position: outside;
 	}
+	.giohang .thanhtoan {
+		margin-top: -10px;
+	}
+
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 	.navbar-default .navbar-brand img {
 		width: 250px !important;
 	}
@@ -872,7 +877,12 @@ span#btn-to-top:hover i {
 	.noibat h2 {
 		font-size: 32px;
 	}
+	.about-us .about-wrap .khach-hang .quote .quote-detail {
+		padding-bottom: 190px;
+	}
+
 	.about-us .about-wrap .khach-hang .quote {
+		width: 95%;
 		margin: auto;
 	}
 	.carousel-control .icon-prev, .carousel-control .icon-next {
@@ -896,8 +906,20 @@ span#btn-to-top:hover i {
 		width: 100%;
 		min-height: 70px;
 	}
+	.noibat .title h3 {
+		text-align: center;
+	}
+	.giohang table tbody td {
+		border: none!important;
+	}
+	.giohang table tbody td {
+		text-align: left;
+	}
+	.summary {
+		margin-right: 0px;
+		text-align: center;
+	}
 }
-
 
 
 
