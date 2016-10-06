@@ -4,30 +4,30 @@ var goi1= {
 	title: 'Hộp quà Thái Hòa',
 	description: 'Thanh lịch, cổ điển',
 	img: 'thaihoa.jpg'
-}
+};
 var goi2 = {
 	title: 'Hộp quà Phát Lộc',
 	description: 'Hiện đại, độc đáo',
 	img: 'phatloc.jpg'
-}
+};
 
 var goi3 = {
 	title: 'Hộp quà Bình An',
 	description: 'Chân thành, ý nghĩa',
 	img: 'binhan.jpg'
-}
+};
 
 var goi4 = {
 	title: 'Hộp quà Phú Quý',
 	description: 'Tinh tế, sang trọng',
 	img: 'phuquy.jpg'
-}
+};
 
 var goi5 = {
 	title: 'Hộp quà Phật độ',
 	description: 'Cổ điển, sang trọng',
 	img: 'traphatdo.jpg'
-}
+};
 
 var goi = [goi1,goi2,goi3,goi4,goi5,goi5,goi4,goi3,goi2,goi1];
 
@@ -39,16 +39,16 @@ function changeListProduct (nameProduct) {
 	var idProduct = $(nameProduct).attr('id');
 	switch(idProduct) {
 		case 'goiquatang':
-			$('.breadcrumb .active-breadcrumb').text('Gói quà tặng')
+			$('.breadcrumb .active-breadcrumb').text('Gói quà tặng');
 		break;
 		case 'che':
-			$('.breadcrumb .active-breadcrumb').text('Chè')
+			$('.breadcrumb .active-breadcrumb').text('Chè');
 		break;
 		case 'omai':
-			$('.breadcrumb .active-breadcrumb').text('Ô Mai')
+			$('.breadcrumb .active-breadcrumb').text('Ô Mai');
 		break;
 		case 'keo':
-			$('.breadcrumb .active-breadcrumb').text('Kẹo')
+			$('.breadcrumb .active-breadcrumb').text('Kẹo');
 		break;
 	}
 	$('.noibat .special').remove();
@@ -61,20 +61,20 @@ function changeListProduct (nameProduct) {
 			addProduct += '<p>'+ goi[i].description +'</p><span><a href="#"></a></span></div></div></div></div>';
 			$('.noibat .row #list-product').append(addProduct);
 		} else{
-			var addProduct = '<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 special">';
+		 	addProduct = '<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 special">';
 			addProduct += '<div class="list"><div class="item"><div class="image"><img src="img/' + goi[i].img + '">';
 			addProduct += '<div class="image-overlay"><a href="product-detail.html"><span>Xem Chi Tiết</span></a></div></div>';
 			addProduct += '<div class="description"><a href="product-detail.html"><h3>' + goi[i].title + '</h3></a>';
 			addProduct += '<p>'+ goi[i].description +'</p><span><a href="#"></a></span></div></div></div></div>';
 			$('.noibat .row #list-product').append(addProduct);
-		};
-	};
+		}
+	}
 }
 
 
-$(document).ready(function() {	
+$(document).ready(function() {
 
-	// wow js 
+	// wow js
 
 	new WOW().init();
 
@@ -83,7 +83,7 @@ $(document).ready(function() {
 
 	$('.navbar-toggle').on('click', function(){
 		$('li.dropdown').children('ul').removeClass('dropdown-show');
-	})
+	});
 
 
 	$('li.dropdown').on('click', function() {
@@ -92,11 +92,11 @@ $(document).ready(function() {
 		} else{
 			$('li.dropdown').children('ul').removeClass('dropdown-show');
 			$(this).children('ul').addClass('dropdown-show');
-		};
+		}
 	});
 
 	//control carousel
-	
+
 	$("#myBtn").click(function(){
 		$("#bs-carousel").carousel("prev");
 	});
@@ -126,7 +126,7 @@ $(document).ready(function() {
 			$('#btn-to-top').css('display', 'block');
 		} else{
 			$('#btn-to-top').css('display', 'none');
-		};
+		}
 	});
 
 	$('#btn-to-top').click(function(){
@@ -136,11 +136,3 @@ $(document).ready(function() {
 	});
 
 });
-
-
-
-
-
-
-
-

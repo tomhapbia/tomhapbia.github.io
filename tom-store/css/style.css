@@ -404,7 +404,6 @@ opacity: 1;
 	border-top: 1px solid #d1d1d1;
 }
 #support .support-wrap {
-	width: 90%;
 	margin: 0 auto;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -1307,7 +1306,7 @@ span#btn-to-top:hover i {
 		border-bottom: 1px solid #c1c1c1;
 	}
 	#support {
-		min-height: 165px;
+		min-height: 270px;
 	}
 	#support .support-wrap {
 		width: 100%;

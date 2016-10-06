@@ -4,30 +4,30 @@ var goi1= {
 	title: 'Hộp quà Thái Hòa',
 	description: 'Thanh lịch, cổ điển',
 	img: 'thaihoa.jpg'
-}
+};
 var goi2 = {
 	title: 'Hộp quà Phát Lộc',
 	description: 'Hiện đại, độc đáo',
 	img: 'phatloc.jpg'
-}
+};
 
 var goi3 = {
 	title: 'Hộp quà Bình An',
 	description: 'Chân thành, ý nghĩa',
-	img: 'binhan.jpg'
-}
+	img: "binhan.jpg"
+};
 
 var goi4 = {
 	title: 'Hộp quà Phú Quý',
 	description: 'Tinh tế, sang trọng',
 	img: 'phuquy.jpg'
-}
+};
 
 var goi5 = {
 	title: 'Hộp quà Phật độ',
 	description: 'Cổ điển, sang trọng',
 	img: 'traphatdo.jpg'
-}
+};
 
 var goi = [goi1,goi2,goi3,goi4,goi5,goi5,goi4,goi3,goi2,goi1];
 
@@ -72,6 +72,13 @@ function changeListProduct (nameProduct) {
 	};
 }
 
+ function showMenuMb() {
+ 	$(this).on('click', function(){
+ 		$('#mySidenav').css('width', '200px');
+ 		$('#mySidenav').css('transition', 'all 2s');
+ 	})
+ }
+
 
 $(document).ready(function() {	
 
@@ -84,7 +91,7 @@ $(document).ready(function() {
 
 	$('.navbar-toggle').on('click', function(){
 		$('li.dropdown').children('ul').removeClass('dropdown-show');
-	})
+	});
 
 
 	$('li.dropdown').on('click', function() {
@@ -140,12 +147,11 @@ $(document).ready(function() {
 	// show find-field
 
 
-
 	$('.find-laptop').on('click', function(){
 		$('.find-laptop-overlay').css('display', 'block');
 		$('#timkiem').css('display', 'block');
 		$('#timkiem').trigger( "focus" );
-	})
+	});
 
 
 	$('#timkiem').focusout(function(){
@@ -157,17 +163,16 @@ $(document).ready(function() {
 		if (event.which == 13) {
 			$('.find-laptop-overlay').css("display", 'none');
 		}
-	})
+	});
 
 	$('.find-moblie').on('click', function(){
 		$('.find-field-mobile').css('display', 'block');
 		$('#timkiem-mobile').trigger( "focus" );
-	})
+	});
 
 	$('#timkiem-mobile').focusout(function(){
 		$('.find-field-mobile').css('display', 'none');
 	});
-
 
 });
 
