@@ -34,6 +34,10 @@ function showTerminalMobile(c) {
 
 
 $(document).ready(function() {
+	$('[data-toggle="tooltip"]').tooltip({
+		trigger: 'hover'
+	})
+
 	var width = $('.left-content').width();
 	var height = $('.left-content').height();
 	$('#myVideo').attr('width', width);
@@ -61,15 +65,13 @@ $(document).ready(function() {
 	var heightRightContent = height - $('.nav-tabs').height();
 	$('.right-content .tab-content').css('height', heightRightContent);
 
-	$('[data-toggle="tooltip"]').tooltip();
-	
-
 	var tabID = 1;
 	$('#btn-add-tab-file').click(function () {
 		tabID++;
 		$('#tablist').append($('<li role="presentation" ><a href="#tab' + tabID + '" role="tab" data-toggle="tab">Tab ' + tabID + '<button class="close" type="button" title="Remove this page">×</button></a></li>'));
 		$('.tab-content.sida').append($('<div role="tabpanel" class="tab-pane fade" id="tab' + tabID + '">Tab '+ tabID +' content</div>'));
 	});
+
 	$('#tablist').on('click','.close',function(){
 		var tabID = $(this).parents('a').attr('href');
 		$(this).parents('li').remove();
