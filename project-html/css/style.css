@@ -122,7 +122,6 @@ header {
 	display: inline-block;
 }
 #banner-title .usersInfo p {
-	float: left;
 	overflow: hidden;
 	color: #d6d6d6;
 	margin: 0 15px;
@@ -187,6 +186,9 @@ header {
 	color: #5f5f5f;
 	vertical-align: middle;
 	margin: 20px 0 50px;
+}
+.content-img img {
+	width: 100%!important;
 }
 
 .content-detail {
@@ -372,6 +374,8 @@ header {
 	box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+
+
 /*************************/
 /*         FOOTER        */
 /*************************/
@@ -546,7 +550,7 @@ label {
 }
 
 .bs-example-modal-lg .fa {
-     font: normal normal normal 14px/1 FontAwesome !important; 
+	font: normal normal normal 14px/1 FontAwesome !important; 
 }
 
 /*************************/
@@ -555,7 +559,7 @@ label {
 
 
 span#btn-to-top {
-	border: 2px solid #FF795D;
+	border: 1px solid #FF795D;
 	background-color: #2B3D52;
 	color: #FF795D;
 	width: 50px;
@@ -574,64 +578,65 @@ span#btn-to-top {
 	-webkit-transition: all ease-in-out .2s;
 	display: none;
 }
-/*span#btn-to-top:hover {
-	background-color: #f8f2dc;
-	color: #8b0304;
-	border: 2px solid #8b0304;
-	}*/
-	span#btn-to-top:hover i {
-		transform: translateY(-3px);
+span#btn-to-top:hover i {
+	transform: translateY(-3px);
+}
+
+
+
+
+/*************************/
+/*      MEDIA-QUERY      */
+/*************************/
+
+@media (max-width: 768px){
+	.top-address span:last-child {
+		margin-bottom: 20px;
+		display: inline-block;
+	}
+}
+
+@media (min-width: 768px){
+	.top-line .top-address {
+		float: left;
+	}
+	.top-line .account {
+		float: right;
+		text-align: right;
+	}
+	.top-line .top-address {
+		text-align: left;
 	}
 
-
-
-
-	/*************************/
-	/*      MEDIA-QUERY      */
-	/*************************/
-
-	@media (max-width: 768px){
-		.top-address span:last-child {
-			margin-bottom: 20px;
-			display: inline-block;
-		}
+	#banner-title .usersInfo p {
+		float: left;
 	}
 
-	@media (min-width: 768px){
-		.top-line .top-address {
-			float: left;
-		}
-		.top-line .account {
-			float: right;
-			text-align: right;
-		}
-		.top-line .top-address {
-			text-align: left;
-		}
-		.reviewText {
-			min-height: 75px;
-		}
+	.reviewText {
+		min-height: 75px;
+	}
 
-		.modal-dialog {
-			width: 400px;
-			margin: 30px auto;
-		}
-		@media (max-width: 700px){
-			#banner-title .usersInfo p {
-				float: none;
-			}
-			.top-line .top-address, 
-			.top-line .account {
-				text-align: center;
-			}
-		}
+	.modal-dialog {
+		width: 400px;
+		margin: 30px auto;
+	}
+}
+@media (max-width: 700px){
+	#banner-title .usersInfo p {
+		float: none;
+	}
+	.top-line .top-address, 
+	.top-line .account {
+		text-align: center;
+	}
+}
 
 
-		@media (max-width: 1000px){
-			.navbar-default .navbar-nav>li {
-				border: none!important;
-			}
-		}
+@media (max-width: 1000px){
+	.navbar-default .navbar-nav>li {
+		border: none!important;
+	}
+}
 
 
 
