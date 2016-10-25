@@ -38,6 +38,14 @@ if ($('.tagKhoahoc').css('margin-bottom') == '0px'){
 }
 
 
+//COUNTER
+
+
+     $('.counter').counterUp({
+         delay: 10,
+         time: 1000
+     });
+
 
 
 

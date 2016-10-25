@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
@@ -17,7 +16,7 @@
     <link rel="stylesheet" href="css/lobibox.css">
     <link rel="stylesheet" href="css/waves.min.css">
     <link rel="stylesheet" href="css/monokai.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/hoc.css">
+    <link rel="stylesheet" href="css/hoctest.css">
 </head>
 <body>
 
@@ -66,7 +65,7 @@
                         scrolling="auto" allowfullscreen style="position:absolute;"></iframe>
             </div>
 
-            <button type="button" class="quiz-lesson" data-toggle="modal" data-target="#modalQuiz">
+            <button class="quiz-lesson" data-toggle="modal" data-target="#modalQuiz">
                 Luyện tập QUIZ!
             </button>
 
@@ -80,7 +79,7 @@
         <div class="right-content">
             <div>
                 <ul class="nav nav-tabs" role="tablist">
-                    <li><a style="cursor: pointer" href="javascript:void(0)" onclick="showTabList(this)" aria-controls="" role="tab" data-toggle="tab"><i id="controls-laptop" class="fa fa-chevron-left" aria-hidden="true"></i></a>
+                    <li><a href="javascript:void(0)" onclick="showTabList(this)" aria-controls="" role="tab" data-toggle="tab"><i id="controls-laptop" class="fa fa-chevron-left" aria-hidden="true"></i></a>
                     </li>
                     <li data-toggle="tooltip" data-placement="bottom" title="Giáo trình" role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-bookmark-o" aria-hidden="true"></i></a></li>
                     <li data-toggle="tooltip" data-placement="bottom" title="Ghi chú" role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-book" aria-hidden="true"></i></a>
@@ -98,10 +97,10 @@
                             </div>
                             <div class="panel-body">
                                 <ul>
-                                    <li class="active"><a href=""><i class="fa fa-check-circle" aria-hidden="true"></i> 1.1 HTML là gì? <span>2:09</span></a></li>
-                                    <li><a href=""><i class="fa fa-check-circle" aria-hidden="true"></i> 1.2 Ứng dụng HTML đầu tiên <span>9:59</span></a></li>
-                                    <li><a href=""><i class="fa fa-check-circle" aria-hidden="true"></i> 1.3 Heading, Paragraph & Special character <span>7:29</span></a></li>
-                                    <li><a href=""><i class="fa fa-check-circle" aria-hidden="true"></i> 1.4 Các thẻ format text <span>5:29</span></a></li>
+                                    <li class="active"><a href="">1.1 HTML là gì? <span>2:09</span></a></li>
+                                    <li><a href="">1.2 Ứng dụng HTML đầu tiên <span>9:59</span></a></li>
+                                    <li><a href="">1.3 Heading, Paragraph & Special character <span>7:29</span></a></li>
+                                    <li><a href="">1.4 Các thẻ format text <span>5:29</span></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -530,15 +529,13 @@
                         </div>
                         <!-- Nav tabs -->
                         <ul class="nav nav-tabs" id="tablist" role="tablist">
-                            <li role="presentation" class="active"><a href="#t1" aria-controls="t1" role="tab"
-                                                                      data-toggle="tab">script.js</a></li>
+                            <li role="presentation" class="active"><a href="#t1" aria-controls="t1" role="tab" data-toggle="tab">script.js</a></li>
                             <li role="presentation"><a href="#t2" aria-controls="t2" role="tab" data-toggle="tab">main.css</a>
                             </li>
                             <li role="presentation"><a href="#t3" aria-controls="t3" role="tab" data-toggle="tab">user.php</a>
                             </li>
 
-                            <button type="button" id="btn-add-tab-file" class="btn btn-primary"><span class=""></span> <i
-                                    class="fa fa-plus" aria-hidden="true"></i></button>
+                            <button type="button" id="btn-add-tab-file" class="btn btn-primary"><span class=""></span> <i class="fa fa-plus" aria-hidden="true"></i></button>
 
                             <button type="button" id="btn-share" class="btn btn-primary pull-right"><span class="">SHARE</span> <i class="fa fa-share-alt" aria-hidden="true"></i>
                             </button>
@@ -565,7 +562,7 @@ $(document).ready(function() {
    $('.tab-content').css('height', heightRightContent);
 });
 
-	
+
 
  var heightRightContent = height - $('.nav-tabs').height();
  $('.tab-content').css('height', heightRightContent);

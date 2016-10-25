@@ -119,7 +119,8 @@ header {
 	margin-right: auto;
 }
 #banner-title .usersInfo div {
-	display: inline-block;
+	text-align: center;
+	overflow: hidden;
 }
 #banner-title .usersInfo p {
 	overflow: hidden;
@@ -553,6 +554,8 @@ label {
 	font: normal normal normal 14px/1 FontAwesome !important; 
 }
 
+
+
 /*************************/
 /*        BTN-TO-TOP     */
 /*************************/
@@ -619,6 +622,10 @@ span#btn-to-top:hover i {
 	.modal-dialog {
 		width: 400px;
 		margin: 30px auto;
+	}
+
+	#banner-title .usersInfo div {
+		display: inline-block;
 	}
 }
 @media (max-width: 700px){

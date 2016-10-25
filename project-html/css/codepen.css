@@ -109,6 +109,7 @@ header {
 
 .penlist .new-pen {
 	font-family: "Noto Sans", sans-serif;
+	text-align: center;
 	font-size: 18px;
 	margin-top: 10px;
 	letter-spacing: 0;
@@ -117,18 +118,16 @@ header {
 	border-radius: 3px;
 	border: none;
 	color: #ffffff;
-	padding: 10px 20px !important;
+	padding: 10px!important;
 	display: block;
-	float: left;
 	transition: all .3s ease-in-out;
-	margin-right: 20px;
 }
 
 .search-pen {
 	margin-top: 10px;
-	margin-bottom: 50px;
 	height: 45px;
-	margin-left: -15px;
+	padding-left:15px;
+	padding-right:0;
 }
 .search-pen span button,
 .search-pen input {
@@ -227,6 +226,21 @@ header {
 	color: #33485F;
 }
 
+.sort {
+	margin-top:10px;
+	height:45px;
+	margin-bottom: 50px;
+}
+.sort span {
+	display: inline-block;
+	line-height:45px;
+}
+.sort select {
+	display: inline-block;
+	width:50%;
+	height:45px;
+	margin-left:5px;
+}
 
 
 
@@ -476,6 +490,9 @@ span#btn-to-top:hover i {
 		width: 400px;
 		margin: 30px auto;
 	}
+	.sort {
+		text-align: right;
+	}
 }
 @media (max-width: 700px){
 	#banner-title .usersInfo p {
@@ -484,6 +501,9 @@ span#btn-to-top:hover i {
 	.top-line .top-address, 
 	.top-line .account {
 		text-align: center;
+	}
+	.search-pen {
+		padding-left:0;
 	}
 }
 

@@ -5,11 +5,11 @@ function showTabList(a){
 			$(a).children().attr('class', 'fa fa-chevron-right');
 		} else{
 			$(a).children().attr('class', 'fa fa-chevron-left');
-		};
+		}
 	} else{
 		$('#expandMobile').children('i').attr('clas','fa fa-chevron-left');
 		$('.right-content').css('margin-left','100%');
-	};
+	}
 }
 
 function showTabListMobile(b){
@@ -36,12 +36,21 @@ function showTerminalMobile(c) {
 $(document).ready(function() {
 	$('[data-toggle="tooltip"]').tooltip({
 		trigger: 'hover'
-	})
+	});
 
 	var width = $('.left-content').width();
 	var height = $('.left-content').height();
 	$('#myVideo').attr('width', width);
 	$('#myVideo').attr('height', height);
+
+
+	// var heightCodeNow = $('.code-terminal').outerHeight();
+	// console.log(heightCodeNow);
+	// $('.folder').css('height', heightCodeNow);
+	// $('.fixHeightFolder').css('height', heightCodeNow);
+	// console.log(heightCodeNow);
+
+
 	$(window).resize(function(){
 		var width = $('.left-content').width();
 		var height = $('.left-content').height();
@@ -55,11 +64,15 @@ $(document).ready(function() {
 
 
 	var heightCodeNow = $('.code-terminal').height();
+	$('.folder').css('height', heightCodeNow);
+	$('.fixHeightFolder').css('height', heightCodeNow);
 	$(window).resize(function(){
 		var heightCodeNow = $('.code-terminal').height();
 		$('.folder').css('height', heightCodeNow);
+		$('.fixHeightFolder').css('height', heightCodeNow);
 	});
-	$('.folder').css('height', heightCodeNow);
+
+
 
 
 	var heightRightContent = height - $('.nav-tabs').height();
