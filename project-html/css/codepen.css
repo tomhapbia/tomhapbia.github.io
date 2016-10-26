@@ -129,6 +129,10 @@ header {
 	padding-left:15px;
 	padding-right:0;
 }
+
+.search-pen .btn {
+	border: 1px solid #c4af62;
+}
 .search-pen span button,
 .search-pen input {
 	height: 45px;
@@ -459,10 +463,16 @@ span#btn-to-top:hover i {
 /*      MEDIA-QUERY      */
 /*************************/
 
-@media (max-width: 768px){
+@media (max-width: 767px){
 	.top-address span:last-child {
 		margin-bottom: 20px;
 		display: inline-block;
+	}
+	.sort select {
+		width:calc(100% - 65px);
+	}
+	.sort {
+		padding: 0;
 	}
 }
 
@@ -492,6 +502,7 @@ span#btn-to-top:hover i {
 	}
 	.sort {
 		text-align: right;
+		padding-right:0;
 	}
 }
 @media (max-width: 700px){
