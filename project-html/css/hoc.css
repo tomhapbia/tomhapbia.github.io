@@ -533,6 +533,11 @@ pre code {
 	padding:0;
 	border-radius: 2px;
 }
+.submenu-wrap .nav li.active a:focus,
+.submenu-wrap .nav li.active a:active,
+.submenu-wrap .nav li.active a:hover {
+	border: none;
+}
 
 
 /*************************/
