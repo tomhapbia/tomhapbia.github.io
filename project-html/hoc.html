@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Hoc editor</title>
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -97,8 +97,7 @@
                             href="#messages" aria-controls="messages" role="tab" data-toggle="tab"><i
                             class="fa fa-comments" aria-hidden="true"></i></a></li>
                     <li data-toggle="tooltip" data-placement="bottom" title="Xếp hạng" role="presentation"><a
-                            href="#settings" aria-controls="settings" role="tab" data-toggle="tab"><i
-                            class="fa fa-trophy" aria-hidden="true"></i></a></li>
+                            href="#settings" aria-controls="settings" role="tab" data-toggle="tab"><i class="fa fa-trophy" aria-hidden="true"></i></a></li>
                 </ul>
 
                 <!-- Tab panes -->
@@ -526,15 +525,15 @@
             <h2>Code Now!</h2>
             <div class="row fixHeightFolder">
                 <div class="folder">
-                    <a href="">
+                    <a href="javasctipt:void(0)">
                         <i class="fa fa-caret-down" aria-hidden="true"></i>
                         <i class="fa fa-folder iconfolder" aria-hidden="true"></i>
-                        <span>TechMaster</span>
+                        <span>root folder</span>
                     </a>
                     <div id="TechMaster" class="submenu-wrap">
                         <ul class="nav nav-tabs" role="tablist">
                             <li role="presentation" class="active">
-                                <a href="#t1" aria-controls="t1" role="tab" data-toggle="tab">
+                                <a style="line-height:30px;" href="#t1" aria-controls="t1" role="tab" data-toggle="tab">
                                     <div class="subMenuFolder1" style="border-radius: 2px;"><i class="fa fa-css3" aria-hidden="true"></i> main.css
                                     </div>
                                 </a>
@@ -545,6 +544,12 @@
                                         <img width="20px" style="display: inline-block; margin-top:-5px;" src="img/js.svg" alt="">
                                         <span
                                                 style="margin-top:5px;text-align:center;line-height:20px;display: inline-block;">script.js</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a style="line-height:30px;" href="#t4" aria-controls="t4" role="tab" data-toggle="tab">
+                                    <div class="subMenuFolder1" style="border-radius: 2px;"><i class="fa fa-html5" aria-hidden="true"></i> index.html
                                     </div>
                                 </a>
                             </li>
@@ -568,16 +573,16 @@
                         </div>
                         <!-- Nav tabs -->
                         <ul class="nav nav-tabs" id="tablist" role="tablist">
-                            <li role="presentation" class="active"><a href="#t1" aria-controls="t1" role="tab"
-                                                                      data-toggle="tab">script.js</a></li>
-                            <li role="presentation"><a href="#t2" aria-controls="t2" role="tab" data-toggle="tab">main.css</a>
+                            <li role="presentation" class="active"><a href="#t1" aria-controls="t1" role="tab" data-toggle="tab">main.css</a></li>
+                            <li role="presentation"><a href="#t2" aria-controls="t2" role="tab" data-toggle="tab">script.js</a>
                             </li>
-                            <li role="presentation"><a href="#t3" aria-controls="t3" role="tab" data-toggle="tab">user.php</a>
+                            <li role="presentation"><a href="#t3" aria-controls="t3" role="tab" data-toggle="tab">index.html</a>
+                            </li>
+                            <li role="presentation"><a href="#t4" aria-controls="t4" role="tab" data-toggle="tab">user.php</a>
                             </li>
 
                             <button type="button" id="btn-add-tab-file" class="btn btn-primary"><span class=""></span>
-                                <i
-                                        class="fa fa-plus" aria-hidden="true"></i></button>
+                                <i  class="fa fa-plus" aria-hidden="true"></i></button>
 
                             <button data-toggle="modal" data-target="#saveCodepen" type="button" id="btn-share"
                                     class="btn btn-primary pull-right"><span class="">SAVE</span> <i
@@ -591,203 +596,186 @@
 
                         <!-- Tab panes -->
                         <div class="tab-content sida">
-                            <div role="tabpanel" class="tab-pane active" id="t1">
-									<pre class="javascript">
-										<code>
+                            <div style="position: relative;width:100%; height: 100%; overflow: hidden" role="tabpanel" class="tab-pane active" id="t1">
+header {
+    background-color: #33485F;
+    color: #cccccc;
+    overflow: hidden;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.top-line {
+    overflow: hidden;
+    padding: 5px 0 20px;
+}
+.bottom-line {
+    border-top: 1px solid #ccc;
+}
+.navbar-default {
+    background-color: #33485F;
+    border: none;
+}
+.navbar-brand {
+    padding: 0;
+}
+.top-line span {
+    font-size: 14px;
+    padding: 1px 5px;
+}
+.top-line a span  {
+    color: #cccccc;
+}
+.fix-br {
+    border-right: 1px solid #fff;
+}
+.top-line span i {
+    margin-right: 5px;
+}
+.top-line .top-address,
+.top-line .account {
+    text-align: center;
+}
+
+.top-line .account span,
+.top-line .top-address span {
+    display: inline-block;
+}
+
+.navbar-default .navbar-nav>li>a {
+    font-size: 16px;
+    cursor: pointer;
+    color: #cccccc;
+    font-family: 'Noto Sans', sans-serif;
+}
+.navbar-toggle {
+    padding: 8px 10px;
+    margin-top: 15px;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: #fff;
+}
+.top-address span:first-child i {
+    font-size: 18px;
+}
+.navbar {
+    margin-bottom: 15px;
+}
+.navbar-default .navbar-nav>li>a {
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+.navbar-default .navbar-collapse {
+    border: none;
+    box-shadow: none;
+}
+                            </div>
+
+                            <div style="position: relative;width:100%; height: 100%; overflow: hidden" role="tabpanel" class="tab-pane" id="t2">
+/**
+* Created by Tom on 10/24/16.
+*/
+
+function showTabList(a){
+    if ($('#expandMobile').css('display') == 'none') {
+        $('.right-content').toggleClass('right-full');
+        if ($(a).children().attr('class') == 'fa fa-chevron-left') {
+            $(a).children().attr('class', 'fa fa-chevron-right');
+        } else{
+            $(a).children().attr('class', 'fa fa-chevron-left');
+        }
+    } else{
+        $('#expandMobile').children('i').attr('class','fa fa-chevron-left');
+        $('.right-content').css('margin-left','100%');
+    }
+}
+
+function showTabListMobile(b){
+    $(b).children('i').attr('class','fa fa-chevron-right');
+    $('.right-content').css('margin-left','0');
+    $('#controls-laptop').attr('class','fa fa-chevron-right');
+
+}
+var fixshowTerminalMobile = 1;
+function showTerminalMobile(c) {
+    if (fixshowTerminalMobile%2 == 1){
+        $(c).find('i').attr('class', 'fa fa-chevron-left');
+        $('.folder').css('margin-left', '0');
+    }else {
+        $(c).find('i').attr('class', 'fa fa-chevron-right');
+        $('.folder').css('margin-left', '-50%');
+    }
+    fixshowTerminalMobile++;
+}
+
+
+
 $(document).ready(function() {
- var width = $('.left-content').width();
- var height = $('.left-content').height();
- $('#myVideo').attr('width', width);
- $('#myVideo').attr('height', height);
- $(window).resize(function(){
-  var width = $('.left-content').width();
-  var height = $('.left-content').height();
-  $('#myVideo').attr('width', width);
-  $('#myVideo').attr('height', height);
-   var heightRightContent = height - $('.nav-tabs').height();
-   $('.tab-content').css('height', heightRightContent);
+    $('[data-toggle="tooltip"]').tooltip({
+        trigger: 'hover'
+    });
+
+    var width = $('.left-content').width();
+    var height = $('.left-content').height();
+    $('#myVideo').attr('width', width);
+    $('#myVideo').attr('height', height);
+
+    $(window).resize(function(){
+        var width = $('.left-content').width();
+        var height = $('.left-content').height();
+        $('#myVideo').attr('width', width);
+        $('#myVideo').attr('height', height);
+
+        var heightRightContent = height - $('.nav-tabs').height();
+        $('.right-content .tab-content').css('height', heightRightContent);
+    });
+
+
+
+    var heightCodeNow = $('.code-terminal').height();
+    $('.folder').css('height', heightCodeNow);
+    $('.fixHeightFolder').css('height', heightCodeNow);
+    $(window).resize(function(){
+        var heightCodeNow = $('.code-terminal').height();
+        $('.folder').css('height', heightCodeNow);
+        $('.fixHeightFolder').css('height', heightCodeNow);
+    });
+
+
+
+
+    var heightRightContent = height - $('.nav-tabs').height();
+    $('.right-content .tab-content').css('height', heightRightContent);
 });
 
-	
 
- var heightRightContent = height - $('.nav-tabs').height();
- $('.tab-content').css('height', heightRightContent);
 
- $('[data-toggle="tooltip"]').tooltip();
-  var tabID = 1;
-  $('#tablist').on('click','.close',function(){
-   var tabID = $(this).parents('a').attr('href');
-   $(this).parents('li').remove();
-   $(tabID).remove();
-     //display first tab
-    var tabFirst = $('#tablist a:first');
-    tabFirst.tab('show');
-  });
-});
-										</code>
-									</pre>
+
+
+
+
+                                
+
                             </div>
-                            <div role="tabpanel" class="tab-pane" id="t2">
-									<pre class="css">
-										<code>
-.main-content {
- background-color: #E9EAEA;
- padding-top: 30px;
- padding-bottom: 30px;
-}
+                            <div style="position: relative;width:100%; height: 100%; overflow: hidden" role="tabpanel" class="tab-pane" id="t3"></div>
 
-.content-title h2 {
- text-align: center;
- font-weight: bold;
- text-transform: uppercase;
- font-size: 32px;
- letter-spacing: .2rem;
- padding: 0;
- color: #5f5f5f;
- vertical-align: middle;
- margin: 20px 0 50px;
-}
-.content-img img {
- width: 100%!important;
-}
-
-.content-detail {
- position: relative;
- background-color: #fff;
- transition: all .25s;
- border-radius: 2px;
- transition: all 0.2s;
- margin-bottom: 40px;
- box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-}
-.content-detail:hover {
- box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.content-detail h3 {
- color: #444;
- margin-top: 15px;
- font-weight: 700;
- border-bottom: 2px solid #3c948b;
- padding-bottom: 20px;
-}
-.content-description {
- padding: 15px;
-}
-.content-description p {
- font-size: 14px;
- font-weight: 200;
- line-height: 20px;
- letter-spacing: 1px;
- color: #7b8b8e;
- margin-top: 20px;
- padding-bottom: 20px;
-}
-
-										</code>
-									</pre>
-                            </div>
-                            <div role="tabpanel" class="tab-pane" id="t3">
-									<pre class="php">
-										<code>
-class Users extends Controller {
-public function index()
-{
- $users = $this->model->getAllUsers();
- $province = $this->model->getAllProvince();
- $amount_of_users = $this->model->getAmountOfUsers();
- require APP . 'view/_templates/header.php';
- require APP . 'view/users/index.php';
- require APP . 'view/_templates/footer.php';
-}
-
-public function addUser()
-{
- if (isset($_POST["add"])) {
-  $avata = "";
-  if ($_FILES["avata"]["type"] == "image/jpeg" || $_FILES["avata"]["type"] == "image/png") {
-   move_uploaded_file($_FILES["avata"]["tmp_name"], "upload/".$_FILES["avata"]["name"]);
-   $avata = "upload/".$_FILES["avata"]["name"];
-  }
-  $_POST["avata"] = $avata;
-  $this->model->add("user", $_POST);
- }
- header('location: ' . URL . 'users/index');
-}
-
-public function add(){
- $province = $this->model->getAllProvince();
- require APP . 'view/_templates/header.php';
- require APP . 'view/users/add.php';
- require APP . 'view/_templates/footer.php';
-}
-
-public function deleteUser($user_id)
-{
- if (isset($user_id)) {
-     $this->model->deleteUser($user_id);
- }
- header('location: ' . URL . 'users/index');
-}
-
-public function editUser($user_id)
-{
- if (isset($user_id)) {
-  $user = $this->model->getUser($user_id);
-  $province = $this->model->getAllProvince();
-  require APP . 'view/_templates/header.php';
-  require APP . 'view/users/edit.php';
-  require APP . 'view/_templates/footer.php';
- } else {
-  header('location: ' . URL . 'users/index');
- }
-}
-
-public function updateUser()
-{
- if (isset($_POST["update"])) {
-  $user_id = $_POST["id"];
-  $username = $_POST["username"];
-  $email = $_POST["email"];
-  $gender = $_POST["gender"];
-  $province_id = $_POST["province_id"];
-  $birthday = date("Y-m-d",strtotime($_POST["birthday"]));
-  $description = addslashes($_POST["description"]);
-  $avata = $_POST["avata"];
-  if ($_FILES["avata"]["name"] != "") {
-   if ($_FILES["avata"]["type"] == "image/jpeg" || $_FILES["avata"]["type"] == "image/png"){
-    move_uploaded_file($_FILES["avata"]["tmp_name"], "upload/".$_FILES["avata"]["name"]);
-    $avata = "upload/".$_FILES["avata"]["name"];
-   }
-  }
-  $_POST["avata"] = $avata;
-  $this->model->update("user", $_POST);
- }
- header('location: ' . URL . 'users/index');
-}
-
-public function ajaxGetStats1()
-{
- $amount_of_users = $this->model->getAmountOfUsers();
- echo $amount_of_users;
-}
-}
-										</code>
-									</pre>
-                            </div>
+                            <div style="position: relative;width:100%; height: 100%; overflow: hidden" role="tabpanel" class="tab-pane" id="t4"></div>
                         </div>
                     </div>
                     <div>
                         <!-- Nav tabs -->
                         <ul style="margin-top:5px;" class="nav nav-tabs" id="tablist" role="tablist">
-                            <li role="presentation" class="active"><a href="#terminal1" aria-controls="terminal1"
-                                                                      role="tab" data-toggle="tab"><i
-                                    style="margin-right:5px;" class="fa fa-terminal" aria-hidden="true"></i> bash -
-                                "tomhapbia"</a></li>
+                            <li role="presentation" class="active"><a href="#terminal1" aria-controls="terminal1" role="tab" data-toggle="tab"><i style="margin-right:5px;" class="fa fa-terminal" aria-hidden="true"></i> bash - "tomhapbia"</a></li>
                         </ul>
 
                         <!-- Tab panes -->
                         <div class="tab-content sidaterminal">
-                            <div role="tabpanel" class="tab-pane active" id="terminal1">
+                            <div style="position: relative" role="tabpanel" class="tab-pane active" id="terminal1">
                                 <p>root@tom:~$ whoami</p>
                                 <p>created with ♥ by
                                     <a href="https://twitter.com/@samarkandiy" title="Tom Hap Bia">@tomhapbia</a>
@@ -934,6 +922,93 @@ public function ajaxGetStats1()
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
 <script src="js/hoc.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
+
+<script src="https://cloud9ide.github.io/emmet-core/emmet.js"></script>
+<script src="ace/ace.js"></script>
+<script src="ace/ext-language_tools.js"></script>
+<script src="ace/ext-emmet.js"></script>
+<script src="ace/ext-modelist.js"></script>
+
+<script>
+    document.getElementById('t1').style.fontSize='14px';
+    var editor = ace.edit("t1");
+    editor.setTheme("ace/theme/monokai");
+    editor.getSession().setMode("ace/mode/html");
+    editor.setShowPrintMargin(false);
+    editor.setOptions({
+        enableBasicAutocompletion: true,
+        enableSnippets: true,
+        enableLiveAutocompletion: false,
+        enableEmmet: true
+    });
+
+    (function () {
+        var modelist = ace.require("ace/ext/modelist");
+        var filePath = "blahblah/weee/some.css";
+        var mode = modelist.getModeForPath(filePath).mode;
+        editor.session.setMode(mode);
+    }());
+</script>
+
+
+<script>
+    document.getElementById('t2').style.fontSize='14px';
+    var editor = ace.edit("t2");
+    editor.setTheme("ace/theme/monokai");
+    editor.getSession().setMode("ace/mode/javascript");
+    editor.setShowPrintMargin(false);
+    editor.setOptions({
+        enableBasicAutocompletion: true,
+        enableSnippets: true,
+        enableLiveAutocompletion: false,
+        enableEmmet: true
+    });
+
+    (function () {
+        var modelist = ace.require("ace/ext/modelist");
+        var filePath = "blahblah/weee/some.js";
+        var mode = modelist.getModeForPath(filePath).mode;
+        editor.session.setMode(mode);
+    }());
+</script>
+
+
+<script>
+    document.getElementById('t3').style.fontSize='14px';
+    var editor = ace.edit("t3");
+    editor.setTheme("ace/theme/monokai");
+    editor.getSession().setMode("ace/mode/html");
+    editor.setShowPrintMargin(false);
+    editor.setOptions({
+        enableBasicAutocompletion: true,
+        enableSnippets: true,
+        enableLiveAutocompletion: false,
+        enableEmmet: true
+    });
+
+    (function () {
+        var modelist = ace.require("ace/ext/modelist");
+        var filePath = "blahblah/weee/some.html";
+        var mode = modelist.getModeForPath(filePath).mode;
+        editor.session.setMode(mode);
+    }());
+</script>
+
+<script>
+    document.getElementById('t4').style.fontSize='14px';
+    var editor = ace.edit("t4");
+    editor.setTheme("ace/theme/monokai");
+    editor.getSession().setMode("ace/mode/php");
+    editor.setShowPrintMargin(false);
+    editor.setOptions({
+        enableBasicAutocompletion: true,
+        enableSnippets: true,
+        enableLiveAutocompletion: false,
+        enableEmmet: true
+    });
+</script>
+
+
 
 </body>
 </html>

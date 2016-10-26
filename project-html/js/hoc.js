@@ -7,7 +7,7 @@ function showTabList(a){
 			$(a).children().attr('class', 'fa fa-chevron-left');
 		}
 	} else{
-		$('#expandMobile').children('i').attr('clas','fa fa-chevron-left');
+		$('#expandMobile').children('i').attr('class','fa fa-chevron-left');
 		$('.right-content').css('margin-left','100%');
 	}
 }
@@ -29,7 +29,6 @@ function showTerminalMobile(c) {
 	}
 	fixshowTerminalMobile++;
 }
-
 
 
 
