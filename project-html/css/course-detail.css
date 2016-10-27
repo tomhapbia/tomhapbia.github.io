@@ -47,6 +47,7 @@ a {
 }
 label {
     margin-top: 10px;
+    display: inline;
 }
 .login-form textarea {
     width: 100%;

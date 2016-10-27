@@ -419,7 +419,7 @@ span#btn-to-top:hover i {
         display: inline-block;
     }
     .sort select {
-        width: calc(100% - 65px);
+        width: calc(100% - 81px);
     }
     .blog-detail {
         padding-left: 15px;

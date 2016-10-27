@@ -44,4 +44,16 @@ $(document).ready(function () {
     })
 
 
+// fix height index
+    var maxHeight = 0;
+    $('.pen-description').each(function () {
+        if ($(this).height() > maxHeight) {
+            maxHeight = $(this).height();
+        }
+    });
+
+    $('.pen-description').each(function () {
+        $(this).height(maxHeight);
+    })
+
 });

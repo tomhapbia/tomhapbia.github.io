@@ -33,6 +33,37 @@ function showTerminalMobile(c) {
 
 
 $(document).ready(function() {
+	$(".navbar-default .navbar-nav>li").hover(function () {
+		$(".bottom-line").css("border", "none");
+		$(".navbar-brand").css("border-top", "1px solid #33485F");
+		$(this).css("border-top", "1px solid #ccc");
+	}, function () {
+		$(".bottom-line").css("border-top", "1px solid #ccc");
+		$(this).css("border-top", "none");
+		$(".navbar-brand").css("border-top", "none");
+	});
+
+
+// Show modal dang nhap/dangki
+
+	$('#btn-dangki').on('click', function () {
+		$('.bs-example-modal-lg').modal('show');
+		$('#myTabs a[href="#profile"]').tab('show');
+	})
+
+	$('#btn-dangki2').on('click', function () {
+		$('.bs-example-modal-lg').modal('show');
+		$('#myTabs a[href="#profile"]').tab('show');
+	})
+
+	$('#btn-dangnhap').on('click', function () {
+		$('.bs-example-modal-lg').modal('show');
+		$('#myTabs a[href="#home"]').tab('show');
+	})
+
+
+
+
 	$('[data-toggle="tooltip"]').tooltip({
 		trigger: 'hover'
 	});
@@ -93,8 +124,6 @@ $(document).ready(function() {
             var tabFirst = $('#tablist a:first');
             tabFirst.tab('show');
         });
-
-
 });
 
 
