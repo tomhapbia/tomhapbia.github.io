@@ -111,6 +111,18 @@ header {
     border-radius: 5px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
+
+.user-img {
+    position: relative;
+}
+#changeAvatar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    color: #FF795D;
+    cursor: pointer;
+}
 .user-info-wrap {
     overflow: hidden;
     padding-bottom:20px;
@@ -139,6 +151,24 @@ header {
     background: #ff8e77;
     transition: all .3s;
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.progress {
+    margin-bottom: 0;
+    height: 15px;
+    margin-bottom:10px;
+}
+
+.progress-bar-success {
+    background-color: #FF795D;
+}
+
+.progress span {
+    font-size: 10px;
+    width: 100%;
+    line-height: 15px;
+    display: block;
 }
 
 
@@ -411,6 +441,7 @@ span#btn-to-top:hover i {
         margin-bottom: 20px;
         display: inline-block;
     }
+
 }
 
 @media (min-width: 768px){
@@ -436,6 +467,9 @@ span#btn-to-top:hover i {
     .modal-dialog {
         width: 400px;
         margin: 30px auto;
+    }
+    .user-info .progress {
+        width:40%;
     }
 }
 @media (max-width: 700px){

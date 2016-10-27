@@ -403,7 +403,6 @@ pre code {
 .codenow .sidaterminal {
 	overflow: hidden;
 	height:150px!important;
-	margin-bottom:20px;
 }
 
 #terminal1 p{
@@ -630,6 +629,13 @@ pre code {
 	overflow-y: auto;
 }
 
+
+
+
+
+.ace_editor * {
+	font: inherit!important;
+}
 
 /*************************/
 /*      MEDIA-QUERY      */
