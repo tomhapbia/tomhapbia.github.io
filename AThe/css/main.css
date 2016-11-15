@@ -155,6 +155,7 @@
 .video {
     clear: both;
     overflow: hidden;
+    margin-top:50px;
 }
 
 .network-wrap {
