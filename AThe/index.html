@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="main">
+                <div>
+
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab"
+                                                                  data-toggle="tab">Đăng nhập</a></li>
+                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Điều khiển</a>
+                        </li>
+                        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab"
+                                                   data-toggle="tab">Video</a></li>
+                    </ul>
+                    <div class="user">
+                        <a href=""><span>Tôm Hấp Bia |</span></a>
+                        <a href=""><span>Sign Out</span></a>
+                    </div>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="home">
+                            <h3 class="text-center" style="margin-top: 40px">Đăng nhập</h3>
+                            <div class="form">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Tên đăng nhập</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Tên đăng nhập">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">Mật khẩu</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mật khẩu">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="serer">Server</label>
+                                        <select id="server" class="form-control" title="">
+                                            <option hidden value="">Chọn server</option>
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                            <option value="">5</option>
+                                        </select>
+                                    </div>
+
+
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Ghi nhớ đăng nhập
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="btn btn-default button">Kết nối</button>
+                                    <button type="submit" class="btn btn-default button float-right">Chọn sever</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="profile">
+                            <div style="overflow: hidden;">
+                                <div class="col-xs-5">
+                                    <div class="controls-left">
+                                        <div style="overflow: hidden">
+                                            <div class="controls">
+                                                <button class="btn btn-default"><i class="fa fa-play-circle icon" aria-hidden="true"></i></button>
+                                                <button class="btn btn-default"><i class="fa fa-stop-circle icon" aria-hidden="true"></i></button>
+                                                <button class="btn btn-default"><i style="font-size:22px;" class="fa fa-camera icon" aria-hidden="true"></i></button>
+                                                <button class="btn btn-default"><i class="fa fa-video-camera icon" aria-hidden="true"></i></button>
+                                            </div>
+                                            <div class="camera">
+                                                <img class="img-responsive" src="camera.jpg" alt="">
+                                                <div class="move">
+                                                    <button class="btn btn-default"><i class="fa fa-chevron-circle-left icon" aria-hidden="true"></i></button>
+                                                </div>
+                                                <div class="move">
+                                                    <button class="btn btn-default"><i class="fa fa-chevron-circle-right icon" aria-hidden="true"></i></button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="network">
+                                            <div>
+                                                <span>Trạng thái mạng: Nhanh/Chậm</span>
+                                            </div>
+                                            <div>
+                                                <span>Năng lượng: 50%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-7">
+                                    <div class="controls-right">
+                                        <div>
+                                            <div class="map">
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14900.219532297939!2d105.8466438!3d20.990437!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1479185764981" width="100%" height="305" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                            </div>
+                                            <div class="choose">
+                                                <button class="btn btn-default button">Chọn</button>
+                                                <button class="btn btn-default button">Chọn</button>
+                                                <button class="btn btn-default button">Chọn</button>
+                                                <button class="btn btn-default button">Chọn</button>
+                                                <button class="btn btn-default button">Đi</button>
+                                                <button class="btn btn-default button">Stop</button>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div class="col-xs-4">
+                                                <div id="control-robot">
+                                                    <button id="move-left" class="btn btn-default move-robot"><i class="fa fa-chevron-circle-left icon" aria-hidden="true"></i></button>
+
+                                                    <button id="move-up" class="btn btn-default move-robot"><i class="fa fa-chevron-circle-up icon" aria-hidden="true"></i></button>
+                                                    <button id="move-down" class="btn btn-default move-robot"><i class="fa fa-chevron-circle-down icon" aria-hidden="true"></i></button>
+                                                    <button id="move-right" class="btn btn-default move-robot"><i class="fa fa-chevron-circle-right icon" aria-hidden="true"></i></button>
+                                                    <button id="move-undo" class="btn btn-default move-robot"><i class="fa fa-undo icon" aria-hidden="true"></i></button>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-8">
+                                                <div class="screen">
+                                                    <button class="btn btn-default plus-minus"><i class="fa fa-minus-square icon" aria-hidden="true"></i></button>
+                                                    <div style="display: inline-block; float: left; margin-top:30px;">
+                                                        <img width="150px" src="screen.jpg" class="img-responsive" alt="">
+                                                    </div>
+                                                    <button class="btn btn-default plus-minus"><i class="fa fa-plus-square icon" aria-hidden="true"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="messages">
+                            <div class="video">
+                                <div class="col-xs-8">
+                                    <div class="video">
+                                        <iframe width="100%" height="350px" src="https://www.youtube.com/embed/sP-GrSBfaqs" frameborder="0" allowfullscreen></iframe>
+                                        <div class="controls-video">
+                                            <button class="btn btn-default"><i class="fa fa-fast-backward icon" aria-hidden="true"></i></button>
+                                            <button class="btn btn-default"><i class="fa fa-backward icon" aria-hidden="true"></i></button>
+                                            <button class="btn btn-default"><i class="fa fa-play icon" aria-hidden="true"></i></button>
+                                            <button class="btn btn-default"><i class="fa fa-stop icon" aria-hidden="true"></i></button>
+                                            <button class="btn btn-default"><i class="fa fa-forward icon" aria-hidden="true"></i></button>
+                                            <button class="btn btn-default"><i class="fa fa-fast-forward icon" aria-hidden="true"></i></button>
+
+                                        </div>
+                                        <div class="controls-video-right">
+                                            <button class="btn btn-default"><i class="fa fa-camera icon" aria-hidden="true"></i></button>
+                                            <button class="btn btn-default"><i class="fa fa-expand icon" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-4">
+                                    <div class="list-video">
+                                        <ol>
+                                            <li><a href="">Video 1</a></li>
+                                            <li><a href="">Video 1</a></li>
+                                            <li><a href="">Video 1</a></li>
+                                            <li><a href="">Video 1</a></li>
+                                            <li><a href="">Video 1</a></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="network-wrap">
+                                <div class="col-xs-8">
+                                    <span>Tình trạng mạng: Nhanh/Chậm</span>
+                                </div>
+                                <div class="col-xs-4">
+                                    <span>Năng lượng: 50%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

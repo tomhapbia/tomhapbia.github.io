@@ -1,0 +1,180 @@
+.main {
+    border: 1px solid #ddd;
+    margin-top:50px;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.form {
+    width:50%;
+    margin:auto;
+}
+
+.button {
+    font-size: 20px;
+    margin-top: 15px;
+    letter-spacing: 0;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    background: #FF795D;
+    border-radius: 3px;
+    border: none;
+    color: #ffffff;
+    transition: all .3s ease-in-out;
+}
+
+.button:hover {
+    background: #ff8e77;
+    transition: all .3s;
+    color: #fff;
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2), 0 5px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.float-right {
+    float: right;
+}
+.controls {
+    width:15%;
+    float: left;
+    height:305px;
+}
+
+.controls button {
+    background: #fff;
+    border: none;
+    margin-bottom:10px;
+}
+.camera {
+    float: left;
+    width:85%;
+    overflow: hidden;
+}
+.camera img {
+    margin-bottom:10px;
+    height:250px;
+}
+
+.move {
+    width:50%;
+    float: left;
+    text-align: center;
+}
+.icon {
+    font-size: 24px;
+    color: #FF795D;
+    line-height:1.3;
+    display: block;
+}
+.tab-pane {
+    padding-bottom: 20px;
+    padding-top:20px;
+}
+.network {
+    margin-top:20px;
+    clear: both;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.map {
+    width:85%;
+    float: left;
+}
+
+.choose {
+    width:15%;
+    float: left;
+}
+
+.choose .button {
+    margin-top:0;
+    margin-bottom:10px;
+    clear: both;
+    width:72px;
+    display: block;
+    float: right;
+}
+.controls-right {
+    height: 500px;
+}
+#control-robot {
+    position: relative;
+}
+.move-robot {
+    position: absolute;
+    overflow: hidden;
+}
+#move-up {
+    top: 0;
+    left: 80px;
+}
+
+#move-left {
+    top: 50px;
+    left: 28px;
+}
+#move-undo {
+    top: 50px;
+    left: 80px;
+}
+#move-right {
+    top: 50px;
+    left: 132px;
+}
+
+#move-down {
+    left: 80px;
+    top:100px;
+}
+
+.plus-minus {
+    float: left;
+    margin-top: 50px;
+    margin-left:10px;
+    margin-right:10px;
+}
+.screen {
+    position: absolute;
+    overflow: hidden;
+    padding-left: 30px;
+}
+.controls-video {
+    text-align: center;
+    width:80%;
+    float: left;
+}
+
+.controls-video-right {
+    width:20%;
+    float: left;
+    text-align: center;
+}
+
+.list-video {
+    border: 1px solid #ddd;
+}
+.video {
+    clear: both;
+    overflow: hidden;
+}
+
+.network-wrap {
+    border: 1px solid #ddd;
+    clear: both;
+    margin-top:20px;
+    overflow: hidden;
+    padding-top: 20px;
+    padding-bottom:20px;
+}
+
+
+.main .nav-tabs {
+    width:80%;
+    float: left;
+}
+
+.user {
+    width:20%;
+    float: left;
+    line-height:41px;
+    border-bottom:1px solid #ddd;
+}
