@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chi tiết khóa học</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&amp;subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/lobibox.css">
+    <link rel="stylesheet" href="css/waves.min.css">
+    <link rel="stylesheet" href="css/star-rating-svg.css">
+    <link rel="stylesheet" href="css/course-detail.css">
+
+</head>
+<body>
+<header class="container-fluid">
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="top-line">
+                    <div class="col-xs-12 col-sm-6 top-address">
+                        <span class="fix-br"><i class="fa fa-mobile" aria-hidden="true"></i>090.220.9011</span>
+                        <span><i class="fa fa-envelope-o" aria-hidden="true"></i>ductruong127@gmail.com</span>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 account">
+                        <a href="javascript:void(0)" id="btn-dangnhap"><span class="fix-br"><i class="border-bottom fa fa-user" aria-hidden="true"></i>Đăng nhập</span></a>
+                        <a href="javascript:void(0)" id="btn-dangki"><span>Đăng kí</span></a>
+                    </div>
+                </div>
+                <div class="bottom-line">
+                    <nav class="navbar navbar-default" role="navigation">
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
+                            </div>
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="uppercase"><a href="khoahoc.html">Khóa học</a></li>
+                                    <li class="uppercase"><a href="codepen.html">Codepen</a></li>
+                                    <li class="uppercase"><a href="#">Challenge</a></li>
+                                    <li class="uppercase"><a href="blog.html">Blog</a></li>
+                                    <li class="uppercase"><a href="#">Chúng tôi</a></li>
+                                </ul>
+                            </div><!-- /.navbar-collapse -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<section class="container-fluid course-info-wrap">
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-3">
+                    <div class="course-info">
+                        <img src="img/ui_ux_banner_techmaster.png" alt="" width="100%" class="img-responsive">
+                        <div class="course-info-tittle">
+                            <h2>Lập trình PHP</h2>
+                            <div class="my-rating-tom"></div>
+                            <span id="numberVote">(69)</span>
+                            <div style="clear: both;line-height: 22px;margin-left: 5px;color: #7b8b8e; font-size:18px;">
+                                96 Học viên
+                            </div>
+                        </div>
+                        <div class="course-instructor">
+                            <h5 style="text-align:center;">Giảng viên</h5>
+                            <img src="img/nghia.png" width="50px" alt="">
+                            <h3 style="display: inline-block; margin: 0 5px 0 0;line-height: 50px;">Thân Văn Nghĩa</h3>
+                        </div>
+                        <div class="course-info-controls">
+                            <!--<ul class="tab-pane">-->
+                            <!--<li class="active"><a href="#tab-course-1">Giới thiệu</a></li>-->
+                            <!--<li><a href="#tab-course-2">Giảng viên</a></li>-->
+                            <!--<li><a href="#tab-course-3">Mục tiêu khóa học</a></li>-->
+                            <!--<li><a href="#tab-course-4">Giáo trình</a></li>-->
+                            <!--</ul>-->
+
+                            <ul class="nav nav-tabs" role="tablist">
+                                <!--<li><a href="javascript:void(0)" onclick="showTabList(this)" aria-controls="" role="tab" data-toggle="tab"><i id="controls-laptop" class="fa fa-chevron-left" aria-hidden="true"></i></a>-->
+                                <!--</li>-->
+                                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab"
+                                                                          data-toggle="tab">Giới thiệu</a></li>
+                                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab"
+                                                           data-toggle="tab">Giảng viên</a></li>
+                                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab"
+                                                           data-toggle="tab">Mục tiêu khóa học</a></li>
+                                <li role="presentation"><a href="#settings" aria-controls="settings" role="tab"
+                                                           data-toggle="tab">Giáo trình</a></li>
+                                <li role="presentation"><a href="#review" aria-controls="review" role="tab"
+                                                           data-toggle="tab">Đánh giá</a></li>
+                            </ul>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <div class="course-detail">
+                        <div class="course-detail-tittle">
+                            <h2>Lập trình PHP</h2>
+                            <div class="course-info-numberStd hidden-xs">
+                                <div>
+                                    <p><span class="counter">96</span>Learners</p>
+                                    <p><span class="counter">69</span>Lessons</p>
+                                </div>
+
+                                <div>
+                                    <p><span class="counter">96</span>Quizzes</p>
+                                </div>
+                            </div>
+                            <button class="take-course" data-toggle="modal" data-target="#payModal">
+                                ĐĂNG KÍ NGAY!
+                                <p style="text-align:center; font-size: 18px;"><span style="font-size:14px;
+font-style:italic;">Chỉ từ: </span>800.000 đ</p>
+                            </button>
+
+
+                        </div>
+
+
+                        <div class="course-info-content">
+
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="home">
+                                    <p>Mỗi ngày bạn lướt web, có bao giờ bạn tìm hiểu các trang web đó được viết bằng
+                                        ngôn ngữ gì? Trong số 10 trang web mà bạn ghé thăm, có lẽ quá nửa trong số đó
+                                        được viết bởi <strong>PHP</strong>. Vì sao lại như vậy?</p>
+                                    <p><strong>PHP</strong> là mã nguồn mở, nó hoàn toàn miễn phí, hỗ trợ người dùng xây
+                                        dựng website với chi phí tiết kiệm nhất, nhờ đó mà PHP đã trở nên phổ biến một
+                                        cách rất nhanh chóng trong những năm qua. Ngay cả những ông lớn như Facebook,
+                                        Yahoo!, Wikipedia cũng sử dụng tới PHP. </p>
+                                    <p><strong>Cam kết việc làm cho học viên hoàn thành web site tốt nghiệp.</strong>
+                                    </p>
+
+                                    <h3>Bạn sẽ học được gì?</h3>
+                                    <ul style="list-style-type: circle">
+                                        <li>- Ngôn ngữ lập trình PHP cơ bản</li>
+                                        <li>- Tính năng mới của PHP 7, bắt kịp sự thay đổi của công nghệ hiện đại</li>
+                                        <li>- Các bước thực tế xây dựng một website. 02 ứng dụng mẫu: blog và site bán
+                                            hàng trực tuyến
+                                        </li>
+                                        <li>- Sử dụng Slim Framework để hiểu rõ mô hình Model - View - Controller,
+                                            Object Relational Mapping
+                                        </li>
+                                    </ul>
+
+                                    <h3>Tại sao lại là PHP 7?</h3>
+                                    <p>PHP 7 có một phiên bản engine hoàn toàn mới có tên gọi là PHP#NG (Next
+                                        Generation).. Điểm nổi bật nhất mà engine mới này mang lại cho PHP 7 là sự cải
+                                        thiện hiệu suất hoạt động một cách đáng kể. So với PHP 5 thì phiên bản PHP 7 có
+                                        hiệu suất hoạt động vô cùng ấn tượng, đạt tới gấp 2 lần. Giữa một thế giới luôn
+                                        chuyển động và mọi thứ ngày càng phát triển, tốc độ luôn là điều mà người ta
+                                        hướng tới. PHP 7 đáp ứng cho chúng ta điều mọi người mong đợi - tốc độ xử lý
+                                        nhanh hơn. Ngoài ưu điểm về tốc độ, PHP 7 còn mang đến nhiều lợi ích khác cho
+                                        người dùng như khả năng quản lý lỗi dễ dàng hơn, hỗ trợ hệ thống 64 bits tốt
+                                        hơn, cung cấp các tính năng mới tiện dụng, ... Các bạn có thể tham khảo chi tiết
+                                        hơn về ưu điểm của PHP 7 trong bài viết của Techmaster: PHP 7: 10 điều bạn cần
+                                        biết.</p>
+                                    <h3>Làm được gì với PHP?</h3>
+                                    <p>Không mất quá nhiều thời gian để có thể nắm bắt ngôn ngữ PHP, bạn có thể nhanh
+                                        chóng học nó và ứng dụng vào thực tế: xây dựng website, xây dựng service cho ứng
+                                        dụng di động. Bạn cũng không phải lo lắng về đầu ra khi mà nhu cầu tuyển dụng
+                                        lập trình viên PHP vẫn luôn rất lớn.</p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="profile">
+                                    <div class="giangvien-info">
+                                        <img src="img/nghia.png" width="120" alt="">
+                                        <h3><span style="font-size:14px; font-style:italic;">Giảng viên: </span><a
+                                                href="">Thân Văn Nghĩa</a></h3>
+                                        <p id="giangvienpfix">Lập trình viên PHP, Laravel 8 năm kinh nghiệm. Đến nay, đã
+                                            hoàn thành hơn 69 dự án phần mềm lớn nhỏ. Ngoài lập trình mình còn có khả
+                                            năng chém gió thần sầu...</p>
+
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="messages">
+                                    <p>- Học viên có thể tự phân tích quy trình thiết kế, cơ sở dữ liệu & lập trình ra
+                                        một website hoàn chỉnh.</p>
+                                    <p>- Nắm vững kiến thức lập trình Hướng đối tượng & mô hình MVC</p>
+                                    <p>- Làm chủ framework LARAVEL, tạo ấn tượng cực mạnh đến với nhà tuyển dụng
+                                        PHP.</p>
+                                    <p>- Hoàn tất khóa học, học viên đủ sức ứng tuyển vào vị trí lập trình PHP tại các
+                                        công ty thiết kế web.</p>
+                                    <p>- Nếu quyết tâm học & làm đầy đủ các bài tập, học viên có thể tự thành lập công
+                                        ty hoặc nhóm thiết kế website.
+                                    </p>
+                                </div>
+                                <div role="tabpanel" class="tab-pane" id="settings">
+                                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="chap1">
+                                                <h3 class="panel-title collapsed" role="button" data-toggle="collapse"
+                                                    data-parent="#accordion" href="#collapseOne" aria-expanded="false"
+                                                    aria-controls="collapseOne"><i class="fa fa-chevron-down"
+                                                                                   aria-hidden="true"></i> 1. Giới thiệu
+                                                    tổng quát (5 lesson)</h3>
+                                            </div>
+                                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel"
+                                                 aria-labelledby="chap1">
+                                                <div class="panel-body">
+                                                    <ul>
+                                                        <li class="active"><a href="">1.1 Bài mở đầu <span>02:22</span></a>
+                                                        </li>
+                                                        <li><a href="">1.2 Cài đặt môi trường để lập trình PHP <span>16:03</span></a>
+                                                        </li>
+                                                        <li><a href="">1.3 Cách cài đặt bổ sung extension cho PHP sau
+                                                            khi build <span>02:45</span></a></li>
+                                                        <li><a href="">1.4 Cài đặt trình soạn thảo, viết chương trình
+                                                            đầu tiên bằng PHP <span>13:46</span></a></li>
+                                                        <li><a href="">1.5 Các tài liệu PHP <span>02:52</span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="chap2">
+                                                <h3 class="panel-title collapsed" role="button" data-toggle="collapse"
+                                                    data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+                                                    aria-controls="collapseTwo"><i class="fa fa-chevron-down"
+                                                                                   aria-hidden="true"></i> 2. PHP căn
+                                                    bản (8 lesson)</h3>
+                                            </div>
+
+                                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+                                                 aria-labelledby="chap2">
+                                                <div class="panel-body">
+                                                    <ul>
+                                                        <li><a href="">2.1 Các kiểu dữ liệu cơ bản
+                                                            <span>06:02</span></a></li>
+                                                        <li><a href="">2.2 Toán tử trong PHP (phần 1) <span>09:55</span></a>
+                                                        </li>
+                                                        <li><a href="">2.3 Toán tử trong PHP (phần 2) <span>11:21</span></a>
+                                                        </li>
+                                                        <li><a href="">2.4 Các mệnh đề điều kiện trong
+                                                            PHP<span>08:11</span></a></li>
+                                                        <li><a href="">2.5 Mảng trong PHP và duyệt vòng lặp qua mảng với
+                                                            For và Foreach<span>06:06</span></a></li>
+                                                        <li><a href="">2.6 Các hàm xử lý file trong
+                                                            PHP<span>10:07</span></a></li>
+                                                        <li><a href="">2.7 Loop với While và Do-While<span>06:44</span></a>
+                                                        </li>
+                                                        <li><a href="">2.8 Hàm trong PHP 7, điểm mới: khai báo kiểu trả
+                                                            về<span>10:38</span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="chap3">
+                                                <h3 class="panel-title collapsed" role="button" data-toggle="collapse"
+                                                    data-parent="#accordion" href="#collapseThree" aria-expanded="false"
+                                                    aria-controls="collapseThree"><i class="fa fa-chevron-down"
+                                                                                     aria-hidden="true"></i> 3. Làm việc
+                                                    với Form (10 lesson)</h3>
+                                            </div>
+                                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                                                 aria-labelledby="chap3">
+                                                <div class="panel-body">
+                                                    <ul>
+                                                        <li><a href="">3.1 Form cơ bản <span>07:54</span></a></li>
+                                                        <li><a href="">3.2 Xử lý form POST <span>08:07</span></a></li>
+                                                        <li><a href="">3.3 Xử lý form GET <span>10:02</span></a></li>
+                                                        <li><a href="">3.4 Upload file với PHP <span>15:08</span></a>
+                                                        </li>
+                                                        <li><a href="">3.5 Xử lý dữ liệu khi POST form một cách an toàn
+                                                            <span>08:08</span></a></li>
+                                                        <li><a href="">3.6 Kiểm tra tính hợp lệ của form
+                                                            <span>07:15</span></a></li>
+                                                        <li><a href="">3.7 Kiểm tra tính hợp lệ của form với biểu thức
+                                                            chính quy (Regular Expression) <span>11:48</span></a></li>
+                                                        <li><a href="">3.8 Tự điền lại các giá trị hợp lệ cho form khi
+                                                            gặp lỗi<span>06:46</span></a></li>
+                                                        <li><a href="">3.9 Bài tập tổng hợp về Form<span></span></a>
+                                                        </li>
+                                                        <li><a href="">3.10 Xử lý Ajax và dữ liệu JSON trong PHP<span>06:39</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div role="tabpanel" class="tab-pane" id="review">
+                                    <div class="reviewStar">
+                                        <div class="review-stars"></div>
+                                        <span id="numberReview">(69 Đánh giá)</span>
+
+                                        <textarea class="form-control"
+                                                  placeholder="Đánh giá của bạn... (Tối thiểu 20 kí tự)"></textarea>
+                                        <div style="float: left;margin-top:15px;" id="user-comment-star"></div>
+                                        <button class="send-cmt">Gửi đánh giá <i class="submit-cmt fa fa-reply"
+                                                                                 aria-hidden="true"></i></button>
+                                    </div>
+
+
+                                    <div class="comment">
+                                        <div class="info-content">
+                                            <div class="avatar-comment">
+                                                <img width="50px" src="img/nghia.png" alt="Phạm Đức Hùng"
+                                                     title="comment">
+                                            </div>
+                                            <div class="user-detail-comment">
+                                                <p><strong>Thân Văn Nghĩa</strong><span
+                                                        class="comment-date"> 06-09-1969 </span>
+                                                </p>
+                                                <div class="my-rating-tom"></div>
+                                                <p>Chương trinh khóa học bao quát, cho học viên cái nhìn tổng quan. Nội
+                                                    dung bài giảng chuyên sâu, có tính ứng dụng cao.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="comment">
+                                        <div class="info-content">
+                                            <div class="avatar-comment">
+                                                <img width="50px" src="img/dm.jpg" alt="Phạm Đức Hùng" title="comment">
+                                            </div>
+                                            <div class="user-detail-comment">
+                                                <p><strong>David De Gea</strong><span
+                                                        class="comment-date"> 06-09-1969 </span>
+                                                </p>
+                                                <div class="my-rating-tom"></div>
+                                                <p>Chương trinh khóa học đầy đủ chi tiết. Giảng viên nhiệt tình và đặc
+                                                    biệt chém gió thần sầu.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-3 course-other hidden-xs hidden-sm">
+                    <div class="course-instructors">
+                        <h4>Khóa học cùng giảng viên</h4>
+
+                        <div class="course-1">
+                            <img width="60px" src="img/ui_ux_banner_techmaster.png" alt="">
+                            <a href="" class="course-1-name">
+                                Thiết kế giao diện, trải nghiệm người dùng
+                            </a>
+                            <span>4.000.000 đ</span>
+                        </div>
+                        <div class="course-1">
+                            <img width="60px" src="img/ui_ux_banner_techmaster.png" alt="">
+                            <a href="" class="course-1-name">
+                                Thiết kế giao diện, trải nghiệm người dùng
+                            </a>
+                            <span>4.000.000 đ</span>
+                        </div>
+                        <div class="course-1">
+                            <img width="60px" src="img/ui_ux_banner_techmaster.png" alt="">
+                            <a href="" class="course-1-name">
+                                Thiết kế giao diện, trải nghiệm người dùng
+                            </a>
+                            <span>4.000.000 đ</span>
+                        </div>
+                    </div>
+
+                    <div class="course-relative">
+                        <h4>Khóa học liên quan</h4>
+
+                        <div class="course-1">
+                            <img width="60px" src="img/ui_ux_banner_techmaster.png" alt="">
+                            <a href="" class="course-1-name">
+                                Thiết kế giao diện, trải nghiệm người dùng
+                            </a>
+                            <span>4.000.000 đ</span>
+                        </div>
+                        <div class="course-1">
+                            <img width="60px" src="img/ui_ux_banner_techmaster.png" alt="">
+                            <a href="" class="course-1-name">
+                                Thiết kế giao diện, trải nghiệm người dùng
+                            </a>
+                            <span>4.000.000 đ</span>
+                        </div>
+                        <div class="course-1">
+                            <img width="60px" src="img/ui_ux_banner_techmaster.png" alt="">
+                            <a href="" class="course-1-name">
+                                Thiết kế giao diện, trải nghiệm người dùng
+                            </a>
+                            <span>4.000.000 đ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div id="expandMobileCourseTab">
+    <div id="showCourseControlsTab" onclick="showCourseControlsTab(this)">
+        <a href="javascript:void(0)"><i class="fa fa-chevron-right"></i></a>
+    </div>
+
+
+    <ul class="nav nav-tabs" role="tablist">
+        <!--<li><a href="javascript:void(0)" onclick="showTabList(this)" aria-controls="" role="tab" data-toggle="tab"><i id="controls-laptop" class="fa fa-chevron-left" aria-hidden="true"></i></a>-->
+        <!--</li>-->
+        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Giới
+            thiệu</a></li>
+        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Giảng viên</a>
+        </li>
+        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Mục tiêu khóa
+            học</a></li>
+        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Giáo trình</a>
+        </li>
+        <li role="presentation"><a href="#review" aria-controls="review" role="tab" data-toggle="tab">Đánh giá</a></li>
+    </ul>
+</div>
+
+
+<!-- PAY MODAL -->
+
+<!-- Modal -->
+<div class="modal fade" id="payModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Chọn phương thức thanh toán</h4>
+            </div>
+            <div class="modal-body">
+                <form id="pay-type">
+                    <div class="col-xs-12 col-sm-4">
+                        <input name="group1" type="radio" checked id="pay1" value="1">
+                        <label for="pay1">Thanh toán bằng chuyển khoản</label>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <input name="group1" type="radio" id="pay2" value="2">
+                        <label for="pay2">Thanh toán tại Techmaster</label>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <input name="group1" type="radio" id="pay3" value="3">
+                        <label for="pay3">Thanh toán trực tiếp</label>
+                    </div>
+                </form>
+
+                <div class="pay-content" id="pay1-wrapper" style="display: block">
+                    <div class="pay-description">
+                        <p>- Các bạn có thể chuyển khoản ngân hàng để đóng học phí. Khi chuyển khoản, lưu ý đóng đúng
+                            mức học phí.</p>
+                        <p>- Tên Tài Khoản NH: Công ty TNHH Techmaster Việt Nam</p>
+                        <p>- Số Tài Khoản NH: 002 1000 252 385 (TK Đồng Việt Nam)</p>
+                        <p>- Ngân hàng: Vietcombank, Chi nhánh Hà Nội</p>
+                    </div>
+
+                    <div class="pay-form">
+                        <p>- Nội dung chuyển khoản: (Ghi tên của bạn và số điện thoại)
+                    </div>
+                </div>
+
+                <div class="pay-content" id="pay2-wrapper" style="display: none">
+                    <div class="pay-description">
+                        <p>- Để đóng học phí trực tiếp, bạn vui lòng đến địa chỉ:</p>
+                        <p>Số 14, ngõ 4, Nguyễn Đình Chiểu, quận Hai Bà Trưng, Hà nội, Việt Nam.</p>
+                    </div>
+                </div>
+
+                <div class="pay-content" id="pay3-wrapper" style="display: none">
+                    <div class="pay-description">
+                        <p>Chọn hình thức thanh toán trực tiếp</p>
+                        <form id="pay-now">
+                            <div class="col-xs-12 col-sm-4">
+                                <input name="group2" type="radio" checked id="payNow1" value="1">
+                                <label for="payNow1">Qua thẻ quốc tế</label>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <input name="group2" type="radio" id="payNow2" value="2">
+                                <label for="payNow2">Internet Banking</label>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <input name="group2" type="radio" id="payNow3" value="3">
+                                <label for="payNow3">Thẻ cào</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+                <a href="hoc.html"><button type="button" class="pay-confirm">Vào học!</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- LOGIN MODAL -->
+<!--    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button> -->
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <ul class="nav nav-tabs" id="myTabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#dangnhap" aria-controls="dangnhap" role="tab"
+                                                              data-toggle="tab">Đăng nhập</a></li>
+                    <li role="presentation"><a href="#dangki" aria-controls="dangki" role="tab" data-toggle="tab">Đăng
+                        kí</a></li>
+                </ul>
+            </div>
+            <div class="modal-body">
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="dangnhap">
+                        <form class="form-login-signup">
+                            <div class="form-group login-form">
+                                <label for="email" class="control-label">Email:</label>
+                                <input type="text" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 form-control"
+                                       id="email">
+                            </div>
+                            <div class="form-group login-form">
+                                <label for="message-text" class="control-label">Mật khẩu:</label>
+                                <input type="password" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 form-control"
+                                       id="password">
+                            </div>
+                        </form>
+
+
+                        <div class="btn-login-sign-up">
+                            <div id="lost-pass">
+                                <a href="">Quên mật khẩu?</a>
+                                <input type="checkbox" name="" id=""><span>&nbsp; Ghi nhớ đăng nhập</span>
+                            </div>
+
+                            <div class="socials-login">
+                                <a href="" id="login-fb" class="color-white">
+                                    <span class="fa fa-facebook text-center background-blue"></span>
+                                    <span class="fix-width-social text-center color-blue">Facebook</span>
+                                </a>
+                                <a href="" id="login-gg" class="color-white">
+                                    <span class="fa fa-google-plus text-center background-red"></span>
+                                    <span class="fix-width-social text-center color-red">Google</span>
+                                </a>
+                            </div>
+
+                            <a href="user-dashboard.html">
+                                <button type="button" class="btn btn-primary">Đăng Nhập</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane" id="dangki">
+                        <div role="tabpanel" class="tab-pane active" id="home">
+                            <form class="form-login-signup">
+
+
+                                <div class="form-group login-form">
+                                    <label for="recipient-name" class="control-label">Email:</label>
+                                    <input type="text" class=" col-xs-12 col-sm-12 col-md-4 col-lg-4 form-control"
+                                           id="email">
+                                </div>
+
+                                <div class="form-group login-form">
+                                    <label for="message-text" class="control-label">Mật khẩu:</label>
+                                    <input type="password" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 form-control"
+                                           id="password">
+                                </div>
+
+                                <div class="form-group login-form">
+                                    <label for="message-text" class="control-label">Xác nhận mật khẩu:</label>
+                                    <input type="password" class="col-xs-12 col-sm-12 col-md-4 col-lg-4 form-control"
+                                           id="password">
+                                </div>
+
+                                <div class="form-group login-form">
+                                    <label for="fullname" class="control-label">Họ tên:</label>
+                                    <input type="text" name="fullname"
+                                           class=" col-xs-12 col-sm-12 col-md-4 col-lg-4 form-control"
+                                           id="username">
+                                </div>
+
+                                <div class="form-group login-form">
+                                    <label for="sdt" class="control-label">Số điện thoại:</label>
+                                    <input type="text" name="sdt"
+                                           class=" col-xs-12 col-sm-12 col-md-4 col-lg-4 form-control">
+                                </div>
+                            </form>
+                            <div class="btn-login-sign-up">
+                                <a href="">
+                                    <button type="button" class="btn btn-primary">Đăng Kí</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<span class="waves-effect" id="btn-to-top">
+    <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+</span>
+
+<footer id="footer" class="container-fluid">
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <h4>Địa chỉ</h4>
+                    <div class="chat-block">
+                        <div>
+                            <a href="https://techmaster.vn/trungtam/dia-chi#co-so-1">
+                                <address> Số 14, ngõ 4, Nguyễn Đình Chiểu, Hai Bà Trưng, Hà Nội</address>
+                                <time> Mở cửa: <b>9:00</b> đến <b>18:00</b></time>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://techmaster.vn/trungtam/dia-chi#co-so-2">
+                                <address> Phòng 2304, tầng 23, toà nhà StarCity, 81 Lê Văn Lương, Nhân Chính, Thanh
+                                    Xuân, Hà Nội
+                                </address>
+                                <time> Mở cửa: <b>9:00</b> đến <b>18:00</b></time>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-3">
+                    <h4>Contact</h4>
+                    <ul class="list-unstyled nav-list">
+                        <li><a href="" class="jobs">Mr Cường: 090.220.9011</a></li>
+                        <li><a href="https://techmaster.vn/trungtam/Trung-tam">Mr Nghĩa: 096.440.7993</a></li>
+                        <li><a href="https://techmaster.vn/trungtam/giang-vien">cuong@techmaster.vn</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-12 col-sm-2">
+                    <h4>Về chúng tôi</h4>
+                    <ul class="list-unstyled nav-list">
+                        <li><a href="" class="jobs">Việc làm</a></li>
+                        <li><a href="https://techmaster.vn/trungtam/Trung-tam">Về chúng tôi</a></li>
+                        <li><a href="https://techmaster.vn/trungtam/giang-vien">Giảng viên</a></li>
+                        <li><a href="https://techmaster.vn/trungtam/quy-dinh">Cơ sở vật chất</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-12 col-sm-3">
+                    <h4>Kết nối</h4>
+                    <ul id="ketnoi-footer" class="list-unstyled nav-list">
+                        <li><img src="img/fb.png"></li>
+                        <li><img src="img/g+.png"></li>
+                        <li><img src="img/twt.png"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.star-rating-svg.min.js"></script>
+<script src="js/jquery-resizable.min.js"></script>
+<script src="js/waves.min.js"></script>
+<script src="js/rating-star.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="js/course-detail.js"></script>
+</body>
+</html>

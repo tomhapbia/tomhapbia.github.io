@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&amp;subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/lobibox.css">
+    <link rel="stylesheet" href="css/waves.min.css">
+    <link rel="stylesheet" href="css/monokai.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/hoctest.css">
+</head>
+<body>
+
+<header class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Dashboard</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><i class="fa fa-bell-o" aria-hidden="true"></i></a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tôm Hấp Bia <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> Trang cá nhân</a></li>
+                                <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Đăng xuất</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+<section class="container-fluid main-content">
+    <div class="row">
+        <div class="left-content">
+            <h3 class="lessonTittle">Ứng dụng HTML đầu tiên</h3>
+
+            <div style="position:relative; padding-bottom:56.25%; overflow:hidden;">
+                <iframe id="myVideo" src="https://content.jwplatform.com/players/1kcDFqpO-l45hyimM.html" frameborder="0"
+                        scrolling="auto" allowfullscreen style="position:absolute;"></iframe>
+            </div>
+
+            <button class="quiz-lesson" data-toggle="modal" data-target="#modalQuiz">
+                Luyện tập QUIZ!
+            </button>
+
+
+            <div id="expandMobile" onclick="showTabListMobile(this)">
+                <a href="javascript:void(0)"><i class="fa fa-chevron-left"></i></a>
+            </div>
+        </div>
+
+
+        <div class="right-content">
+            <div>
+                <ul class="nav nav-tabs" role="tablist">
+                    <li><a href="javascript:void(0)" onclick="showTabList(this)" aria-controls="" role="tab" data-toggle="tab"><i id="controls-laptop" class="fa fa-chevron-left" aria-hidden="true"></i></a>
+                    </li>
+                    <li data-toggle="tooltip" data-placement="bottom" title="Giáo trình" role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-bookmark-o" aria-hidden="true"></i></a></li>
+                    <li data-toggle="tooltip" data-placement="bottom" title="Ghi chú" role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-book" aria-hidden="true"></i></a>
+                    </li>
+                    <li data-toggle="tooltip" data-placement="bottom" title="Thảo luận" role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"><i class="fa fa-comments" aria-hidden="true"></i></a></li>
+                    <li data-toggle="tooltip" data-placement="bottom" title="Xếp hạng" role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab"><i class="fa fa-trophy" aria-hidden="true"></i></a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="home">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">1. Tổng quan về HTML</h3>
+                            </div>
+                            <div class="panel-body">
+                                <ul>
+                                    <li class="active"><a href="">1.1 HTML là gì? <span>2:09</span></a></li>
+                                    <li><a href="">1.2 Ứng dụng HTML đầu tiên <span>9:59</span></a></li>
+                                    <li><a href="">1.3 Heading, Paragraph & Special character <span>7:29</span></a></li>
+                                    <li><a href="">1.4 Các thẻ format text <span>5:29</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">1. Tổng quan về HTML</h3>
+                            </div>
+                            <div class="panel-body">
+                                <ul>
+                                    <li><a href="">1.1 HTML là gì? <span>2:09</span></a></li>
+                                    <li><a href="">1.2 Ứng dụng HTML đầu tiên <span>9:59</span></a></li>
+                                    <li><a href="">1.3 Heading, Paragraph & Special character <span>7:29</span></a></li>
+                                    <li><a href="">1.4 Các thẻ format text <span>5:29</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">1. Tổng quan về HTML</h3>
+                            </div>
+                            <div class="panel-body">
+                                <ul>
+                                    <li><a href="">1.1 HTML là gì? <span>2:09</span></a></li>
+                                    <li><a href="">1.2 Ứng dụng HTML đầu tiên <span>9:59</span></a></li>
+                                    <li><a href="">1.3 Heading, Paragraph & Special character <span>7:29</span></a></li>
+                                    <li><a href="">1.4 Các thẻ format text <span>5:29</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">1. Tổng quan về HTML</h3>
+                            </div>
+                            <div class="panel-body">
+                                <ul>
+                                    <li><a href="">1.1 HTML là gì? <span>2:09</span></a></li>
+                                    <li><a href="">1.2 Ứng dụng HTML đầu tiên <span>9:59</span></a></li>
+                                    <li><a href="">1.3 Heading, Paragraph & Special character <span>7:29</span></a></li>
+                                    <li><a href="">1.4 Các thẻ format text <span>5:29</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">1. Tổng quan về HTML</h3>
+                            </div>
+                            <div class="panel-body">
+                                <ul>
+                                    <li><a href="">1.1 HTML là gì? <span>2:09</span></a></li>
+                                    <li><a href="">1.2 Ứng dụng HTML đầu tiên <span>9:59</span></a></li>
+                                    <li><a href="">1.3 Heading, Paragraph & Special character <span>7:29</span></a></li>
+                                    <li><a href="">1.4 Các thẻ format text <span>5:29</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="profile">
+                        <div class="lesson-content" id="lessonContent">
+                            <p>Tham khảo các loại <strong><em>style</em></strong> cho <strong><em>border</em></strong>
+                                tại đây.
+                            </p>
+
+                            <p><strong>Chú ý:</strong></p>
+
+                            <p>Thuộc tính <strong><em>border-radius</em> </strong>cũng có thể viết tách ra thành:</p>
+
+                            <p><em><strong>border-top-left-radius</strong></em> (góc trên bên trái)<br
+                                    style="box-sizing: border-box; color: rgb(0, 0, 0); font-family: Consolas, 'courier new'; line-height: 22.4px;"><em><strong>border-top-right-radius</strong></em>
+                                (góc trên bên phải)<br
+                                        style="box-sizing: border-box; color: rgb(0, 0, 0); font-family: Consolas, 'courier new'; line-height: 22.4px;"><em><strong>border-bottom-right-radius</strong></em>
+                                (góc dưới bên phải)<br
+                                        style="box-sizing: border-box; color: rgb(0, 0, 0); font-family: Consolas, 'courier new'; line-height: 22.4px;"><em><strong>border-bottom-left-radius</strong>
+                                </em>(góc dưới bên trái)</p>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="messages">
+                        <h4>Nếu có thắc mắc về bài học, xin vui lòng đặt câu hỏi tại đây.</h4>
+
+                        <div class="user_nhanxet">
+                            <img src="img/dm.jpg" alt="">
+                            <a href="">Tồ Tí Tởn</a>
+                            <span>21/10/2016 | 06:09:69</span>
+                            <p>Giảng viên của Techmaster ai cũng đẹp trai, nhiệt tình đặc biệt là anh Nghĩa <3</p>
+                            <button style="margin-bottom:5px;" class="pull-right btn btn-primary btn-sm btn-flat listComment">Trả lời</button>
+                        </div>
+                        <div class="nhanxet_sub">
+                            <img src="img/dm.jpg" alt="">
+                            <a href="">Thân Văn Nghĩa</a>
+                            <span>21/10/2016 | 09:06:69</span>
+                            <p>Ahihi <3</p>
+                        </div>
+
+                        <textarea class="form-control" placeholder="Viết tin nhắn"></textarea>
+                        <button class="send-cmt">Gửi <i class="submit-cmt fa fa-reply" aria-hidden="true"></i></button>
+                        <span style="font-style: italic; display: block">Tin nhắn phải có tối thiểu 20 ký tự.</span>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="settings">
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Tên học viên</th>
+                                <th>Điểm số</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Thân Văn Nghĩa</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar"
+                                             aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 98%">
+                                            <span>399/400</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Phan Đức Trường</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar"
+                                             aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 80%">
+                                            <span>380/400</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Đức Trường Phan</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar"
+                                             aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 70%">
+                                            <span>350/400</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Nguyễn Sỹ Tèo</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar"
+                                             aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 65%">
+                                            <span>320/400</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Đức Trường Phan</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar"
+                                             aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 70%">
+                                            <span>350/400</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">6</th>
+                                <td>Đức Trường Phan</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar"
+                                             aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 70%">
+                                            <span>350/400</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">7</th>
+                                <td>Đức Trường Phan</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar"
+                                             aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 70%">
+                                            <span>350/400</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">8</th>
+                                <td>Đức Trường Phan</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar"
+                                             aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 70%">
+                                            <span>350/400</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">9</th>
+                                <td>Đức Trường Phan</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar"
+                                             aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 70%">
+                                            <span>350/400</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">10</th>
+                                <td>Đức Trường Phan</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar"
+                                             aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 70%">
+                                            <span>350/400</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">11</th>
+                                <td>Đức Trường Phan</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar"
+                                             aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 70%">
+                                            <span>350/400</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">12</th>
+                                <td>Đức Trường Phan</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar"
+                                             aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 70%">
+                                            <span>350/400</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">13</th>
+                                <td>Đức Trường Phan</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar"
+                                             aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 70%">
+                                            <span>350/400</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">14</th>
+                                <td>Đức Trường Phan</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar"
+                                             aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 70%">
+                                            <span>350/400</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">15</th>
+                                <td>Đức Trường Phan</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar"
+                                             aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 70%">
+                                            <span>350/400</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">16</th>
+                                <td>Đức Trường Phan</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar"
+                                             aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 70%">
+                                            <span>350/400</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">17</th>
+                                <td>Đức Trường Phan</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar"
+                                             aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 70%">
+                                            <span>350/400</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">18</th>
+                                <td>Đức Trường Phan</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar"
+                                             aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 70%">
+                                            <span>350/400</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">19</th>
+                                <td>Đức Trường Phan</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar"
+                                             aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 70%">
+                                            <span>350/400</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">20</th>
+                                <td>Đức Trường Phan</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-success" role="progressbar"
+                                             aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 70%">
+                                            <span>350/400</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12">
+            <button class="change-lesson">
+                <span><i class="fa fa-chevron-circle-left" aria-hidden="true"></i>	<i class="hidden-xs">Bài trước</i></span>
+            </button>
+            <button class="change-lesson">
+                <span><i class="hidden-xs">Bài sau</i> <i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span>
+            </button>
+            <span id="noteCodeNow">Các bạn có thể thực hành code ngay bên dưới!</span>
+        </div>
+    </div>
+</section>
+
+
+<section class="container-fluid codenow">
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>Code Now!</h2>
+            <div class="row fixHeightFolder">
+                <div class="folder">
+                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    <i class="fa fa-folder iconfolder" aria-hidden="true"></i>
+                    <span>TechMaster</span>
+                    <div class="subMenuFolder1" style="background: #FF795D; color: white; border-radius: 2px;">
+                        <i class="fa fa-css3" aria-hidden="true"></i> main.css
+                    </div>
+                    <div class="subMenuFolder1" style="border-radius: 2px; padding-left:25px;">
+                        <img width="20px" style="display: inline-block; margin-top:-5px;" src="img/js.svg" alt=""> <span
+                            style="margin-top:5px;text-align:center;line-height:20px;display: inline-block;">script.js</span>
+                    </div>
+                    <div class="subMenuFolder1" style="border-radius: 2px; padding-left:25px;">
+                        <img width="20px" style="display: inline-block; margin-top:-5px;" src="img/php-square.svg"
+                             alt=""> <span
+                            style="margin-top:5px;text-align:center;line-height:20px;display: inline-block;">user.php</span>
+                    </div>
+                </div>
+                <div class="code-terminal">
+                    <div>
+                        <div id="expandMobileTerminal" onclick="showTerminalMobile(this)">
+                            <a href="javascript:void(0)"><i class="fa fa-chevron-right"></i></a>
+                        </div>
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" id="tablist" role="tablist">
+                            <li role="presentation" class="active"><a href="#t1" aria-controls="t1" role="tab" data-toggle="tab">script.js</a></li>
+                            <li role="presentation"><a href="#t2" aria-controls="t2" role="tab" data-toggle="tab">main.css</a>
+                            </li>
+                            <li role="presentation"><a href="#t3" aria-controls="t3" role="tab" data-toggle="tab">user.php</a>
+                            </li>
+
+                            <button type="button" id="btn-add-tab-file" class="btn btn-primary"><span class=""></span> <i class="fa fa-plus" aria-hidden="true"></i></button>
+
+                            <button type="button" id="btn-share" class="btn btn-primary pull-right"><span class="">SHARE</span> <i class="fa fa-share-alt" aria-hidden="true"></i>
+                            </button>
+                            <button data-toggle="modal" data-target="#resultModal" type="button" id="btn-run" class="btn btn-primary pull-right"><span class="">RUN</span> <i class="fa fa-play" aria-hidden="true"></i>
+                            </button>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content sida">
+                            <div role="tabpanel" class="tab-pane active" id="t1">
+									<pre class="javascript">
+										<code>
+$(document).ready(function() {
+ var width = $('.left-content').width();
+ var height = $('.left-content').height();
+ $('#myVideo').attr('width', width);
+ $('#myVideo').attr('height', height);
+ $(window).resize(function(){
+  var width = $('.left-content').width();
+  var height = $('.left-content').height();
+  $('#myVideo').attr('width', width);
+  $('#myVideo').attr('height', height);
+   var heightRightContent = height - $('.nav-tabs').height();
+   $('.tab-content').css('height', heightRightContent);
+});
+
+
+
+ var heightRightContent = height - $('.nav-tabs').height();
+ $('.tab-content').css('height', heightRightContent);
+
+ $('[data-toggle="tooltip"]').tooltip();
+  var tabID = 1;
+  $('#tablist').on('click','.close',function(){
+   var tabID = $(this).parents('a').attr('href');
+   $(this).parents('li').remove();
+   $(tabID).remove();
+     //display first tab
+    var tabFirst = $('#tablist a:first');
+    tabFirst.tab('show');
+  });
+});
+										</code>
+									</pre>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="t2">
+									<pre class="css">
+										<code>
+.main-content {
+ background-color: #E9EAEA;
+ padding-top: 30px;
+ padding-bottom: 30px;
+}
+
+.content-title h2 {
+ text-align: center;
+ font-weight: bold;
+ text-transform: uppercase;
+ font-size: 32px;
+ letter-spacing: .2rem;
+ padding: 0;
+ color: #5f5f5f;
+ vertical-align: middle;
+ margin: 20px 0 50px;
+}
+.content-img img {
+ width: 100%!important;
+}
+
+.content-detail {
+ position: relative;
+ background-color: #fff;
+ transition: all .25s;
+ border-radius: 2px;
+ transition: all 0.2s;
+ margin-bottom: 40px;
+ box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.content-detail:hover {
+ box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.content-detail h3 {
+ color: #444;
+ margin-top: 15px;
+ font-weight: 700;
+ border-bottom: 2px solid #3c948b;
+ padding-bottom: 20px;
+}
+.content-description {
+ padding: 15px;
+}
+.content-description p {
+ font-size: 14px;
+ font-weight: 200;
+ line-height: 20px;
+ letter-spacing: 1px;
+ color: #7b8b8e;
+ margin-top: 20px;
+ padding-bottom: 20px;
+}
+
+										</code>
+									</pre>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="t3">
+									<pre class="php">
+										<code>
+class Users extends Controller {
+public function index()
+{
+ $users = $this->model->getAllUsers();
+ $province = $this->model->getAllProvince();
+ $amount_of_users = $this->model->getAmountOfUsers();
+ require APP . 'view/_templates/header.php';
+ require APP . 'view/users/index.php';
+ require APP . 'view/_templates/footer.php';
+}
+
+public function addUser()
+{
+ if (isset($_POST["add"])) {
+  $avata = "";
+  if ($_FILES["avata"]["type"] == "image/jpeg" || $_FILES["avata"]["type"] == "image/png") {
+   move_uploaded_file($_FILES["avata"]["tmp_name"], "upload/".$_FILES["avata"]["name"]);
+   $avata = "upload/".$_FILES["avata"]["name"];
+  }
+  $_POST["avata"] = $avata;
+  $this->model->add("user", $_POST);
+ }
+ header('location: ' . URL . 'users/index');
+}
+
+public function add(){
+ $province = $this->model->getAllProvince();
+ require APP . 'view/_templates/header.php';
+ require APP . 'view/users/add.php';
+ require APP . 'view/_templates/footer.php';
+}
+
+public function deleteUser($user_id)
+{
+ if (isset($user_id)) {
+     $this->model->deleteUser($user_id);
+ }
+ header('location: ' . URL . 'users/index');
+}
+
+public function editUser($user_id)
+{
+ if (isset($user_id)) {
+  $user = $this->model->getUser($user_id);
+  $province = $this->model->getAllProvince();
+  require APP . 'view/_templates/header.php';
+  require APP . 'view/users/edit.php';
+  require APP . 'view/_templates/footer.php';
+ } else {
+  header('location: ' . URL . 'users/index');
+ }
+}
+
+public function updateUser()
+{
+ if (isset($_POST["update"])) {
+  $user_id = $_POST["id"];
+  $username = $_POST["username"];
+  $email = $_POST["email"];
+  $gender = $_POST["gender"];
+  $province_id = $_POST["province_id"];
+  $birthday = date("Y-m-d",strtotime($_POST["birthday"]));
+  $description = addslashes($_POST["description"]);
+  $avata = $_POST["avata"];
+  if ($_FILES["avata"]["name"] != "") {
+   if ($_FILES["avata"]["type"] == "image/jpeg" || $_FILES["avata"]["type"] == "image/png"){
+    move_uploaded_file($_FILES["avata"]["tmp_name"], "upload/".$_FILES["avata"]["name"]);
+    $avata = "upload/".$_FILES["avata"]["name"];
+   }
+  }
+  $_POST["avata"] = $avata;
+  $this->model->update("user", $_POST);
+ }
+ header('location: ' . URL . 'users/index');
+}
+
+public function ajaxGetStats1()
+{
+ $amount_of_users = $this->model->getAmountOfUsers();
+ echo $amount_of_users;
+}
+}
+										</code>
+									</pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <!-- Nav tabs -->
+                        <ul style="margin-top:5px;" class="nav nav-tabs" id="tablist" role="tablist">
+                            <li role="presentation" class="active"><a href="#terminal1" aria-controls="terminal1" role="tab" data-toggle="tab"><i style="margin-right:5px;" class="fa fa-terminal" aria-hidden="true"></i> bash - "tomhapbia"</a></li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content sidaterminal">
+                            <div role="tabpanel" class="tab-pane active" id="terminal1">
+                                <p>root@tom:~$ whoami</p>
+                                <p>created with ♥ by
+                                    <a href="https://twitter.com/@samarkandiy" title="Tom Hap Bia">@tomhapbia</a>
+                                    ;)<span>|</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--MODAL-RESULT-->
+<!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Preview</h4>
+            </div>
+            <div class="modal-body">
+                Đây là kết quả
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Modal QUIZ -->
+<div class="modal fade" id="modalQuiz" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">
+                    <div class="progress" style="width:50%;margin:auto;">
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80"
+                             aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                            <span>8/10</span>
+                        </div>
+                    </div>
+                </h4>
+            </div>
+            <div class="modal-body">
+                <h3>Tùng Mountain là ai?</h3>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                            [1] Đạo sĩ
+                        </label>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1">
+                            [2] Y sĩ
+                        </label>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option1">
+                            [3] Bác sĩ
+                        </label>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="optionsRadios" id="optionsRadios4" value="option1">
+                            [4] Giáo sĩ
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <span class="badge-quiz"><i class="fa fa-check fa-4x"></i></span>
+                <h3>Chính xác</h3>
+                <button type="button" class="btn btn-primary nextQuiz">Kiểm tra/Câu tiếp</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+<script src="js/hoc.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>
