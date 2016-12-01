@@ -77,6 +77,8 @@ a {
 	height: 0;
 	opacity: 0;
 	transform: scale(0);
+	-ms-transform: scale(0); /* IE 9 */
+    -webkit-transform: scale(0); /* Chrome, Safari, Opera */
 	-webkit-transition: all 1s ease;
 	-moz-transition: all 1s ease;
 	transition: all 1s ease;
@@ -88,6 +90,8 @@ a {
 }
 .navbar-default .navbar-nav .dropdown ul.dropdown-show {
 	transform: scale(1);
+	-ms-transform: scale(1); /* IE 9 */
+    -webkit-transform: scale(1); /* Chrome, Safari, Opera */
 	height: auto;
 	opacity: 1!important;
 }
@@ -729,6 +733,8 @@ span#btn-to-top:hover {
 }
 span#btn-to-top:hover i {
 	transform: translateY(-2px);
+	-ms-transform: translateY(-2px); /* IE 9 */
+    -webkit-transform: translateY(-2px); /* Chrome, Safari, Opera */
 }
 
 

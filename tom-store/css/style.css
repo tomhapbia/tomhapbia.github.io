@@ -558,6 +558,8 @@ opacity: 1;
 	left: 50%;
 	width: 70%;
 	padding: 10px;
+	-ms-transform: translate(-50%,-50%); /* IE 9 */
+    -webkit-transform: translate(-50%,-50%); /* Chrome, Safari, Opera */
 	transform: translate(-50%,-50%);
 	overflow: hidden;
 	transition: all ease-in-out .5s;
